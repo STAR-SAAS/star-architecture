@@ -1,6 +1,6 @@
 # STAR Open Questions
 
-**Version:** v0.1.5  
+**Version:** v0.1.6  
 **Status:** Active
 
 Open questions must not be presented as confirmed architecture.
@@ -21,14 +21,14 @@ Open questions must not be presented as confirmed architecture.
 |---|---|---|---|
 | OQ-007 | What content belongs in GitHub versus issue tracking, CRM, monitoring, email/calendar and other systems? | Prevents GitHub from becoming a dumping ground. | `13_INFORMATION_AND_KNOWLEDGE_GOVERNANCE.md` proposes one authoritative source per information class; map STAR's actual tools and owners. |
 | OQ-008 | What is the minimum decision-record taxonomy beyond ADR? | Product and governance decisions also need traceability. | `18_DECISION_RECORD_VALIDATION.md` shows one generic template worked retrospectively across three domains. Test it prospectively on one contested or high-risk decision before closing this question. |
-| OQ-009 | How will knowledge be reviewed, expired and archived? | A growing repository without lifecycle control becomes unreliable. | `22_KNOWLEDGE_METADATA_AUDIT.md` defines minimum metadata, priority files and review triggers. Apply the metadata to high-impact files and test ownership during real work. |
+| OQ-009 | How will knowledge be reviewed, expired and archived? | A growing repository without lifecycle control becomes unreliable. | `22_KNOWLEDGE_METADATA_AUDIT.md` defined the metadata; high-impact files now carry it and `23_KNOWLEDGE_REVIEW_REGISTER.md` assigns review responsibility. Test ownership during real Mission work before closing. |
 
 ## Priority C — team experience and AI
 
 | ID | Question | Why it matters | Current evidence / next validation |
 |---|---|---|---|
 | OQ-010 | What information should each role see first in a Mission view? | Supports fast comprehension without hiding necessary context. | `20_ROLE_VIEW_DESK_WALKTHROUGH.md` supports Why/What/Who/Now/Evidence for orientation. Test comprehension with real participants using an authoritative Mission. |
-| OQ-011 | What are the authority and approval boundaries for AI agents? | AI participation without controls creates quality and security risk. | `14_AI_WORK_GOVERNANCE.md`, `19_AI_WORK_CONTROL_DRY_RUN.md` and `21_AI_CONTEXT_PACKAGE_TEST.md` validate A1/A2 documentation/GitHub work. Code/test and A3 dry-run remain open. |
+| OQ-011 | What are the authority and approval boundaries for AI agents? | AI participation without controls creates quality and security risk. | `14_AI_WORK_GOVERNANCE.md`, `19_AI_WORK_CONTROL_DRY_RUN.md`, `21_AI_CONTEXT_PACKAGE_TEST.md` and `24_AI_A3_HIGH_IMPACT_DRY_RUN.md` cover A1/A2 and a design-level A3 dry run. AI code/test and non-document sandbox work remain open. |
 | OQ-012 | How should context be assembled for AI tasks? | AI quality depends on current, relevant and authorized context. | `templates/AI_CONTEXT_PACKAGE.md` and `21_AI_CONTEXT_PACKAGE_TEST.md` provide and validate a minimum A2 package. Test it next on one code/test or non-document analysis Work Item. |
 | OQ-013 | What onboarding targets are realistic for different roles? | Numeric targets such as 30 seconds, one hour or five days were proposed but not validated. | Test with actual team members. |
 
