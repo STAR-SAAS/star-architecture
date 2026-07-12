@@ -1,6 +1,6 @@
 # STAR Product Delivery Foundation — Candidate
 
-**Version:** v0.2.0  
+**Version:** v0.2.1  
 **Status:** Candidate; not frozen  
 **Purpose:** Explain the minimum Product Delivery model in one page before exposing deeper research or architecture.
 
@@ -102,6 +102,11 @@ The first Mission view should show only:
 5. **Evidence** — tests, release, operational results, metrics and feedback.
 
 Detailed research, architecture and implementation artifacts are available through drill-down links.
+
+## Apply the candidate
+
+- Use [`12_RESPONSIBILITY_AND_ROLE_VIEWS.md`](12_RESPONSIBILITY_AND_ROLE_VIEWS.md) to identify accountability, authority and each participant's first questions.
+- Start a real Mission with [`templates/MISSION_BRIEF.md`](templates/MISSION_BRIEF.md), linking rather than duplicating detailed artifacts.
 
 ## Validation status
 
