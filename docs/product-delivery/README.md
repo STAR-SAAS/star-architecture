@@ -1,16 +1,18 @@
 # STAR OS · Product Delivery — Working Memory Baseline
 
-**Version:** v0.1.2  
+**Version:** v0.1.3  
 **Date:** 2026-07-12 (Asia/Singapore)  
 **Status:** Working baseline; not frozen  
-**Purpose:** Turn the confirmed conversation into durable, reviewable Markdown so future work does not depend on chat memory.
+**Purpose:** Turn confirmed discussion into durable, reviewable Markdown and translate research into material that teams can understand and use.
 
 ## Start here
 
-1. Read [`01_DECISION_LOG.md`](01_DECISION_LOG.md) before proposing a new direction.
-2. Check [`02_OPEN_QUESTIONS.md`](02_OPEN_QUESTIONS.md) before treating a candidate idea as confirmed.
-3. Use [`07_WORKING_METHOD.md`](07_WORKING_METHOD.md) for every new Mission or architecture task.
-4. Record material changes in [`CHANGELOG.md`](CHANGELOG.md).
+1. Read [`11_FOUNDATION_CANDIDATE.md`](11_FOUNDATION_CANDIDATE.md) for the one-page candidate model.
+2. Use [`templates/MISSION_BRIEF.md`](templates/MISSION_BRIEF.md) to test it on a real Mission.
+3. Read [`01_DECISION_LOG.md`](01_DECISION_LOG.md) before proposing a new direction.
+4. Check [`02_OPEN_QUESTIONS.md`](02_OPEN_QUESTIONS.md) before treating a candidate idea as confirmed.
+5. Use [`07_WORKING_METHOD.md`](07_WORKING_METHOD.md) for every new Mission or architecture task.
+6. Record material changes in [`CHANGELOG.md`](CHANGELOG.md).
 
 ## Repository contents
 
@@ -26,10 +28,13 @@
 | `07_WORKING_METHOD.md` | How STAR work should be researched, decided, documented and delivered |
 | `08_PRODUCT_DELIVERY_DRAFT_AUDIT.md` | Audit of the three early Product Delivery drafts |
 | `09_GLOSSARY.md` | Shared terms, with definition status |
-| `10_MODEL_VALIDATION.md` | SmartQuote and GateHub validation of the candidate delivery model |
+| `10_MODEL_VALIDATION.md` | SmartQuote and GateHub desk validation of the candidate delivery model |
+| `11_FOUNDATION_CANDIDATE.md` | One-page candidate foundation, Mission definition and minimum objects |
+| `12_RESPONSIBILITY_AND_ROLE_VIEWS.md` | Candidate responsibility model and first-view needs for all participant groups |
+| `templates/MISSION_BRIEF.md` | One-page Mission template for real-world validation |
 | `GITHUB_SYNC_STATUS.md` | Exact synchronization state; prevents false claims of upload |
 | `CHANGELOG.md` | Chronological repository changes |
-| `MANIFEST.md` | SHA-256 manifest for the Markdown baseline |
+| `MANIFEST.md` | Repository file index and integrity guidance |
 
 ## Status model
 
@@ -40,4 +45,4 @@
 
 ## Reading principle
 
-Front-line team members should not be required to read this entire repository. Detailed research is for maintainers and AI; each role should receive a short, task-relevant view through progressive disclosure.
+Front-line team members should not be required to read this entire repository. Detailed research is for maintainers and AI; each participant should receive a short, task-relevant view through progressive disclosure.
