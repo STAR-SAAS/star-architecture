@@ -1,9 +1,17 @@
 # STAR OS · Product Delivery — Project Charter
 
-**Version:** v0.1.0  
-**Status:** Working baseline; not frozen  
-**Owner:** STAR leadership  
-**Maintainers:** Product Delivery / Architecture maintainers and approved AI collaborators
+| Field | Value |
+|---|---|
+| **Type / scope** | Charter — STAR Product Delivery foundation |
+| **Version / status** | v0.1.1 — Working baseline; not frozen |
+| **Owner** | STAR leadership |
+| **Maintainer** | Product Delivery maintainers |
+| **Last reviewed** | 2026-07-12 |
+| **Review trigger** | Material scope/strategy change, confirmed-decision conflict, real-Mission finding or freeze proposal |
+| **Authoritative working source** | This repository path in Draft PR #1; `main` only after approved merge |
+| **Affects** | Product Delivery foundation, participating teams and future active Missions |
+| **Supersession** | None |
+| **Access** | Public |
 
 ## Why this work exists
 
