@@ -29,6 +29,7 @@
 | `10_MODEL_VALIDATION.md` | SmartQuote and GateHub validation of the candidate delivery model |
 | `GITHUB_SYNC_STATUS.md` | Exact synchronization state; prevents false claims of upload |
 | `CHANGELOG.md` | Chronological repository changes |
+| `MANIFEST.md` | SHA-256 manifest for the Markdown baseline |
 
 ## Status model
 
