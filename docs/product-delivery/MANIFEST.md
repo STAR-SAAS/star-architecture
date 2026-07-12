@@ -1,6 +1,6 @@
 # Repository Manifest
 
-**Version:** v0.1.7  
+**Version:** v0.1.9  
 **Status:** Live file index
 
 ## Integrity guidance
@@ -29,13 +29,18 @@ For an exact reviewed snapshot, use the commit SHA or merged pull-request SHA.
 | `12_RESPONSIBILITY_AND_ROLE_VIEWS.md` | Responsibility and participant views |
 | `13_INFORMATION_AND_KNOWLEDGE_GOVERNANCE.md` | Information-source and knowledge-lifecycle candidate |
 | `14_AI_WORK_GOVERNANCE.md` | AI authority and validation candidate |
-| `15_VALIDATION_PLAN.md` | Validation and freeze evidence plan |
+| `15_VALIDATION_PLAN.md` | Validation status and freeze evidence plan |
 | `16_ACTIVE_MISSION_INTAKE.md` | Active Mission evidence-gap audit |
 | `17_WORK_STATUS.md` | Current work, progress, blockers and next actions |
+| `18_DECISION_RECORD_VALIDATION.md` | Generic Decision Record validation evidence |
+| `19_AI_WORK_CONTROL_DRY_RUN.md` | AI A1/A2 work-control validation evidence |
 | `templates/MISSION_BRIEF.md` | One-page Mission template |
 | `templates/DECISION_RECORD.md` | Generic Decision Record template |
 | `examples/MISSION_SMARTQUOTE_MERCHANT_DISCOUNT_RULE.md` | Concise SmartQuote desk example |
 | `examples/MISSION_GATEHUB_PSP_CONNECTOR.md` | Concise GateHub desk example |
+| `examples/decisions/DEC-0030_VALUE_TRACEABILITY.md` | Product/Delivery decision example |
+| `examples/decisions/DEC-0032_GITHUB_BASELINE_LOCATION.md` | Architecture/Repository decision example |
+| `examples/decisions/DEC-0034_STEPWISE_WORK_REPORTING.md` | Governance/Working Method decision example |
 | `CHANGELOG.md` | Chronological changes |
 | `GITHUB_SYNC_STATUS.md` | Repository, branch and PR status |
 | `MANIFEST.md` | This index and integrity guidance |
