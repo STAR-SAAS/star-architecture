@@ -2,6 +2,24 @@
 
 All notable changes to this Markdown baseline are recorded here.
 
+## [0.1.7] — 2026-07-12
+
+### Added
+
+- `16_ACTIVE_MISSION_INTAKE.md` with the current evidence-gap audit for Mission-001 and Mission-002.
+- `17_WORK_STATUS.md` with current tasks, progress, blockers, next actions and user-decision status.
+
+### Verified
+
+- `STARSAAS/star-platform` and `STARSAAS/star-domains` currently contain no repository material that can serve as an authoritative real-Mission baseline.
+- The SmartQuote discount-rule and GateHub PSP-connector files remain desk examples, not completed real-Mission validation.
+
+### Corrected
+
+- Aligned README and Manifest with the actual Draft PR file set.
+- Added the active-Mission intake and work-status files to the repository reading order and index.
+- Clarified that no user GitHub action is currently required and Draft PR #1 should not yet be merged.
+
 ## [0.1.6] — 2026-07-12
 
 ### Added
