@@ -1,8 +1,17 @@
 # STAR AI Work Governance — Candidate
 
-**Version:** v0.1.0  
-**Status:** Candidate; not frozen  
-**Purpose:** Let AI contribute meaningfully while keeping human accountability, authorization, evidence and customer risk clear.
+| Field | Value |
+|---|---|
+| **Type / scope** | Governance candidate — AI work authority, controls and validation |
+| **Version / status** | v0.1.1 — Candidate; not frozen |
+| **Owner** | STAR leadership |
+| **Maintainer** | Product Delivery / AI governance maintainers |
+| **Last reviewed** | 2026-07-12 |
+| **Review trigger** | Real AI-work finding, authority or risk change, security/privacy incident, conflicting decision or freeze proposal |
+| **Authoritative working source** | This repository path in Draft PR #1; `main` only after approved merge |
+| **Affects** | AI contributors, human reviewers/approvers and all Mission work that delegates material activity to AI |
+| **Supersession** | None |
+| **Access** | Public; secrets, restricted data and production credentials are excluded |
 
 ## Core rule
 
