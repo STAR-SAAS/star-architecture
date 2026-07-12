@@ -1,6 +1,6 @@
 # STAR Working Method
 
-**Version:** v0.1.0  
+**Version:** v0.1.1  
 **Status:** Confirmed working method; details not frozen
 
 ## End-to-end sequence
@@ -15,6 +15,24 @@
 8. **Architect and design** — create the minimum structure needed to support value and work.
 9. **Implement in small changes** — automate checks and obtain human review appropriate to risk.
 10. **Validate and learn** — assess customer/user outcome, operational behavior and lessons; feed them into the next decision.
+
+## Work-batch communication
+
+Before starting a multi-step batch:
+
+1. list the planned tasks in execution order;
+2. state whether any user or GitHub action is required;
+3. continue without asking for confirmation when the work is reversible and within confirmed scope.
+
+While the batch is underway, give concise progress updates that include:
+
+- current task and purpose;
+- completed / in-progress status;
+- next action;
+- blocker, if any;
+- whether a user decision is needed.
+
+Record durable status in `17_WORK_STATUS.md`; chat updates remain concise and operational.
 
 ## Required quality checks
 
