@@ -1,20 +1,33 @@
-# File Manifest
+# Repository Manifest
 
-**Generated:** 2026-07-12
+**Version:** v0.1.3  
+**Status:** Live file index
 
-| File | SHA-256 |
+## Integrity guidance
+
+Git commits and Git object IDs are the authoritative integrity mechanism for this repository. A manually maintained SHA-256 table was removed because incremental commits made it stale and therefore misleading.
+
+For an exact reviewed snapshot, use the commit SHA or merged pull-request SHA. Do not rely on copied file hashes unless a release package explicitly generates and verifies them in automation.
+
+## Current files
+
+| Path | Purpose |
 |---|---|
-| `00_PROJECT_CHARTER.md` | `4890d6a38bc8ada23711ddefc64ba1150b9a00c2825186b555712a514e100d5c` |
-| `01_DECISION_LOG.md` | `664fa4cd8d174f414e9f96c910e52e8995609acadd73360b3de7f2fd35a3546a` |
-| `02_OPEN_QUESTIONS.md` | `280e5e5ddac868570a136cb35e59d0294a63876c8c10b60a608b604620c7c46d` |
-| `03_RESEARCH_CANON.md` | `77ae9cdd1804ab1efcf5b6b9a06edaf457605d46a61aa64d08403a36a6abb9cd` |
-| `04_SUPERSEDED_IDEAS.md` | `b7769253fa630ce9e9bcaef93085e014b32e927df23b470b1af1e482b81fca75` |
-| `05_ASSUMPTIONS.md` | `c9b7e50ce305e832c210e98c19be19faad4cd471febf0de8fd3ba1434939afb3` |
-| `06_STAKEHOLDER_MAP.md` | `a7cae49cd75b83f9e11a3fb2253adf2d33e44cdc11d1c4751e0b761f4d47046a` |
-| `07_WORKING_METHOD.md` | `ad46d2ead4b014224d1e14b444602d160ed6962a2dfc8499c9b3df97dfed643d` |
-| `08_PRODUCT_DELIVERY_DRAFT_AUDIT.md` | `ea9ff08b5fd67e30a494b204313db27c8c78c2c2ee1bafbad3d5f9f9686b1ee8` |
-| `09_GLOSSARY.md` | `b79b6776a749e64deaffaff2d19353448448bc90a5a1cb5f196f9778d06fd576` |
-| `10_MODEL_VALIDATION.md` | `d1465a1623feb1d17bd3b1fe7e46fed17b2a9a79218322d600a2471392e100c2` |
-| `CHANGELOG.md` | `705a23114871bbb9fbe1b2e706a9273f8a83faf5628c86dcf1e367cbaee2fa10` |
-| `GITHUB_SYNC_STATUS.md` | `64d1d04a2fe73f95f9d5e83705a4e8cbc910a22e6271599551f7ae7e6a58a6d1` |
-| `README.md` | `7e8d8b4d17310a3e6e393caaae38ab80e79c41c094e767aad6c498691b399cae` |
+| `README.md` | Entry point and reading order |
+| `00_PROJECT_CHARTER.md` | Purpose, scope and constraints |
+| `01_DECISION_LOG.md` | Confirmed decisions |
+| `02_OPEN_QUESTIONS.md` | Unresolved questions |
+| `03_RESEARCH_CANON.md` | External methods and current adoption posture |
+| `04_SUPERSEDED_IDEAS.md` | Rejected and replaced ideas |
+| `05_ASSUMPTIONS.md` | Unconfirmed hypotheses |
+| `06_STAKEHOLDER_MAP.md` | Stakeholder coverage |
+| `07_WORKING_METHOD.md` | Working and quality method |
+| `08_PRODUCT_DELIVERY_DRAFT_AUDIT.md` | Audit of early drafts |
+| `09_GLOSSARY.md` | Working vocabulary |
+| `10_MODEL_VALIDATION.md` | SmartQuote and GateHub desk validation |
+| `11_FOUNDATION_CANDIDATE.md` | One-page candidate foundation |
+| `12_RESPONSIBILITY_AND_ROLE_VIEWS.md` | Responsibility and participant views |
+| `templates/MISSION_BRIEF.md` | One-page Mission template |
+| `CHANGELOG.md` | Chronological changes |
+| `GITHUB_SYNC_STATUS.md` | Repository, branch and PR status |
+| `MANIFEST.md` | This index and integrity guidance |
