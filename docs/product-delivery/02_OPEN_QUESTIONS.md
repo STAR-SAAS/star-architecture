@@ -1,6 +1,6 @@
 # STAR Open Questions
 
-**Version:** v0.1.2  
+**Version:** v0.1.3  
 **Status:** Active
 
 Open questions must not be presented as confirmed architecture.
@@ -17,18 +17,18 @@ Open questions must not be presented as confirmed architecture.
 
 ## Priority B — repository and knowledge
 
-| ID | Question | Why it matters | Next validation |
+| ID | Question | Why it matters | Current evidence / next validation |
 |---|---|---|---|
-| OQ-007 | What content belongs in GitHub versus issue tracking, CRM, monitoring, email/calendar and other systems? | Prevents GitHub from becoming a dumping ground. | Define authoritative source by information class. |
-| OQ-008 | What is the minimum decision-record taxonomy beyond ADR? | Product and governance decisions also need traceability. | Compare one generic Decision Record with typed variants. |
-| OQ-009 | How will knowledge be reviewed, expired and archived? | A growing repository without lifecycle control becomes unreliable. | Define owner, review date and supersession rules. |
+| OQ-007 | What content belongs in GitHub versus issue tracking, CRM, monitoring, email/calendar and other systems? | Prevents GitHub from becoming a dumping ground. | `13_INFORMATION_AND_KNOWLEDGE_GOVERNANCE.md` proposes one authoritative source per information class; map STAR's actual tools and identify exceptions. |
+| OQ-008 | What is the minimum decision-record taxonomy beyond ADR? | Product and governance decisions also need traceability. | `templates/DECISION_RECORD.md` tests one generic record with a Type field; apply it to one product, one architecture and one governance decision before specializing. |
+| OQ-009 | How will knowledge be reviewed, expired and archived? | A growing repository without lifecycle control becomes unreliable. | A candidate lifecycle and minimum metadata exist in `13_INFORMATION_AND_KNOWLEDGE_GOVERNANCE.md`; apply owners and review triggers to current files. |
 
 ## Priority C — team experience and AI
 
 | ID | Question | Why it matters | Current evidence / next validation |
 |---|---|---|---|
 | OQ-010 | What information should each role see first in a Mission view? | Supports fast comprehension without hiding necessary context. | Candidate views now exist in `12_RESPONSIBILITY_AND_ROLE_VIEWS.md` and `templates/MISSION_BRIEF.md`; test with PM, project manager, architect, FE, BE, QA, AI, Ops and customer participants. |
-| OQ-011 | What are the authority and approval boundaries for AI agents? | AI participation without controls creates quality and security risk. | Candidate minimum limits appear in `12_RESPONSIBILITY_AND_ROLE_VIEWS.md`; define human-required gates by risk class. |
+| OQ-011 | What are the authority and approval boundaries for AI agents? | AI participation without controls creates quality and security risk. | Candidate minimum limits appear in `12_RESPONSIBILITY_AND_ROLE_VIEWS.md`, `13_INFORMATION_AND_KNOWLEDGE_GOVERNANCE.md` and both templates; define human-required gates by risk class. |
 | OQ-012 | How should context be assembled for AI tasks? | AI quality depends on current, relevant and authorized context. | Prototype a context package for one code or analysis Work Item. |
 | OQ-013 | What onboarding targets are realistic for different roles? | Numeric targets such as 30 seconds, one hour or five days were proposed but not validated. | Test with actual team members. |
 
