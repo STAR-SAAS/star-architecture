@@ -1,6 +1,6 @@
 # STAR Decision Log
 
-**Version:** v0.1.1  
+**Version:** v0.1.2  
 **Status:** Active working log  
 **Last consolidated:** 2026-07-12
 
@@ -33,6 +33,7 @@
 | DEC-0011 | Use progressive disclosure: executive summary, team handbook, technical specification and research/reference layers serve different audiences. | Accepted |
 | DEC-0012 | Front-line team members must not be required to understand the whole STAR theory before contributing. | Explicit/Accepted |
 | DEC-0013 | Research material is not automatically a team-facing deliverable; it must be translated into actionable guidance. | Accepted |
+| DEC-0033 | Provide timely, concise progress feedback while working on STAR tasks. Updates should name the current task, purpose, status, next action, blocker if any, and whether a user decision is needed. | Explicit |
 
 ## Stakeholders, customers and teams
 
