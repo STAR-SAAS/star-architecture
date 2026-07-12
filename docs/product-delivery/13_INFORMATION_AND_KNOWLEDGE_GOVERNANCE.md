@@ -1,8 +1,17 @@
 # STAR Information and Knowledge Governance — Candidate
 
-**Version:** v0.1.0  
-**Status:** Candidate; not frozen  
-**Purpose:** Define where different information belongs and how versioned knowledge remains current, authoritative and usable by humans and AI.
+| Field | Value |
+|---|---|
+| **Type / scope** | Governance candidate — authoritative sources and durable knowledge lifecycle |
+| **Version / status** | v0.1.1 — Candidate; not frozen |
+| **Owner** | STAR leadership |
+| **Maintainer** | Product Delivery / Architecture maintainers |
+| **Last reviewed** | 2026-07-12 |
+| **Review trigger** | Actual tool/source map change, owner change, contradictory guidance, incident/audit finding or freeze proposal |
+| **Authoritative working source** | This repository path in Draft PR #1; `main` only after approved merge |
+| **Affects** | Product and engineering knowledge, active Missions, AI context, repository boundaries and all information-owning teams |
+| **Supersession** | Supersedes the rejected idea that GitHub is the universal enterprise source of truth |
+| **Access** | Public; sensitive source records remain in their authorized systems |
 
 ## Core rule
 
