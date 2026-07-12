@@ -11,8 +11,9 @@
 - **Base branch:** `main`
 - **Draft PR:** `#1 — Add STAR OS Product Delivery working-memory baseline`
 - **PR URL:** https://github.com/STARSAAS/star-architecture/pull/1
-- **Verified changed files:** 26
-- **Verified head commit:** `33139809cf07a5d376811324aa8c2f00130d1311`
+- **Last verified changed-file count:** 31
+
+The live PR head SHA is intentionally not copied into this file: updating this status file creates a new commit and would make a stored head SHA immediately stale. Use the PR itself as the authoritative live branch state.
 
 ## Current meaning
 
