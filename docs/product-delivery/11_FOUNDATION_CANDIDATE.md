@@ -1,8 +1,17 @@
 # STAR Product Delivery Foundation — Candidate
 
-**Version:** v0.2.1  
-**Status:** Candidate; not frozen  
-**Purpose:** Explain the minimum Product Delivery model in one page before exposing deeper research or architecture.
+| Field | Value |
+|---|---|
+| **Type / scope** | Foundation model — minimum STAR Product Delivery structure |
+| **Version / status** | v0.2.2 — Candidate; not frozen |
+| **Owner** | STAR leadership |
+| **Maintainer** | Product Delivery maintainers |
+| **Last reviewed** | 2026-07-12 |
+| **Review trigger** | Real-Mission evidence, role-comprehension finding, conflicting decision or freeze proposal |
+| **Authoritative working source** | This repository path in Draft PR #1; `main` only after approved merge |
+| **Affects** | Mission definition, minimum information model, team-facing Mission views and validation |
+| **Supersession** | Replaces the early linear Product → Mission → Epic → Feature → Story draft direction for current testing |
+| **Access** | Public |
 
 ## The problem
 
