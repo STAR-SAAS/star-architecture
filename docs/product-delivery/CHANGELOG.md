@@ -2,6 +2,25 @@
 
 All notable changes to this Markdown baseline are recorded here.
 
+## [0.1.3] — 2026-07-12
+
+### Added
+
+- One-page `11_FOUNDATION_CANDIDATE.md` with the minimum delivery loop, Mission definition, entry/exit boundaries and minimum information objects.
+- `12_RESPONSIBILITY_AND_ROLE_VIEWS.md` to separate value receiver, stakeholder, owner, approver, reviewer, operator, AI agent and system responsibilities.
+- `templates/MISSION_BRIEF.md` as the first team-facing template for real-Mission validation.
+
+### Changed
+
+- Made the one-page foundation and Mission Brief the primary README entry points.
+- Linked open questions and assumptions to concrete validation artifacts instead of leaving them as abstract research topics.
+- Replaced the stale manually maintained SHA-256 table with Git-based integrity guidance and a live file index.
+
+### Still open
+
+- The candidate model is not frozen until it is used on a real active Mission with actual owners, dates, dependencies, approvals and outcome evidence.
+- Final STAR scope/name, Mission hierarchy, AI authority boundaries and authoritative-source mapping remain open.
+
 ## [0.1.2] — 2026-07-12
 
 ### Changed
@@ -46,9 +65,9 @@ All notable changes to this Markdown baseline are recorded here.
 - Replaced premature "fully adopt" language with contextual minimum-adoption candidates.
 - Separated confirmed decisions from hypotheses and open questions.
 
-### Known limitations
+### Known limitations at this version
 
-- GitHub repository destination is not yet confirmed.
-- Files have not been pushed to GitHub.
-- Several previously discussed frameworks still require primary-source audit.
-- Final STAR scope, Mission definition and minimal meta-model remain open.
+- GitHub repository destination had not yet been confirmed.
+- Files had not yet been pushed to GitHub.
+- Several previously discussed frameworks still required primary-source audit.
+- Final STAR scope, Mission definition and minimal meta-model remained open.
