@@ -1,6 +1,6 @@
 # STAR Decision Log
 
-**Version:** v0.1.0  
+**Version:** v0.1.1  
 **Status:** Active working log  
 **Last consolidated:** 2026-07-12
 
@@ -62,6 +62,7 @@
 | DEC-0025 | GitHub authorization does not cause automatic synchronization; publishing must be an explicit, verifiable action. | Confirmed fact accepted by user |
 | DEC-0026 | GitHub is a primary authoritative repository for versioned product and engineering knowledge, not the universal source for all enterprise data. | Accepted |
 | DEC-0027 | Do not claim that Markdown has been synchronized to GitHub unless the commit/push can be verified. | Derived from DEC-0020/0025; integrity constraint |
+| DEC-0032 | Store this Product Delivery working-memory baseline in `STARSAAS/star-architecture` under `docs/product-delivery/`; introduce changes through a dedicated branch and pull request rather than placing the baseline directly on `main`. | Explicitly confirmed |
 
 ## Conversation and workstream boundary
 
