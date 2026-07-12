@@ -2,6 +2,23 @@
 
 All notable changes to this Markdown baseline are recorded here.
 
+## [0.1.5] — 2026-07-12
+
+### Added
+
+- `13_INFORMATION_AND_KNOWLEDGE_GOVERNANCE.md` with a candidate authoritative-source map and knowledge lifecycle.
+- `14_AI_WORK_GOVERNANCE.md` with candidate AI work levels, human accountability and stop conditions.
+- `15_VALIDATION_PLAN.md` defining the evidence required before freeze.
+- `templates/DECISION_RECORD.md` as a generic cross-domain Decision Record candidate.
+- Two concise Mission Brief examples for SmartQuote discount rules and a GateHub PSP connector.
+
+### Improved
+
+- Added role-based reading guidance so front-line teams do not need to read the research repository.
+- Made the Mission Brief the primary team-facing artifact while keeping detailed evidence linked.
+- Replaced abstract open questions with concrete candidate artifacts and validation actions.
+- Kept the foundation in Draft status; no candidate rule was promoted to a confirmed or frozen standard.
+
 ## [0.1.3] — 2026-07-12
 
 ### Added
@@ -50,7 +67,7 @@ All notable changes to this Markdown baseline are recorded here.
 - Project Charter
 - Consolidated Decision Log with 31 working decisions
 - Open Questions register
-- Source-verified Research Canon candidate
+- Source-reviewed Research Canon candidate
 - Superseded and rejected ideas register
 - Assumptions register
 - Cross-functional Stakeholder Map
