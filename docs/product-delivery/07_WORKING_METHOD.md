@@ -1,7 +1,17 @@
 # STAR Working Method
 
-**Version:** v0.1.1  
-**Status:** Confirmed working method; details not frozen
+| Field | Value |
+|---|---|
+| **Type / scope** | Working method — Product Delivery research, decision, design and validation |
+| **Version / status** | v0.1.2 — Confirmed working method; details not frozen |
+| **Owner** | STAR leadership |
+| **Maintainer** | Product Delivery maintainers |
+| **Last reviewed** | 2026-07-12 |
+| **Review trigger** | New confirmed work-discipline decision, recurring execution friction, real-Mission finding or freeze proposal |
+| **Authoritative working source** | This repository path in Draft PR #1; `main` only after approved merge |
+| **Affects** | All Product Delivery work batches, maintainers, AI contributors and future Mission teams |
+| **Supersession** | None |
+| **Access** | Public |
 
 ## End-to-end sequence
 
