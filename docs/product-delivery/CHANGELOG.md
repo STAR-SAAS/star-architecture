@@ -2,6 +2,16 @@
 
 All notable changes to this Markdown baseline are recorded here.
 
+## [0.1.6] — 2026-07-12
+
+### Added
+
+- Recorded `DEC-0033`: STAR work must include timely, concise progress feedback while tasks are underway.
+
+### Improved
+
+- Progress feedback now has an explicit minimum shape: current task, purpose, status, next action, blocker if any, and whether a user decision is needed.
+
 ## [0.1.5] — 2026-07-12
 
 ### Added
