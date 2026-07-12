@@ -11,7 +11,7 @@
 - **Base branch:** `main`
 - **Draft PR:** `#1 — Add STAR OS Product Delivery working-memory baseline`
 - **PR URL:** https://github.com/STARSAAS/star-architecture/pull/1
-- **Last verified changed-file count:** 31
+- **Last verified changed-file count:** 40
 
 The live PR head SHA is intentionally not copied into this file: updating this status file creates a new commit and would make a stored head SHA immediately stale. Use the PR itself as the authoritative live branch state.
 
@@ -19,14 +19,23 @@ The live PR head SHA is intentionally not copied into this file: updating this s
 
 The Markdown baseline is durably stored on a dedicated GitHub review branch and is visible in Draft PR #1. It is **not frozen** and is **not yet part of `main`**. GitHub storage provides versioning and reviewability; it does not convert working decisions or candidate models into final standards.
 
+## Current validation state
+
+- V0 complete.
+- V1/V2 blocked by missing authoritative active-Mission data.
+- V3 complete with a prospective-decision limitation.
+- V4 partial: desk walkthrough complete, real participants pending.
+- V5 partial: A1/A2 and a design-level A3 dry run complete; code/test and non-document sandbox work pending.
+- V6 blocked by the missing actual enterprise system and owner map.
+
 ## Current user action
 
-**No GitHub action is required now.** Keep the pull request in Draft and do not merge it while real-Mission validation remains incomplete.
+**No GitHub action is required now.** Keep the pull request in Draft and do not merge it while the evidence gates remain incomplete.
 
 ## Merge policy
 
 1. Review the Decision Log and Open Questions.
 2. Correct any inaccurately classified decision before merge.
-3. Complete the required real-Mission validation or explicitly accept the documented limitations.
+3. Complete the required real-Mission validation or explicitly accept documented limitations.
 4. Keep the pull request in Draft while the baseline remains under review.
 5. Merge only after the baseline is accepted as the authoritative working memory.
