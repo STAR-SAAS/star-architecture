@@ -2,6 +2,27 @@
 
 All notable changes to this Markdown baseline are recorded here.
 
+## [0.1.8] — 2026-07-12
+
+### Added
+
+- Recorded `DEC-0034`: list planned tasks before a multi-step batch, then execute and report them step by step.
+- Added the same work-batch communication rule to `07_WORKING_METHOD.md`.
+
+### Updated
+
+- Marked V0 Active Mission intake audit complete.
+- Marked V1 and V2 blocked by the absence of an authoritative real-Mission baseline.
+- Marked V6 blocked until STAR's actual enterprise tool/source map is recorded.
+- Updated `17_WORK_STATUS.md` with completed audit work and the next executable validation batch.
+- Updated the Draft PR description and GitHub synchronization status to match the current 26-file baseline.
+
+### Verified
+
+- README, Manifest, Changelog, Sync Status and PR contents are aligned.
+- Current candidate documents do not conflict with confirmed Decision Log constraints.
+- No user GitHub action is required; Draft PR #1 remains open and should not yet be merged.
+
 ## [0.1.7] — 2026-07-12
 
 ### Added
