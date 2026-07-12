@@ -17,11 +17,11 @@ Turn the Product Delivery foundation from a plausible candidate into a concise, 
 - Produced responsibility, role-view, information-governance and AI-work candidates.
 - Added Mission Brief and Decision Record templates.
 - Added SmartQuote and GateHub desk examples.
-- Added the validation plan and freeze gate.
 - Completed V0: audited Mission-001 and Mission-002 information readiness without inventing missing facts.
-- Completed the repository consistency audit across README, Manifest, Changelog, Sync Status, PR body and the 26-file PR set.
+- Completed the repository consistency audit across README, Manifest, Changelog, Sync Status, PR body and file set.
 - Added `DEC-0033` and `DEC-0034` for timely, planned and stepwise work reporting.
-- Confirmed that desk examples are not real-Mission validation evidence.
+- Completed V3 with a limitation: one generic Decision Record was usable across Product/Delivery, Architecture/Repository and Governance/Working Method decisions.
+- Partially completed V5: A1 document proposal and A2 reversible GitHub execution were controlled and evidenced.
 
 ## Current validation state
 
@@ -30,9 +30,9 @@ Turn the Product Delivery foundation from a plausible candidate into a concise, 
 | V0 Active Mission intake audit | Complete |
 | V1 Real Mission walkthrough | Blocked — authoritative Mission baseline missing |
 | V2 Mission lifecycle observation | Blocked by V1 |
-| V3 Decision-record test | Ready to execute using existing confirmed decisions |
+| V3 Decision-record test | Complete with retrospective limitation |
 | V4 Role-view comprehension | Waiting for a real Mission Brief and representative participants |
-| V5 AI work-control test | Ready for initial dry-run on bounded documentation/GitHub work |
+| V5 AI work-control test | Partial — A1/A2 documentation and GitHub work validated |
 | V6 Authoritative-source map | Blocked — actual enterprise tool map not recorded |
 
 ## Current blockers
@@ -48,15 +48,15 @@ The repositories currently contain no authoritative active-Mission baseline with
 - current next actions;
 - actual tool/source links.
 
-This blocks **V1/V2 real Mission validation**, but it does not block V3 decision-record testing, V5 AI dry-runs, repository challenge or preparation of validation materials.
+The actual enterprise tool/source map is also not recorded. These gaps block V1/V2 and V6, but do not block preparation of AI context or knowledge-governance templates.
 
 ## Next work batch
 
-1. Apply `templates/DECISION_RECORD.md` to three existing confirmed decisions: product/delivery, architecture/repository and governance/working method.
-2. Evaluate whether one generic Decision Record remains readable across all three.
-3. Dry-run `14_AI_WORK_GOVERNANCE.md` against the current bounded GitHub documentation task.
-4. Update the V3 and V5 evidence register with findings.
-5. Continue to keep Draft PR #1 open and not frozen.
+1. Create a minimal AI context-package template that records task, sources, versions, authorization, allowed actions, uncertainty, reviewer and expiry.
+2. Test that template against the current Product Delivery GitHub task without inventing code or Mission context.
+3. Define minimum owner/review metadata for current durable Markdown files and identify which files need it first.
+4. Update OQ-009 and OQ-012 evidence.
+5. Keep Draft PR #1 open and not frozen.
 
 ## User action required
 
