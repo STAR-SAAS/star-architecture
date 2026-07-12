@@ -1,6 +1,6 @@
 # Repository Manifest
 
-**Version:** v0.1.9  
+**Version:** v0.2.0  
 **Status:** Live file index
 
 ## Integrity guidance
@@ -34,13 +34,26 @@ For an exact reviewed snapshot, use the commit SHA or merged pull-request SHA.
 | `17_WORK_STATUS.md` | Current work, progress, blockers and next actions |
 | `18_DECISION_RECORD_VALIDATION.md` | Generic Decision Record validation evidence |
 | `19_AI_WORK_CONTROL_DRY_RUN.md` | AI A1/A2 work-control validation evidence |
-| `templates/MISSION_BRIEF.md` | One-page Mission template |
-| `templates/DECISION_RECORD.md` | Generic Decision Record template |
+| `20_ROLE_VIEW_DESK_WALKTHROUGH.md` | Desk role-view validation evidence |
+| `21_AI_CONTEXT_PACKAGE_TEST.md` | AI context-package validation evidence |
+| `22_KNOWLEDGE_METADATA_AUDIT.md` | Durable-knowledge metadata audit |
+| `23_KNOWLEDGE_REVIEW_REGISTER.md` | Ownership and review register |
+| `24_AI_A3_HIGH_IMPACT_DRY_RUN.md` | Design-level A3 high-impact dry run |
 | `examples/MISSION_SMARTQUOTE_MERCHANT_DISCOUNT_RULE.md` | Concise SmartQuote desk example |
 | `examples/MISSION_GATEHUB_PSP_CONNECTOR.md` | Concise GateHub desk example |
 | `examples/decisions/DEC-0030_VALUE_TRACEABILITY.md` | Product/Delivery decision example |
 | `examples/decisions/DEC-0032_GITHUB_BASELINE_LOCATION.md` | Architecture/Repository decision example |
 | `examples/decisions/DEC-0034_STEPWISE_WORK_REPORTING.md` | Governance/Working Method decision example |
+| `templates/MISSION_BRIEF.md` | One-page Mission template |
+| `templates/ACTIVE_MISSION_INTAKE.md` | Real-Mission fact collection template |
+| `templates/DECISION_RECORD.md` | Generic Decision Record template |
+| `templates/AI_CONTEXT_PACKAGE.md` | Detailed AI context package template |
+| `templates/AI_TASK_CONTEXT.md` | Concise AI task-context template |
+| `templates/KNOWLEDGE_METADATA.md` | Durable-knowledge metadata template |
 | `CHANGELOG.md` | Chronological changes |
 | `GITHUB_SYNC_STATUS.md` | Repository, branch and PR status |
 | `MANIFEST.md` | This index and integrity guidance |
+
+## Current count
+
+Draft PR #1 currently changes **40 Markdown files** under `docs/product-delivery/`.
