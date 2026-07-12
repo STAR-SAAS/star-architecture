@@ -1,6 +1,6 @@
 # STAR Open Questions
 
-**Version:** v0.1.0  
+**Version:** v0.1.1  
 **Status:** Active
 
 Open questions must not be presented as confirmed architecture.
@@ -19,7 +19,6 @@ Open questions must not be presented as confirmed architecture.
 
 | ID | Question | Why it matters | Next validation |
 |---|---|---|---|
-| OQ-006 | Should `STARSAAS/star-architecture` be the authoritative GitHub home for this baseline, or should a dedicated STAR OS repository be created? | Determines ownership and future folder boundaries. | Executive repository decision. |
 | OQ-007 | What content belongs in GitHub versus issue tracking, CRM, monitoring, email/calendar and other systems? | Prevents GitHub from becoming a dumping ground. | Define authoritative source by information class. |
 | OQ-008 | What is the minimum decision-record taxonomy beyond ADR? | Product and governance decisions also need traceability. | Compare one generic Decision Record with typed variants. |
 | OQ-009 | How will knowledge be reviewed, expired and archived? | A growing repository without lifecycle control becomes unreliable. | Define owner, review date and supersession rules. |
@@ -40,3 +39,7 @@ Open questions must not be presented as confirmed architecture.
 - A2A production use
 - Enterprise-wide capability map
 - Commercial positioning of STAR OS
+
+## Resolved questions
+
+- **OQ-006:** Repository and path resolved by `DEC-0032`: `STARSAAS/star-architecture/docs/product-delivery/`.
