@@ -1,9 +1,13 @@
 # STAR OS · Product Delivery — Working Memory Baseline
 
-**Version:** v0.1.5  
+**Version:** v0.1.7  
 **Date:** 2026-07-12 (Asia/Singapore)  
 **Status:** Working baseline; not frozen  
 **Purpose:** Preserve confirmed decisions and translate research into material that teams can understand and use.
+
+## Current work
+
+Read [`17_WORK_STATUS.md`](17_WORK_STATUS.md) for the current task, progress, blockers, next actions and whether user input is required.
 
 ## Start here
 
@@ -11,20 +15,22 @@ Most participants should read only one or two files:
 
 1. [`11_FOUNDATION_CANDIDATE.md`](11_FOUNDATION_CANDIDATE.md) — one-page candidate model.
 2. [`templates/MISSION_BRIEF.md`](templates/MISSION_BRIEF.md) — the team-facing Mission template.
-3. See the two examples:
+3. See the two desk examples:
    - [`examples/MISSION_SMARTQUOTE_MERCHANT_DISCOUNT_RULE.md`](examples/MISSION_SMARTQUOTE_MERCHANT_DISCOUNT_RULE.md)
    - [`examples/MISSION_GATEHUB_PSP_CONNECTOR.md`](examples/MISSION_GATEHUB_PSP_CONNECTOR.md)
+
+The examples are illustrative only. They are not evidence that a real active Mission has passed validation.
 
 ## Read by responsibility
 
 | Participant | Read first |
 |---|---|
-| Leadership / Sponsor | Foundation candidate, then the Mission Brief |
-| Product / Project / Architecture | Mission Brief and responsibility views |
-| Engineering / QA / Operations | The active Mission Brief and linked technical evidence |
+| Leadership / Sponsor | Work Status and Foundation candidate, then the active Mission Brief |
+| Product / Project / Architecture | Active Mission Brief and responsibility views |
+| Engineering / QA / Operations | Active Mission Brief and linked technical evidence |
 | AI team / agents | Active Mission Brief, authorized context and AI governance |
 | Security / Risk / Compliance / Legal / Finance | Mission risk/approval section and linked evidence |
-| Repository maintainers | Decision Log, Open Questions, Working Method and Changelog |
+| Repository maintainers | Decision Log, Open Questions, Working Method, Work Status and Changelog |
 
 Detailed research is not required reading for front-line contributors.
 
@@ -48,9 +54,11 @@ Detailed research is not required reading for front-line contributors.
 | `13_INFORMATION_AND_KNOWLEDGE_GOVERNANCE.md` | Authoritative-source map and knowledge lifecycle candidate |
 | `14_AI_WORK_GOVERNANCE.md` | Candidate AI work levels, authority and validation boundaries |
 | `15_VALIDATION_PLAN.md` | Evidence required before the foundation can be frozen |
+| `16_ACTIVE_MISSION_INTAKE.md` | Current information-gap audit for Mission-001 and Mission-002 |
+| `17_WORK_STATUS.md` | Current task status, blockers and next actions |
 | `templates/MISSION_BRIEF.md` | One-page Mission template |
 | `templates/DECISION_RECORD.md` | Generic Decision Record template |
-| `examples/` | Concise SmartQuote and GateHub Mission examples |
+| `examples/` | Concise SmartQuote and GateHub desk examples |
 | `GITHUB_SYNC_STATUS.md` | Exact repository, branch and PR state |
 | `CHANGELOG.md` | Chronological changes |
 | `MANIFEST.md` | Live file index and integrity guidance |
@@ -64,4 +72,6 @@ Detailed research is not required reading for front-line contributors.
 
 ## Current next step
 
-Use the Mission Brief on one real active SmartQuote or GateHub change. The foundation stays in Draft PR status until real delivery evidence validates or changes it.
+Obtain an authoritative baseline for one active SmartQuote or GateHub Mission, including real owners, scope, dates, dependencies, approvals and acceptance evidence. Then populate the Mission Brief and execute V1 in `15_VALIDATION_PLAN.md`.
+
+Until that information exists, the repository can continue to be audited and improved, but the foundation must remain a Draft candidate.
