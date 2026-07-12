@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | **Type / scope** | Live working status — STAR Product Delivery foundation |
-| **Version / status** | v0.2.0 — Active working status |
+| **Version / status** | v0.2.1 — Active working status |
 | **Owner** | STAR leadership |
 | **Maintainer** | Product Delivery maintainers |
 | **Updated / last reviewed** | 2026-07-12 (Asia/Singapore) |
@@ -24,15 +24,14 @@ Turn the Product Delivery foundation from a plausible candidate into a concise, 
 - Consolidated confirmed decisions, open questions, assumptions and superseded ideas.
 - Produced the one-page foundation candidate and Mission definition.
 - Produced responsibility, role-view, information-governance and AI-work candidates.
-- Added Mission Brief, Decision Record, Active Mission Intake and AI Context Package templates.
-- Added SmartQuote and GateHub desk examples.
-- Completed V0: audited Mission-001 and Mission-002 information readiness without inventing missing facts.
-- Completed V3 with a limitation: one generic Decision Record was usable across Product/Delivery, Architecture/Repository and Governance/Working Method decisions.
-- Completed a desk-level V4 role-view walkthrough; real participant testing remains open.
-- Partially completed V5: A1 documentation proposal, A2 reversible GitHub execution and a bounded AI context package were validated.
-- Added `DEC-0033` and `DEC-0034` for timely, planned and stepwise work reporting.
-- Audited durable-knowledge metadata and added full metadata to the highest-impact foundation files.
-- Added `23_KNOWLEDGE_REVIEW_REGISTER.md` to make ownership, maintenance and review triggers explicit.
+- Added Mission Brief, Decision Record, Active Mission Intake, AI Context and Knowledge Metadata templates.
+- Completed V0: audited Mission-001 and Mission-002 information readiness without inventing facts.
+- Completed V3 with a limitation: one generic Decision Record worked across three decision domains.
+- Completed desk-level V4 orientation testing; real participant testing remains open.
+- Partially completed V5: A1, A2 context/reversible execution and a design-level A3 dry run are evidenced.
+- Hardened the highest-impact files with ownership and review metadata.
+- Added a central Knowledge Review Register.
+- Aligned README, Manifest, Changelog, Open Questions and Validation Plan with the current evidence.
 
 ## Current validation state
 
@@ -43,12 +42,12 @@ Turn the Product Delivery foundation from a plausible candidate into a concise, 
 | V2 Mission lifecycle observation | Blocked by V1 |
 | V3 Decision-record test | Complete with retrospective limitation |
 | V4 Role-view comprehension | Partial — desk walkthrough complete; real participant test pending |
-| V5 AI work-control test | Partial — A1/A2 documentation/GitHub context validated; code/test and A3 open |
+| V5 AI work-control test | Partial — A1/A2 and A3 design dry run complete; code/test and non-document sandbox pending |
 | V6 Authoritative-source map | Blocked — actual enterprise tool and owner map not recorded |
 
 ## Current blockers
 
-The repositories currently contain no authoritative active-Mission baseline with real:
+Real-Mission validation still lacks authoritative:
 
 - Mission and Product/Service Owners;
 - detailed scope and exclusions;
@@ -59,27 +58,30 @@ The repositories currently contain no authoritative active-Mission baseline with
 - current next actions;
 - actual tool/source links.
 
-The actual enterprise tool/source map and named individual knowledge owners are also not recorded. These gaps block V1/V2 and V6, but do not block repository governance, consistency checks or further reversible validation preparation.
+V6 also lacks the real enterprise system and owner map. V5 code/test evidence requires an authorized repository and bounded task. These facts must not be invented.
 
 ## Current work batch
 
-1. **Complete** — add missing metadata to high-impact governance and validation files.
-2. **Complete** — establish a central knowledge review register.
-3. **In progress** — align Open Questions, README, Manifest, Changelog and Draft PR description with the current file set.
-4. **Next** — run a final file/status consistency check and record remaining blockers without inventing missing facts.
+1. **Complete** — harden high-impact knowledge metadata and establish review ownership.
+2. **Complete** — perform the A3 high-impact AI control dry run.
+3. **Complete** — align README, Manifest, Changelog, Open Questions and Validation Plan.
+4. **In progress** — align GitHub Sync Status and Draft PR description with the current 40-file set.
+5. **Next** — run the final file/status consistency check and record the exact evidence gates.
 
 ## Next evidence-producing work
 
-After repository alignment, the highest-value next validations are:
+The next tests require at least one of the following authoritative inputs:
 
-1. test the AI context package on one real code/test or non-document analysis Work Item when an authorized repository/task is available;
-2. use the generic Decision Record prospectively on one contested material decision;
-3. populate one authoritative active Mission Brief and perform V1/V4 with representative participants;
-4. map STAR's actual enterprise systems and owners for V6.
+1. one real active SmartQuote or GateHub Mission baseline for V1/V2/V4;
+2. one actual enterprise system/owner map for V6;
+3. one authorized code/test or non-document sandbox task for the remaining V5 work;
+4. one prospective contested material decision for the remaining V3 limitation.
+
+Until one becomes available, continue only reversible repository maintenance and do not manufacture evidence.
 
 ## User action required
 
-**None now.** Do not merge Draft PR #1 yet. A user decision will be requested only when selecting or confirming a real Mission baseline, accountable owners, actual enterprise systems, a contested material decision, or a broad architecture choice.
+**No GitHub action is required now.** Keep Draft PR #1 open and do not merge it. A user decision or factual input will be requested only when one of the evidence gates above is ready.
 
 ## Reporting rule
 
