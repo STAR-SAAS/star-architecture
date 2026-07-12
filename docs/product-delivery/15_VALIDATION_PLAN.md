@@ -1,6 +1,6 @@
 # STAR Product Delivery Validation Plan
 
-**Version:** v0.1.1  
+**Version:** v0.1.2  
 **Status:** Candidate execution plan; not frozen  
 **Purpose:** Turn the current Product Delivery model from a plausible design into evidence from real work.
 
@@ -14,6 +14,12 @@ Before the foundation can be frozen, STAR must show that it:
 4. preserves ownership, decisions, risk, traceability and current state;
 5. avoids duplicating live information across GitHub and operational tools;
 6. works on real delivery, not only desk examples.
+
+## Current readiness finding
+
+`16_ACTIVE_MISSION_INTAKE.md` shows that Mission-001 and Mission-002 are known only at a high level. Real validation cannot start until one Mission has authoritative owners, scope, dates, dependencies, approvals, current state and closure evidence.
+
+This is an **input-data blocker**, not evidence that the candidate model itself has failed.
 
 ## Validation sequence
 
@@ -97,13 +103,13 @@ Map STAR's actual issue tracking, CRM, support, observability, CI/CD, IAM, finan
 
 | Validation | Status | Owner | Evidence link | Findings / next action |
 |---|---|---|---|---|
-| V0 Active Mission intake audit | Complete | Product Delivery maintainers | `16_ACTIVE_MISSION_INTAKE.md` | Populate one real Mission Brief with owners, scope, dates and evidence. |
-| V1 Real Mission walkthrough | Not started |  |  |  |
-| V2 Mission lifecycle observation | Not started |  |  |  |
-| V3 Decision-record test | Not started |  |  |  |
-| V4 Role-view comprehension | Not started |  |  |  |
-| V5 AI work-control test | Not started |  |  |  |
-| V6 Authoritative-source map | Not started |  |  |  |
+| V0 Active Mission intake audit | Complete | Product Delivery maintainers | `16_ACTIVE_MISSION_INTAKE.md` | Populate one real Mission Brief with owners, scope, dates and evidence |
+| V1 Real Mission walkthrough | Blocked — authoritative Mission baseline missing | To be named | `16_ACTIVE_MISSION_INTAKE.md` | Select one active Mission and record real owners, scope, dates, dependencies, approvals and evidence |
+| V2 Mission lifecycle observation | Blocked by V1 | To be named |  | Begin only after the selected Mission is committed and observed through delivery |
+| V3 Decision-record test | Not started |  | `templates/DECISION_RECORD.md` | Apply the generic template to three real decision types |
+| V4 Role-view comprehension | Not started |  | `12_RESPONSIBILITY_AND_ROLE_VIEWS.md` | Test with representative participants after V1 has a real brief |
+| V5 AI work-control test | Not started |  | `14_AI_WORK_GOVERNANCE.md` | Select one task at each applicable AI work level |
+| V6 Authoritative-source map | Blocked — actual enterprise tool map not recorded | To be named | `13_INFORMATION_AND_KNOWLEDGE_GOVERNANCE.md` | Record the real systems and owners for each information class |
 
 ## Freeze gate
 
