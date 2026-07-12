@@ -1,6 +1,6 @@
 # STAR Assumptions and Working Hypotheses
 
-**Version:** v0.1.2  
+**Version:** v0.1.3  
 **Status:** Not confirmed architecture
 
 | ID | Hypothesis | Confidence | Validation required |
@@ -13,10 +13,12 @@
 | ASM-006 | Stable IDs and explicit relationships can provide most early traceability without a dedicated graph database. | Medium-high | Implement links in Markdown/YAML for one Mission and measure retrieval quality. |
 | ASM-007 | Progressive disclosure can reduce learning cost while preserving deep traceability. | High | Usability-test executive, PM, developer, QA, Ops and customer views. |
 | ASM-008 | `STARSAAS/star-architecture` is the likely GitHub home for this foundation. | Confirmed | Resolved by `DEC-0032` on 2026-07-12. |
-| ASM-009 | A generic Decision Record may cover product, business, architecture and governance decisions with a type field. | Medium | Compare with separate ADR/PDR/BDR/GDR templates on real decisions. |
+| ASM-009 | A generic Decision Record may cover product, business, architecture and governance decisions with a Type field. | Medium-high | `templates/DECISION_RECORD.md` now exists; test it on three different decision types before creating specialized templates. |
 | ASM-010 | STAR should eventually dogfood its own change, review, release and learning mechanisms. | Medium-high | Branch, Draft PR, changelog and reviewable Markdown are in use; complete review/merge and record friction. |
 | ASM-011 | A one-page Mission Brief can become the primary team-facing view while authoritative detail remains linked. | Medium-high | Use `templates/MISSION_BRIEF.md` with a real Mission and measure comprehension and duplication. |
 | ASM-012 | A small responsibility card can be clearer than a full RACI matrix for the first Mission view. | Medium | Compare the card with an actual cross-functional responsibility review and add detail only where ambiguity remains. |
+| ASM-013 | One authoritative source per information class will reduce contradiction better than placing all enterprise information in GitHub. | High | Map actual STAR tools and test cross-links, access and update latency. |
+| ASM-014 | Candidate → Confirmed → Frozen/Superseded → Archived is sufficient as the first knowledge lifecycle. | Medium | Apply the lifecycle, owner and review trigger to existing Product Delivery files and inspect edge cases. |
 
 ## Rule
 
