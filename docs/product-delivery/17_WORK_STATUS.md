@@ -18,15 +18,22 @@ Turn the Product Delivery foundation from a plausible candidate into a concise, 
 - Added Mission Brief and Decision Record templates.
 - Added SmartQuote and GateHub desk examples.
 - Added the validation plan and freeze gate.
-- Audited Mission-001 and Mission-002 information readiness at the currently available level.
+- Completed V0: audited Mission-001 and Mission-002 information readiness without inventing missing facts.
+- Completed the repository consistency audit across README, Manifest, Changelog, Sync Status, PR body and the 26-file PR set.
+- Added `DEC-0033` and `DEC-0034` for timely, planned and stepwise work reporting.
+- Confirmed that desk examples are not real-Mission validation evidence.
 
-## In progress
+## Current validation state
 
-| Task | Purpose | Status | Next action |
-|---|---|---|---|
-| Repository consistency audit | Keep README, Manifest, Changelog and PR contents aligned | In progress | Update indexes for all current files and verify links/status language |
-| Active Mission information-gap audit | Separate model defects from missing business inputs | In progress | Record the exact data required for V1 real-Mission validation |
-| Team readability review | Ensure participants do not need the full research history | In progress | Check one-page entry points and role-specific reading order |
+| Validation | Current state |
+|---|---|
+| V0 Active Mission intake audit | Complete |
+| V1 Real Mission walkthrough | Blocked — authoritative Mission baseline missing |
+| V2 Mission lifecycle observation | Blocked by V1 |
+| V3 Decision-record test | Ready to execute using existing confirmed decisions |
+| V4 Role-view comprehension | Waiting for a real Mission Brief and representative participants |
+| V5 AI work-control test | Ready for initial dry-run on bounded documentation/GitHub work |
+| V6 Authoritative-source map | Blocked — actual enterprise tool map not recorded |
 
 ## Current blockers
 
@@ -41,23 +48,23 @@ The repositories currently contain no authoritative active-Mission baseline with
 - current next actions;
 - actual tool/source links.
 
-This blocks **real Mission validation**, but it does not block repository cleanup, model challenge or preparation of the validation materials.
+This blocks **V1/V2 real Mission validation**, but it does not block V3 decision-record testing, V5 AI dry-runs, repository challenge or preparation of validation materials.
 
-## Next tasks
+## Next work batch
 
-1. Finish the repository consistency audit.
-2. Finalize the active-Mission intake and evidence-gap record.
-3. Check every candidate file against confirmed Decision IDs.
-4. Keep Draft PR #1 open and not frozen.
-5. When an authoritative active Mission is available, populate `templates/MISSION_BRIEF.md` and run V1 in `15_VALIDATION_PLAN.md`.
+1. Apply `templates/DECISION_RECORD.md` to three existing confirmed decisions: product/delivery, architecture/repository and governance/working method.
+2. Evaluate whether one generic Decision Record remains readable across all three.
+3. Dry-run `14_AI_WORK_GOVERNANCE.md` against the current bounded GitHub documentation task.
+4. Update the V3 and V5 evidence register with findings.
+5. Continue to keep Draft PR #1 open and not frozen.
 
 ## User action required
 
-**None now.** Do not merge Draft PR #1 yet. A user decision will be requested only when selecting or confirming the real Mission baseline, accountable owners, or a material architecture choice.
+**None now.** Do not merge Draft PR #1 yet. A user decision will be requested only when selecting or confirming the real Mission baseline, accountable owners, actual enterprise systems, or a material architecture choice.
 
 ## Reporting rule
 
-While material work is underway, progress updates should state:
+Before a multi-step work batch, list the planned tasks. While material work is underway, progress updates should state:
 
 - current task and purpose;
 - completed / in-progress status;
