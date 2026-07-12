@@ -1,8 +1,17 @@
 # STAR Decision Log
 
-**Version:** v0.1.3  
-**Status:** Active working log  
-**Last consolidated:** 2026-07-12
+| Field | Value |
+|---|---|
+| **Type / scope** | Decision register — confirmed STAR Product Delivery working constraints |
+| **Version / status** | v0.1.4 — Active working log |
+| **Owner** | STAR leadership |
+| **Maintainer** | Product Delivery maintainers |
+| **Last consolidated / reviewed** | 2026-07-12 |
+| **Review trigger** | New confirmed decision, supersession, detected conflict or freeze proposal |
+| **Authoritative working source** | This repository path in Draft PR #1; `main` only after approved merge |
+| **Affects** | All Product Delivery research, design, documentation, validation and implementation work |
+| **Supersession** | Append-only; a newer Decision ID explicitly supersedes an older decision |
+| **Access** | Public |
 
 ## How to use this file
 
