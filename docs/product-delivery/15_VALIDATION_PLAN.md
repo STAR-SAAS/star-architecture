@@ -1,6 +1,6 @@
 # STAR Product Delivery Validation Plan
 
-**Version:** v0.1.3  
+**Version:** v0.1.4  
 **Status:** Candidate execution plan; not frozen  
 **Purpose:** Turn the current Product Delivery model from a plausible design into evidence from real work.
 
@@ -19,7 +19,7 @@ Before the foundation can be frozen, STAR must show that it:
 
 `16_ACTIVE_MISSION_INTAKE.md` shows that Mission-001 and Mission-002 are known only at a high level. Real validation cannot start until one Mission has authoritative owners, scope, dates, dependencies, approvals, current state and closure evidence.
 
-This is an **input-data blocker**, not evidence that the candidate model itself has failed. V3 and part of V5 can proceed independently using existing confirmed decisions and bounded reversible work.
+This is an **input-data blocker**, not evidence that the candidate model itself has failed. V3, desk-level V4 and part of V5 can proceed independently using existing confirmed decisions and bounded reversible work.
 
 ## Validation sequence
 
@@ -84,6 +84,8 @@ Ask representative participants to open the Mission Brief without reading the re
 
 **Pass evidence:** answers are correct, fast and do not require the full theory. Record confusion by role instead of blaming the participant.
 
+**Current result:** partial. `20_ROLE_VIEW_DESK_WALKTHROUGH.md` completed a desk walkthrough across customer, leadership, product, project, architecture, engineering, QA, AI, operations, governance and partner views. The first-view structure passed orientation, but real participant comprehension remains untested.
+
 ### V5 — AI work-control test
 
 Test `14_AI_WORK_GOVERNANCE.md` on:
@@ -95,7 +97,7 @@ Test `14_AI_WORK_GOVERNANCE.md` on:
 
 **Pass evidence:** task scope, authorized context, allowed actions, reviewer, logs, stop conditions and outcome evidence are clear. AI does not silently acquire approval authority.
 
-**Current result:** partial in `19_AI_WORK_CONTROL_DRY_RUN.md`. A1 documentation proposal and A2 reversible GitHub execution passed; code/test work, non-document sandbox execution and A3 high-impact dry-run remain open.
+**Current result:** partial. `19_AI_WORK_CONTROL_DRY_RUN.md` validated A1 documentation proposal and A2 reversible GitHub execution. `templates/AI_CONTEXT_PACKAGE.md` and `21_AI_CONTEXT_PACKAGE_TEST.md` also validated the minimum context package for that A2 batch. Code/test work, non-document sandbox execution and A3 high-impact dry-run remain open.
 
 ### V6 — Authoritative-source map
 
@@ -108,12 +110,12 @@ Map STAR's actual issue tracking, CRM, support, observability, CI/CD, IAM, finan
 | Validation | Status | Owner | Evidence link | Findings / next action |
 |---|---|---|---|---|
 | V0 Active Mission intake audit | Complete | Product Delivery maintainers | `16_ACTIVE_MISSION_INTAKE.md` | Populate one real Mission Brief with owners, scope, dates and evidence |
-| V1 Real Mission walkthrough | Blocked — authoritative Mission baseline missing | To be named | `16_ACTIVE_MISSION_INTAKE.md` | Select one active Mission and record real owners, scope, dates, dependencies, approvals and evidence |
+| V1 Real Mission walkthrough | Blocked — authoritative Mission baseline missing | To be named | `16_ACTIVE_MISSION_INTAKE.md`, `templates/ACTIVE_MISSION_INTAKE.md` | Select one active Mission and record real owners, scope, dates, dependencies, approvals and evidence |
 | V2 Mission lifecycle observation | Blocked by V1 | To be named |  | Begin only after the selected Mission is committed and observed through delivery |
 | V3 Decision-record test | Complete with limitation | Product Delivery maintainers | `18_DECISION_RECORD_VALIDATION.md` | Use the generic template prospectively on one contested material decision |
-| V4 Role-view comprehension | Not started |  | `12_RESPONSIBILITY_AND_ROLE_VIEWS.md` | Test with representative participants after V1 has a real brief |
-| V5 AI work-control test | Partial | Product Delivery maintainers / accountable user | `19_AI_WORK_CONTROL_DRY_RUN.md` | Test AI code/test work, another sandbox action and an A3 dry-run |
-| V6 Authoritative-source map | Blocked — actual enterprise tool map not recorded | To be named | `13_INFORMATION_AND_KNOWLEDGE_GOVERNANCE.md` | Record the real systems and owners for each information class |
+| V4 Role-view comprehension | Partial — desk walkthrough complete | Product Delivery maintainers; real participants to be named | `20_ROLE_VIEW_DESK_WALKTHROUGH.md` | Run the same questions with representative participants using a real Mission |
+| V5 AI work-control test | Partial | Product Delivery maintainers / accountable user | `19_AI_WORK_CONTROL_DRY_RUN.md`, `21_AI_CONTEXT_PACKAGE_TEST.md` | Test AI code/test work, another sandbox action and an A3 dry-run |
+| V6 Authoritative-source map | Blocked — actual enterprise tool map not recorded | To be named | `13_INFORMATION_AND_KNOWLEDGE_GOVERNANCE.md`, `22_KNOWLEDGE_METADATA_AUDIT.md` | Record the real systems, owners and review triggers for each information class |
 
 ## Freeze gate
 
