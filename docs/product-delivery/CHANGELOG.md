@@ -2,6 +2,35 @@
 
 All notable changes to this Markdown baseline are recorded here.
 
+## [0.2.0] — 2026-07-12
+
+### Added
+
+- `20_ROLE_VIEW_DESK_WALKTHROUGH.md` with a cross-functional orientation test.
+- `21_AI_CONTEXT_PACKAGE_TEST.md` and reusable AI context templates.
+- `22_KNOWLEDGE_METADATA_AUDIT.md`, `23_KNOWLEDGE_REVIEW_REGISTER.md` and `templates/KNOWLEDGE_METADATA.md`.
+- `24_AI_A3_HIGH_IMPACT_DRY_RUN.md` for a design-level production/customer-impact control test.
+- `templates/ACTIVE_MISSION_INTAKE.md`, `templates/AI_CONTEXT_PACKAGE.md` and `templates/AI_TASK_CONTEXT.md`.
+
+### Hardened
+
+- Added owner, maintainer, review trigger, authoritative-source, impact, supersession and access metadata to the highest-impact foundation files.
+- Established a central review register so durable knowledge does not remain silently unowned or stale.
+- Aligned README and Manifest with the complete 40-file Draft PR set.
+
+### Validated
+
+- Why / What / Who / Now / Evidence remains sufficient for role orientation in a desk walkthrough, but real participant execution is still unproven.
+- A bounded AI context package was sufficient for A2 reversible documentation/GitHub work.
+- The A3 design dry run preserved human approval, rollback, observation, customer-communication and stop boundaries without executing a real action.
+
+### Still blocked
+
+- V1/V2 require one authoritative active Mission with real owners, scope, dates, dependencies, approvals and evidence.
+- V4 requires representative participants using the real Mission Brief.
+- V5 still requires AI code/test evidence and a bounded non-document sandbox action.
+- V6 requires the actual STAR enterprise system and owner map.
+
 ## [0.1.9] — 2026-07-12
 
 ### Added
@@ -154,6 +183,6 @@ All notable changes to this Markdown baseline are recorded here.
 ### Known limitations at this version
 
 - GitHub repository destination had not yet been confirmed.
-- Files had not yet been pushed to GitHub.
+- Files had not been pushed to GitHub.
 - Several previously discussed frameworks still required primary-source audit.
 - Final STAR scope, Mission definition and minimal meta-model remained open.
