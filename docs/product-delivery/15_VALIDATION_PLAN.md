@@ -1,6 +1,6 @@
 # STAR Product Delivery Validation Plan
 
-**Version:** v0.1.0  
+**Version:** v0.1.1  
 **Status:** Candidate execution plan; not frozen  
 **Purpose:** Turn the current Product Delivery model from a plausible design into evidence from real work.
 
@@ -16,6 +16,14 @@ Before the foundation can be frozen, STAR must show that it:
 6. works on real delivery, not only desk examples.
 
 ## Validation sequence
+
+### V0 — Active Mission intake audit
+
+Apply the candidate Mission fields to STAR's existing active Missions without inventing missing information.
+
+**Pass evidence:** confirmed information and missing accountability, scope, dates, dependencies, risks and acceptance evidence are clearly separated.
+
+**Current result:** completed in `16_ACTIVE_MISSION_INTAKE.md`. The audit confirms that Mission-001 and Mission-002 have a high-level purpose and value direction, but do not yet have enough recorded detail for a real cross-functional walkthrough.
 
 ### V1 — Real Mission walkthrough
 
@@ -89,6 +97,7 @@ Map STAR's actual issue tracking, CRM, support, observability, CI/CD, IAM, finan
 
 | Validation | Status | Owner | Evidence link | Findings / next action |
 |---|---|---|---|---|
+| V0 Active Mission intake audit | Complete | Product Delivery maintainers | `16_ACTIVE_MISSION_INTAKE.md` | Populate one real Mission Brief with owners, scope, dates and evidence. |
 | V1 Real Mission walkthrough | Not started |  |  |  |
 | V2 Mission lifecycle observation | Not started |  |  |  |
 | V3 Decision-record test | Not started |  |  |  |
