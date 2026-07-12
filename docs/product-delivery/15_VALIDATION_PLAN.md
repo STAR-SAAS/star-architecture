@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | **Type / scope** | Validation plan — Product Delivery foundation evidence and freeze gate |
-| **Version / status** | v0.1.5 — Candidate execution plan; not frozen |
+| **Version / status** | v0.1.6 — Candidate execution plan; not frozen |
 | **Owner** | STAR leadership |
 | **Maintainer** | Product Delivery maintainers |
 | **Last reviewed** | 2026-07-12 |
@@ -28,7 +28,7 @@ Before the foundation can be frozen, STAR must show that it:
 
 `16_ACTIVE_MISSION_INTAKE.md` shows that Mission-001 and Mission-002 are known only at a high level. Real validation cannot start until one Mission has authoritative owners, scope, dates, dependencies, approvals, current state and closure evidence.
 
-This is an **input-data blocker**, not evidence that the candidate model itself has failed. V3, desk-level V4 and part of V5 can proceed independently using existing confirmed decisions and bounded reversible work.
+This is an **input-data blocker**, not evidence that the candidate model itself has failed. V3, desk-level V4 and parts of V5 can proceed independently using existing confirmed decisions and bounded reversible work.
 
 ## Validation sequence
 
@@ -106,7 +106,7 @@ Test `14_AI_WORK_GOVERNANCE.md` on:
 
 **Pass evidence:** task scope, authorized context, allowed actions, reviewer, logs, stop conditions and outcome evidence are clear. AI does not silently acquire approval authority.
 
-**Current result:** partial. `19_AI_WORK_CONTROL_DRY_RUN.md` validated A1 documentation proposal and A2 reversible GitHub execution. `templates/AI_CONTEXT_PACKAGE.md` and `21_AI_CONTEXT_PACKAGE_TEST.md` also validated the minimum context package for that A2 batch. Code/test work, non-document sandbox execution and A3 high-impact dry-run remain open.
+**Current result:** partial. `19_AI_WORK_CONTROL_DRY_RUN.md` validated A1 documentation proposal and A2 reversible GitHub execution. `templates/AI_CONTEXT_PACKAGE.md` and `21_AI_CONTEXT_PACKAGE_TEST.md` validated the minimum context package for that A2 batch. `24_AI_A3_HIGH_IMPACT_DRY_RUN.md` completed the design-level A3 dry run without production, customer or sensitive-data action. AI-generated code/test work and a bounded non-document sandbox execution remain open.
 
 ### V6 — Authoritative-source map
 
@@ -123,7 +123,7 @@ Map STAR's actual issue tracking, CRM, support, observability, CI/CD, IAM, finan
 | V2 Mission lifecycle observation | Blocked by V1 | To be named |  | Begin only after the selected Mission is committed and observed through delivery |
 | V3 Decision-record test | Complete with limitation | Product Delivery maintainers | `18_DECISION_RECORD_VALIDATION.md` | Use the generic template prospectively on one contested material decision |
 | V4 Role-view comprehension | Partial — desk walkthrough complete | Product Delivery maintainers; real participants to be named | `20_ROLE_VIEW_DESK_WALKTHROUGH.md` | Run the same questions with representative participants using a real Mission |
-| V5 AI work-control test | Partial | Product Delivery maintainers / accountable user | `19_AI_WORK_CONTROL_DRY_RUN.md`, `21_AI_CONTEXT_PACKAGE_TEST.md` | Test AI code/test work, another sandbox action and an A3 dry-run |
+| V5 AI work-control test | Partial — A1/A2 and A3 design dry run complete | Product Delivery / AI governance maintainers; accountable user | `19_AI_WORK_CONTROL_DRY_RUN.md`, `21_AI_CONTEXT_PACKAGE_TEST.md`, `24_AI_A3_HIGH_IMPACT_DRY_RUN.md` | Test AI code/test work and one bounded non-document sandbox action |
 | V6 Authoritative-source map | Blocked — actual enterprise tool map not recorded | To be named | `13_INFORMATION_AND_KNOWLEDGE_GOVERNANCE.md`, `22_KNOWLEDGE_METADATA_AUDIT.md` | Record the real systems, owners and review triggers for each information class |
 
 ## Freeze gate
