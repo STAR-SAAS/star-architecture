@@ -1,8 +1,17 @@
 # STAR Product Delivery Validation Plan
 
-**Version:** v0.1.4  
-**Status:** Candidate execution plan; not frozen  
-**Purpose:** Turn the current Product Delivery model from a plausible design into evidence from real work.
+| Field | Value |
+|---|---|
+| **Type / scope** | Validation plan — Product Delivery foundation evidence and freeze gate |
+| **Version / status** | v0.1.5 — Candidate execution plan; not frozen |
+| **Owner** | STAR leadership |
+| **Maintainer** | Product Delivery maintainers |
+| **Last reviewed** | 2026-07-12 |
+| **Review trigger** | New validation evidence, real-Mission selection, blocker change, freeze-gate change or proposed approval |
+| **Authoritative working source** | This repository path in Draft PR #1; `main` only after approved merge |
+| **Affects** | Product Delivery foundation, Mission validation, role comprehension, AI controls and merge/freeze readiness |
+| **Supersession** | None |
+| **Access** | Public; linked operational or customer evidence remains in its authorized source |
 
 ## What must be proven
 
