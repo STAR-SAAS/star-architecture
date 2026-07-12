@@ -2,6 +2,26 @@
 
 All notable changes to this Markdown baseline are recorded here.
 
+## [0.1.9] — 2026-07-12
+
+### Added
+
+- Three cross-domain Decision Record examples for `DEC-0030`, `DEC-0032` and `DEC-0034`.
+- `18_DECISION_RECORD_VALIDATION.md` with the V3 generic-template result.
+- `19_AI_WORK_CONTROL_DRY_RUN.md` with the V5 A1/A2 governance result.
+
+### Validated
+
+- One generic Decision Record remained usable across Product/Delivery, Architecture/Repository and Governance/Working Method decisions.
+- Specialized ADR/PDR/GDR templates are not justified yet; a prospective contested decision remains the next test.
+- The current GitHub documentation batch met A2 reversible-execution controls: bounded scope, dedicated branch, Draft PR, traceability, no merge and retained human authority.
+
+### Updated
+
+- Marked V3 complete with a retrospective limitation.
+- Marked V5 partial; code/test work, another sandbox execution and A3 high-impact dry-run remain open.
+- Updated README, Manifest, Open Questions and Work Status with the new evidence.
+
 ## [0.1.8] — 2026-07-12
 
 ### Added
@@ -15,7 +35,7 @@ All notable changes to this Markdown baseline are recorded here.
 - Marked V1 and V2 blocked by the absence of an authoritative real-Mission baseline.
 - Marked V6 blocked until STAR's actual enterprise tool/source map is recorded.
 - Updated `17_WORK_STATUS.md` with completed audit work and the next executable validation batch.
-- Updated the Draft PR description and GitHub synchronization status to match the current 26-file baseline.
+- Updated the Draft PR description and GitHub synchronization status to match the current baseline.
 
 ### Verified
 
