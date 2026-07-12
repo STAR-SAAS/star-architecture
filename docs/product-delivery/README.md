@@ -1,6 +1,6 @@
 # STAR OS · Product Delivery — Working Memory Baseline
 
-**Version:** v0.1.3  
+**Version:** v0.1.4  
 **Date:** 2026-07-12 (Asia/Singapore)  
 **Status:** Working baseline; not frozen  
 **Purpose:** Turn confirmed discussion into durable, reviewable Markdown and translate research into material that teams can understand and use.
@@ -31,7 +31,9 @@
 | `10_MODEL_VALIDATION.md` | SmartQuote and GateHub desk validation of the candidate delivery model |
 | `11_FOUNDATION_CANDIDATE.md` | One-page candidate foundation, Mission definition and minimum objects |
 | `12_RESPONSIBILITY_AND_ROLE_VIEWS.md` | Candidate responsibility model and first-view needs for all participant groups |
+| `13_INFORMATION_AND_KNOWLEDGE_GOVERNANCE.md` | Candidate authoritative-source map and knowledge lifecycle |
 | `templates/MISSION_BRIEF.md` | One-page Mission template for real-world validation |
+| `templates/DECISION_RECORD.md` | Generic decision template for product, architecture, engineering and governance choices |
 | `GITHUB_SYNC_STATUS.md` | Exact synchronization state; prevents false claims of upload |
 | `CHANGELOG.md` | Chronological repository changes |
 | `MANIFEST.md` | Repository file index and integrity guidance |
