@@ -1,6 +1,6 @@
 # STAR Decision Log
 
-**Version:** v0.1.2  
+**Version:** v0.1.3  
 **Status:** Active working log  
 **Last consolidated:** 2026-07-12
 
@@ -34,6 +34,7 @@
 | DEC-0012 | Front-line team members must not be required to understand the whole STAR theory before contributing. | Explicit/Accepted |
 | DEC-0013 | Research material is not automatically a team-facing deliverable; it must be translated into actionable guidance. | Accepted |
 | DEC-0033 | Provide timely, concise progress feedback while working on STAR tasks. Updates should name the current task, purpose, status, next action, blocker if any, and whether a user decision is needed. | Explicit |
+| DEC-0034 | Before beginning a multi-step work batch, list the planned tasks; then execute and report them step by step. If no user or GitHub action is required, state that clearly and continue working. | Explicit |
 
 ## Stakeholders, customers and teams
 
