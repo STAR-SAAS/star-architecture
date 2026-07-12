@@ -1,6 +1,6 @@
 # STAR OS · Product Delivery — Working Memory Baseline
 
-**Version:** v0.1.7  
+**Version:** v0.1.9  
 **Date:** 2026-07-12 (Asia/Singapore)  
 **Status:** Working baseline; not frozen  
 **Purpose:** Preserve confirmed decisions and translate research into material that teams can understand and use.
@@ -53,15 +53,26 @@ Detailed research is not required reading for front-line contributors.
 | `12_RESPONSIBILITY_AND_ROLE_VIEWS.md` | Responsibility model and participant first views |
 | `13_INFORMATION_AND_KNOWLEDGE_GOVERNANCE.md` | Authoritative-source map and knowledge lifecycle candidate |
 | `14_AI_WORK_GOVERNANCE.md` | Candidate AI work levels, authority and validation boundaries |
-| `15_VALIDATION_PLAN.md` | Evidence required before the foundation can be frozen |
+| `15_VALIDATION_PLAN.md` | Evidence status and freeze requirements |
 | `16_ACTIVE_MISSION_INTAKE.md` | Current information-gap audit for Mission-001 and Mission-002 |
 | `17_WORK_STATUS.md` | Current task status, blockers and next actions |
+| `18_DECISION_RECORD_VALIDATION.md` | Cross-domain test of the generic Decision Record |
+| `19_AI_WORK_CONTROL_DRY_RUN.md` | A1/A2 AI governance dry-run using the GitHub documentation batch |
 | `templates/MISSION_BRIEF.md` | One-page Mission template |
 | `templates/DECISION_RECORD.md` | Generic Decision Record template |
-| `examples/` | Concise SmartQuote and GateHub desk examples |
+| `examples/` | SmartQuote/GateHub desk examples and three real confirmed Decision Record examples |
 | `GITHUB_SYNC_STATUS.md` | Exact repository, branch and PR state |
 | `CHANGELOG.md` | Chronological changes |
 | `MANIFEST.md` | Live file index and integrity guidance |
+
+## Validation snapshot
+
+- **V0 Active Mission intake:** complete.
+- **V1/V2 real Mission validation:** blocked by missing authoritative Mission data.
+- **V3 generic Decision Record:** complete with retrospective limitation.
+- **V4 role-view comprehension:** not started with real participants.
+- **V5 AI work control:** partial; A1/A2 documentation/GitHub work validated.
+- **V6 authoritative-source map:** blocked by missing actual enterprise tool map.
 
 ## Status model
 
@@ -72,6 +83,6 @@ Detailed research is not required reading for front-line contributors.
 
 ## Current next step
 
-Obtain an authoritative baseline for one active SmartQuote or GateHub Mission, including real owners, scope, dates, dependencies, approvals and acceptance evidence. Then populate the Mission Brief and execute V1 in `15_VALIDATION_PLAN.md`.
+Continue the validations that do not require real Mission data, while keeping V1/V2 explicitly blocked. When an authoritative SmartQuote or GateHub Mission baseline becomes available, populate the Mission Brief and execute the cross-functional walkthrough.
 
-Until that information exists, the repository can continue to be audited and improved, but the foundation must remain a Draft candidate.
+Until that happens, the foundation must remain a Draft candidate.
