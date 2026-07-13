@@ -1,13 +1,13 @@
 # STAR OS · Product Delivery — Working Memory Baseline
 
-**Version:** v0.2.0  
-**Date:** 2026-07-12 (Asia/Singapore)  
+**Version:** v0.2.1  
+**Date:** 2026-07-13 (Asia/Singapore)  
 **Status:** Working baseline; not frozen  
 **Purpose:** Preserve confirmed decisions and translate research into material that teams can understand and use.
 
 ## Current work
 
-Read [`17_WORK_STATUS.md`](17_WORK_STATUS.md) for the current task, progress, blockers, next actions and whether user input is required.
+Read [`17_WORK_STATUS.md`](17_WORK_STATUS.md) for completed work, evidence gates, blockers and whether user input is required.
 
 ## Start here
 
@@ -73,7 +73,7 @@ Detailed research is not required reading for front-line contributors.
 
 - **V0 Active Mission intake:** complete.
 - **V1/V2 real Mission validation:** blocked by missing authoritative Mission data.
-- **V3 generic Decision Record:** complete with retrospective limitation.
+- **V3 generic Decision Record:** complete with prospective-decision limitation.
 - **V4 role-view comprehension:** desk walkthrough complete; real participant test pending.
 - **V5 AI work control:** partial; A1/A2 and design-level A3 dry run complete, code/test and non-document sandbox work pending.
 - **V6 authoritative-source map:** blocked by missing actual enterprise tool and owner map.
@@ -87,4 +87,4 @@ Detailed research is not required reading for front-line contributors.
 
 ## Current next step
 
-Keep the repository aligned and the PR in Draft. The next evidence gates require one authoritative active Mission, representative participants, actual enterprise system ownership, or an authorized code/test task. Missing facts must not be invented.
+The current repository-governance batch is complete. Keep Draft PR #1 open and unmerged. Further evidence requires one authoritative active Mission, representative participants, the actual enterprise system/owner map, an authorized code/test or sandbox task, or one prospective contested material decision. Missing facts must not be invented.
