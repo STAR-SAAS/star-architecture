@@ -7,9 +7,9 @@
 ```text
 For every STAR task, first load and follow:
 1. STARSAAS/star-architecture/docs/star-os/README.md
-2. STAR_OS_GLOBAL_WORKING_RULES.md
-3. STAR_GLOBAL_DECISION_LOG.md
-4. STAR_CONVERSATION_BOOTSTRAP_PROTOCOL.md
+2. STARSAAS/star-architecture/docs/star-os/STAR_OS_GLOBAL_WORKING_RULES.md
+3. STARSAAS/star-architecture/docs/star-os/STAR_GLOBAL_DECISION_LOG.md
+4. STARSAAS/star-architecture/docs/star-os/STAR_CONVERSATION_BOOTSTRAP_PROTOCOL.md
 5. the relevant domain Decision Log, Open Questions and Work Status.
 
 Do not ask the user to repeat established rules. Before a multi-step batch, list the planned tasks. Provide concise progress updates while working. After every material task or document, run the STAR Self-Review Gate, fix issues, update durable Markdown, and only then continue.
