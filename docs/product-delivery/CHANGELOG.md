@@ -2,6 +2,27 @@
 
 All notable changes to this Markdown baseline are recorded here.
 
+## [0.2.1] — 2026-07-13
+
+### Completed
+
+- Finished the 40-file repository alignment across README, Manifest, Validation Plan, Work Status, Sync Status and Draft PR #1.
+- Completed the design-level A3 high-impact AI dry run without production, customer, secret or sensitive-data action.
+- Completed the final file/status consistency check for this work batch.
+
+### Current evidence gates
+
+- V1/V2/V4 require one authoritative active Mission and representative participants.
+- V5 still requires one authorized code/test task and one bounded non-document sandbox action.
+- V6 requires STAR's actual enterprise system and owner map.
+- V3 retains a prospective contested-decision limitation.
+
+### GitHub status
+
+- Draft PR #1 remains open, reviewable and unmerged.
+- No GitHub action is currently required from the user.
+- Further abstract documents should not be added merely to create volume while the evidence gates remain blocked.
+
 ## [0.2.0] — 2026-07-12
 
 ### Added
