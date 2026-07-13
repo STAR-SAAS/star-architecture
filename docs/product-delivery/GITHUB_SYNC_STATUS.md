@@ -1,6 +1,6 @@
 # GitHub Synchronization Status
 
-**Checked:** 2026-07-12 (Asia/Singapore)  
+**Checked:** 2026-07-13 (Asia/Singapore)  
 **Status:** Synchronized to an open Draft PR; not merged
 
 ## Confirmed destination
@@ -23,7 +23,7 @@ The Markdown baseline is durably stored on a dedicated GitHub review branch and 
 
 - V0 complete.
 - V1/V2 blocked by missing authoritative active-Mission data.
-- V3 complete with a prospective-decision limitation.
+- V3 complete with a prospective contested-decision limitation.
 - V4 partial: desk walkthrough complete, real participants pending.
 - V5 partial: A1/A2 and a design-level A3 dry run complete; code/test and non-document sandbox work pending.
 - V6 blocked by the missing actual enterprise system and owner map.
