@@ -1,6 +1,6 @@
 # Repository Manifest
 
-**Version:** v0.2.0  
+**Version:** v0.2.1  
 **Status:** Live file index
 
 ## Integrity guidance
