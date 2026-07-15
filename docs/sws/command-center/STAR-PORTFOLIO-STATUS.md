@@ -3,14 +3,14 @@
 | Field | Value |
 |---|---|
 | **Document ID** | STAR-PORTFOLIO-001 |
-| **Version / status** | v0.2.3 — Controlled pilot active; repository-migration pilot validated; not frozen |
+| **Version / status** | v0.2.4 — Controlled pilot active; `star-platform` conditional review pending admin checks; not frozen |
 | **Scope** | STAR Command Center portfolio coordination |
 | **Owner** | STAR leadership |
 | **Maintainer** | STAR Command Desk |
 | **Authoritative working source** | `STARSAAS/star-architecture`, Draft PR #2, branch `agent/star-os-global-working-rules` |
 | **Authoritative for** | Portfolio priority, routing, high-level status, next action, blocker, decision needed and freshness |
 | **Not authoritative for** | Professional detail, product requirements, architecture decisions, governance registers, code, tests or sensitive records |
-| **Last reviewed** | 2026-07-14 (Asia/Singapore) |
+| **Last reviewed** | 2026-07-15 (Asia/Singapore) |
 | **Review trigger** | Material status, routing, priority, blocker, decision, closure, evidence or freshness change |
 | **Pilot workstreams** | SWS-001; STAR AI Governance; Mission-001 SmartQuote Foundation |
 | **Project Instructions** | Verified in the current STAR Command Center Project context against SWS-CC-001 on 2026-07-14 |
@@ -33,21 +33,21 @@
 
 | Priority / condition | Count | Note |
 |---|---:|---|
-| Now | 1 | Assess `star-platform` using the validated migration checklist; no transfer yet |
+| Now | 0 | No repository transfer is currently authorized |
 | Next | 1 | SmartQuote Mission baseline establishment |
 | Review | 1 | SAIG decision record and Organization migration preparation |
-| Waiting | 0 | |
+| Waiting | 1 | `star-platform` awaits admin-only webpage checks before a transfer decision |
 | Later | 0 | |
 | Parked | 0 | |
-| Active blockers | 2 | SAIG implementation gates and SmartQuote missing Mission baseline |
-| Decision Needed | 0 | Organization and Owner decisions are confirmed; repository-specific approvals remain separate |
+| Active blockers | 3 | `star-platform` admin evidence, SAIG implementation gates and SmartQuote missing Mission baseline |
+| Decision Needed | 0 | No leadership decision currently verified; repository-specific approval remains pending evidence |
 | Stale / Unknown | 1 | PORT-003 actual delivery progress remains Unknown |
 
 ## 3. Current portfolio
 
 | Item ID | Title | Workstream | Type | Priority | Status | Professional Project | Professional Conversation | Accountable Owner | Current Focus | Next Action | Blocker | Decision Needed | Authoritative Source | Last Reported At | Last Verified At | Freshness |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| PORT-001 | SWS-001 · STAR Workspace Specification | STAR Workspace | Specification | Now | Active | STAR OS | 📚 STAR Architecture Framework (SAF) | STAR leadership | Reuse the validated `star-domains` migration checklist for repository-by-repository assessment | Assess `STARSAAS/star-platform`; do not transfer until a separate Report Back and Command Desk approval | None for the completed `star-domains` Pilot; repository-specific admin checks remain required for each later transfer | None | SWS migration Report Back plus connected GitHub evidence for `STAR-SAAS/star-domains` | 2026-07-14 | 2026-07-14 | Current |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| PORT-001 | SWS-001 · STAR Workspace Specification | STAR Workspace | Specification | Now | Waiting | STAR OS | 📚 STAR Architecture Framework (SAF) | STAR leadership | Complete the repository-specific admin checks for `STARSAAS/star-platform` | User verifies Actions, Pages, Secrets/Variables, Webhooks, Deploy Keys, Environments, Packages, collaborators and integrations; return results for Command Desk approval or hold | Connector-verifiable checks pass, but admin-only repository settings remain Missing | None | `star-platform` professional Report Back plus live GitHub source/target and Connector verification | 2026-07-15 | 2026-07-15 | Current |
 | PORT-002 | STAR AI Governance | AI Governance | Governance | Next | Review | STAR AI Governance | ⭐ STAR AI Governance | Robin — COO / AI Governance Owner | Complete SAIG-DEC-019 authority and prepare the repository-specific Organization migration and least-privilege validation | Complete professional PR #13 review/merge, then prepare and verify the SAIG migration checklist against `STAR-SAAS` | Access, transfer and human-review activation gates remain open | None at portfolio level; Organization `STAR-SAAS` and Owners `STARSAAS`, `rkoh-star` are confirmed | PR #13 and SAIG `main` Work Status / Decision Log | 2026-07-14 14:32 SGT | 2026-07-14 | Current |
 | PORT-003 | Mission-001 · SmartQuote Foundation | SmartQuote | Mission | Next | Intake | SmartQuote / Mission-001 | 🚀 M001 · SmartQuote Foundation | Missing | Establish a concise authoritative Mission baseline with real owners, committed scope, dates, dependencies, current state and acceptance evidence | Create or identify the authoritative Mission record set, beginning with `MISSION_BRIEF.md`, then verify delivery activity against approved operational records | No authoritative Mission-level source establishes ownership, committed scope, progress, dates, dependencies, risks or acceptance evidence | None verified | `STARSAAS/star-architecture` Draft PR #1: `docs/product-delivery/16_ACTIVE_MISSION_INTAKE.md` | 2026-07-14 13:59 SGT | 2026-07-14 13:59 SGT | Unknown |
 
@@ -75,6 +75,7 @@
 | BLK-004 | PORT-002 | SAIG transfer, final least-privilege permissions and human-review evidence remain incomplete | Wave A record interface cannot be declared operationally active | STAR AI Governance | Complete professional PR and repository-specific migration/access workflow | 2026-07-14 | SAIG professional records | Open |
 | BLK-005 | PORT-003 | Authoritative Mission baseline and real delivery facts are missing | Mission cannot be treated as committed, delivery-ready, in review or complete | Mission-001 professional scope | Establish Mission Brief, owners, scope, status and evidence | 2026-07-14 | Product Delivery Active Mission Intake | Open |
 | BLK-006 | PORT-001 | `STAR-SAAS` Organization governance and connector visibility were unverified | Pilot repository transfer could not be authorized or verified | STAR leadership / Organization Owners | Verify Owners, install App and complete pilot transfer | 2026-07-14 | SWS migration Report Back and connected GitHub evidence | Resolved 2026-07-14 |
+| BLK-007 | PORT-001 | Admin-only settings for `STARSAAS/star-platform` are not yet verified | Command Desk cannot issue final transfer authorization | STAR leadership / repository administrator | Confirm all listed repository administration pages are clean and report results | 2026-07-15 | DSP-001-003 professional Report Back | Open |
 
 ## 7. Dispatch log
 
@@ -85,6 +86,9 @@
 | DSP-002-002 | PORT-002 | 2026-07-14; exact time Missing | STAR AI Governance | ⭐ STAR AI Governance | Correct stale pointers and prepare Record Steward backup/access decision | Corrected records, decision options and professional Report Back | Completed — PR #12 merged; PR #13 in Review |
 | DSP-001-001 | PORT-001 | 2026-07-14; exact time Missing | STAR OS | 📚 STAR Architecture Framework (SAF) | Assess controlled migration of company repositories from `STARSAAS` to `STAR-SAAS` | Organization verification, repository inventory, phased plan, pilot recommendation and exact next user action | Completed — Report Back verified |
 | DSP-001-002 | PORT-001 | 2026-07-14; exact time Missing | STAR OS | 📚 STAR Architecture Framework (SAF) | Validate and execute the `star-domains` repository-migration Pilot under conditional approval | Pre/post-transfer evidence and professional Report Back | Completed — Pilot successful and independently verified |
+| DSP-001-003 | PORT-001 | 2026-07-15; exact time Missing | STAR OS | 📚 STAR Architecture Framework (SAF) | Perform independent pre-transfer assessment of `STARSAAS/star-platform` | Source/target state, admin-only gaps, risk, recommendation and validation checklist | Completed — conditional recommendation verified; transfer not authorized |
+
+The incoming professional Report Back used `DSP-001-002`; Command Desk normalized it to `DSP-001-003` because `DSP-001-002` was already assigned to the `star-domains` Pilot.
 
 ## 8. Report Back log
 
@@ -96,6 +100,7 @@
 | RPT-004 | PORT-002 | 2026-07-14 14:32 SGT | Wave A backup, minimum access and status-source correction | Review | PR #12 merged; PR #13 records SAIG-DEC-019 and implementation state | PR #13 head `405508abaf8c5d9b6b2a12408450240922668927` | Complete professional review/merge, then prepare Organization transfer | Access and human-review gates remain | None at portfolio level after Organization confirmation | Verified from live GitHub |
 | RPT-005 | PORT-001 | 2026-07-14 | Repository ownership and authoritative-source migration assessment | Pre-transfer assessment active | Four visible company repositories inventoried; `star-domains` selected conditionally as lowest-risk pilot | Professional Report Back | Verify Organization governance and App access | Organization and admin checks were Missing | Confirm Owners and connector visibility | Verified |
 | RPT-006 | PORT-001 | 2026-07-14 | `star-domains` Pilot migration | Successful | Repository moved to `STAR-SAAS`, remained Public and empty; Owners retained Admin; App restricted to selected repository; old URL redirects | `STAR-SAAS/star-domains` plus connected GitHub installation evidence | Assess `star-platform` separately; no transfer without approval | None for Pilot closure | None | Independently verified from live GitHub |
+| RPT-007 | PORT-001 | 2026-07-15 | `star-platform` independent pre-transfer assessment | Conditional | Source is Public, empty and unarchived; no PR, Issue or target-name conflict; admin-only settings remain unverified | `STARSAAS/star-platform`, target lookup and Organization Connector inventory | Complete admin-page checks and return results for final approval or hold | Actions/settings, Pages, Secrets, Webhooks, Deploy Keys, Environments, Packages, collaborators and integrations remain Missing | None | Verified from live GitHub with admin-only limitations retained |
 
 ## 9. Closed items
 
@@ -107,7 +112,7 @@
 
 | Item ID | Last verified at | Freshness | Reason | Required action |
 |---|---|---|---|---|
-| PORT-001 | 2026-07-14 | Current | Organization, Owners, App scope and successful `star-domains` transfer independently verified | Start `star-platform` assessment only |
+| PORT-001 | 2026-07-15 | Current | `star-platform` source state, target conflict and Connector scope independently verified; admin-only settings remain Missing | Complete webpage checks and return evidence before transfer |
 | PORT-002 | 2026-07-14 | Current | Organization prerequisite resolved; SAIG professional PR/access/migration work remains | Complete professional PR #13 and SAIG-specific pre-transfer review |
 | PORT-003 | 2026-07-14 13:59 SGT | Unknown | Evidence-gap finding current, but delivery progress has no Mission source | Establish Mission-level authority |
 
@@ -124,6 +129,8 @@
 | PF-007 | 2026-07-14 | GitHub App initially existed only on personal account | Migration could not be safely verified | Install App on Organization and restrict scope | Addressed |
 | PF-008 | 2026-07-14 | Empty repositories offer the lowest-risk migration-validation surface | Enabled a controlled first migration | Use `star-domains` as Pilot | Verified |
 | PF-009 | 2026-07-14 | `star-domains` transfer preserved owner, visibility, empty state, permissions, redirect and connector access | Repository-by-repository migration method is now validated | Reuse checklist, but require separate approval per repository | Verified |
+| PF-010 | 2026-07-15 | A professional Report Back reused an existing Dispatch ID | Evidence-chain ambiguity could result | Command Desk normalized the new work to `DSP-001-003` and retained the correction | Addressed |
+| PF-011 | 2026-07-15 | Connector evidence cannot prove all repository administration settings are empty | Final transfer authorization still requires webpage checks | Keep admin-only evidence as an explicit gate | Open prerequisite |
 
 ## 12. Expansion review
 
@@ -139,3 +146,4 @@ Do not add another management conversation or Dashboard unless pilot evidence de
 | v0.2.1 | 2026-07-14 | Set PORT-002 to Review and recorded Organization prerequisite | RPT-004 and live GitHub verification |
 | v0.2.2 | 2026-07-14 | Recorded repository migration pre-transfer assessment and selected conditional pilot | DSP-001-001 and RPT-005 |
 | v0.2.3 | 2026-07-14 | Closed the successful `star-domains` migration Pilot, resolved Organization/App prerequisites and opened `star-platform` assessment only | DSP-001-002, RPT-006 and independent GitHub verification |
+| v0.2.4 | 2026-07-15 | Recorded the verified `star-platform` conditional assessment, added the admin-evidence gate and normalized the duplicate Dispatch ID | DSP-001-003, RPT-007 and live GitHub verification |
