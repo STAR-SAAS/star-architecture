@@ -2,6 +2,47 @@
 
 All notable changes to this Markdown baseline are recorded here.
 
+## [0.3.0] — 2026-07-17
+
+### Added
+
+- Established the authoritative `missions/M001/` record set for `Mission-001 · SmartQuote Foundation`:
+  - `README.md`;
+  - `MISSION_BRIEF.md`;
+  - `DECISION_LOG.md`;
+  - `WORK_STATUS.md`;
+  - `WALKTHROUGH_PREPARATION.md`.
+
+### Confirmed
+
+- Robin is the Mission Owner.
+- Jason Lin is the Product / Service Owner.
+- The proposed first-stage scope and exclusions are approved.
+- The first acceptance outcome is the end-to-end internal quotation scenario from Merchant through API Query.
+- M0-M4 milestone gates are approved.
+- Draft PR #1 on `agent/star-os-product-delivery-baseline` is the authoritative working location.
+
+### Changed
+
+- M001 moved from `Intake` to `Candidate — Baseline Confirmed`.
+- V1 moved from blocked by a missing Mission baseline to ready to schedule; it has not passed.
+- V2 remains blocked until V1 passes and leadership explicitly marks M001 Committed.
+- README, Manifest, Active Mission Intake, Validation Plan, Work Status and GitHub Sync Status now link the M001 record set.
+- Unsupported historical completion or freeze claims are classified as `Unverified / Not authoritative`; they are not `Superseded` without an explicit authoritative supersession record.
+
+### Still missing
+
+- Named business acceptance representative.
+- Named Product, Architecture, Backend, Frontend, QA, DevOps/Operations and business walkthrough representatives.
+- Calendar dates for M1-M4.
+- Verified dependency readiness and implementation evidence.
+
+### Boundary
+
+- SmartQuote Delivery has not started.
+- M001 is not Committed.
+- No formal implementation, complete backlog or finalized API/database/architecture design has been authorized.
+
 ## [0.2.1] — 2026-07-13
 
 ### Completed
