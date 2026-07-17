@@ -2,17 +2,17 @@
 
 | Field | Value |
 |---|---|
-| **Version / status** | v0.2.1 — Active confirmed working decisions; not frozen |
+| **Version / status** | v0.2.2 — Active confirmed working decisions; not frozen |
 | **Owner** | STAR leadership |
 | **Maintainer** | STAR Architecture maintainers |
 | **Last reviewed** | 2026-07-17 (Asia/Singapore) |
-| **Authoritative working source** | Draft PR #2 plus PR #3 proposed record version until approved merge |
+| **Authoritative working source** | Draft PR #2 working branch plus PR #5 child Draft PR record version until approved merge |
 | **Scope** | SWS-001 · STAR Workspace Specification |
 
 ## Authority note
 
 - Decision basis may be leadership-confirmed before the corresponding record version is merged.
-- Entries introduced or corrected in PR #3 are proposed record versions until PR #3 is merged into the Draft PR #2 branch.
+- Entries introduced or corrected in PR #5 are proposed record versions until PR #5 is merged into the Draft PR #2 branch.
 - After that merge, they become part of the Draft PR #2 working baseline; they are still not frozen and do not enter `main` unless Draft PR #2 is separately merged.
 
 ## Log rules
@@ -40,6 +40,44 @@
 | **SWS-DEC-012** | GitHub is durable structured organizational memory, not a raw chat archive. Material decisions, status and evidence synchronize to GitHub while noise and sensitive data are excluded. | Leadership-confirmed basis; proposed record version in PR #3; not frozen | STAR organizational memory | Additional confirmed requirement in DSP-001-004 |
 | **SWS-DEC-013** | Scope-level `CONTEXT_PACKAGE.md`, `ACTIVE_DECISIONS.md` and concise `WORK_STATUS.md` form the default runtime set. Loading is incremental by branch, required-file version and freshness metadata; whole-repository and full-history loading are not default. | Leadership-confirmed basis; proposed record version in PR #3; not frozen | Runtime context loading | Additional confirmed requirement in DSP-001-004 |
 | **SWS-DEC-014** | The repository containing the SWS-001 portfolio ledger was subsequently transferred from `STARSAAS/star-architecture` to `STAR-SAAS/star-architecture`. The portfolio-ledger governance intent of SWS-DEC-006 remains active; only the repository-location identity is corrected, and the original confirmed decision remains historically visible. | Leadership-confirmed repository-state correction; proposed record version in PR #3; not frozen | SWS-001 / STAR Command Center pilot | Repository transfer verified after SWS-DEC-006; does not silently rewrite SWS-DEC-006 |
+| **SWS-DEC-015** | Leadership approves the pre-start role matrices, controlled role-overlap exception, candidate locations and safety boundaries for SWS Pilot Packages A, B and C. Package A uses the existing private `STAR-SAAS/star-ai-governance` repository with Internal-only classification and no raw Confidential/Restricted data; Package B uses the approved Pilot Candidate Alias and M001 package paths; Package C uses the approved Command Desk context paths and Safe Ledger Update method. Allen Liao may hold maintainer and execution-owner roles for these three Packages only until Pilot closure, while Dorden remains the independent professional reviewer. These approvals do not start any Package, create any file, change access, update the Ledger, activate automation or authorize SmartQuote Delivery. | Leadership-approved startup conditions; implementation Missing; not a Pilot start authorization | SWS Pilot Packages A, B and C | DSP-001-015; approved by Jason Lin; overlap expires at Pilot closure and is reviewed on Package completion, role/access change, material finding or Pilot closure |
+
+## SWS-DEC-015 approved role matrices and boundaries
+
+| Package | accountable_owner | maintainer | execution_owner | professional_reviewer | report_back_approver | Current status |
+|---|---|---|---|---|---|---|
+| Package A — SAIG | Robin Koh | Allen Liao | Allen Liao | Dorden | Jason Lin | Approved roles; Blocked pending remaining access, location and private-source conditions |
+| Package B — M001 | Robin | Allen Liao | Allen Liao | Dorden | Jason Lin | Approved roles; Blocked pending Alias authority, files, fingerprints and execution authorization |
+| Package C — Command Desk | Jason Lin | Allen Liao | Allen Liao | Dorden | Jason Lin | Approved roles; Blocked pending files, tool/permission verification, selected Report Back and safe-update evidence |
+
+Approved overlap exception:
+
+```yaml
+overlap:
+  person: Allen Liao
+  roles:
+    - maintainer
+    - execution_owner
+  reason: minimum SWS Pilot execution efficiency
+  approved_by: Jason Lin
+  scope: SWS Pilot Packages A, B and C only
+  expiry: Pilot closure
+  review_triggers:
+    - Package completion
+    - role change
+    - access change
+    - material finding
+    - Pilot closure
+  remaining_independent_reviewer: Dorden
+```
+
+Package C additionally permits Jason Lin to hold `accountable_owner` and `report_back_approver`; Dorden must still provide independent professional review. No overlap exception may remove all independent review.
+
+Approved candidate locations and controls:
+
+- Package A: existing private `STAR-SAAS/star-ai-governance`; Internal-only; no raw Confidential/Restricted data; Allen may prepare content but receives no automatic Write permission; submission uses an authorized maintainer's dedicated branch and PR. Exact private directory, actual access, authorized submitting maintainer, opaque public reference/private mapping, and retention/review implementation remain Missing.
+- Package B: `docs/sws/PILOT_ALIAS_REGISTRY.md` and `docs/product-delivery/missions/M001/{CONTEXT_PACKAGE.md,ACTIVE_DECISIONS.md,WORK_STATUS.md` are Pilot Candidate paths only. `M001` must resolve uniquely; collisions stop and mark Blocked; chat or AI memory must not infer aliases. Alias owner, write authority and modification approval remain Missing. M1 and leadership commitment gates remain separate.
+- Package C: `docs/sws/command-center/context/{CONTEXT_PACKAGE.md,ACTIVE_DECISIONS.md,WORK_STATUS.md` are Pilot Candidate paths. Ledger updates require a dedicated branch, one Portfolio Item, exact blob SHA or equivalent optimistic concurrency, complete PR diff, full post-write readback, structural/non-target checks, Dorden review and freshness change only after every check passes. Truncated-text reconstruction, unbound whole-file overwrite, forced SHA-conflict overwrite, unrelated multi-item updates and target-line-only verification are prohibited.
 
 ## Not decided or frozen
 
@@ -48,6 +86,6 @@
 - automated synchronization and generation of context packages;
 - validated token and freshness thresholds by Scope and mode;
 - final access model for sensitive portfolio information;
-- exact canonical location and naming convention for context packages in every repository;
-- authoritative Scope Alias Registry location and collision rules;
+- exact final canonical location and naming convention for context packages in every repository;
+- authoritative final Scope Alias Registry location and collision governance beyond the Pilot Candidate;
 - whether future portfolio scale requires another management surface.

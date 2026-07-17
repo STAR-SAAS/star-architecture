@@ -2,11 +2,11 @@
 
 | Field | Value |
 |---|---|
-| **Version / status** | v0.2.1 — Active |
+| **Version / status** | v0.2.2 — Active |
 | **Owner** | STAR leadership |
 | **Maintainer** | STAR Architecture maintainers |
 | **Last reviewed** | 2026-07-17 (Asia/Singapore) |
-| **Authoritative working source** | Draft PR #2 plus PR #3 proposed record version until approved merge |
+| **Authoritative working source** | Draft PR #2 working branch plus PR #5 child Draft PR record version until approved merge |
 | **Scope** | SWS-001, STAR Command Center pilot and conversation-governance pilot |
 
 Open questions and missing evidence must not be presented as confirmed architecture or verified operational state. Prior Question IDs remain visible when closed, superseded or reformulated.
@@ -16,12 +16,40 @@ Open questions and missing evidence must not be presented as confirmed architect
 | ID | Question or missing evidence | State | Required next evidence |
 |---|---|---|---|
 | **SWS-OQ-001** | Are final STAR Command Center Project Instructions installed closely enough to enforce orchestration-only behavior? | Missing | Compare installed Project Instructions with SWS-CC-001. |
-| **SWS-OQ-002** | What is the verified current professional status and owner of each pilot workstream? | Partially verified; source-linked refresh required | Load current Context Package / Decision Log / Work Status for SWS, SAIG and M001. |
-| **SWS-OQ-004** | Can Command Desk maintain the portfolio ledger reliably? | Partial evidence; portfolio ledger currently Stale / update pending | Record verified commits and failures across more than one safe update cycle. |
-| **SWS-OQ-010** | Where will each pilot Scope place its canonical Context Package, Active Decisions and Work Status? | Candidate structure; implementation Missing | Implement and review packages in SAIG, M001 and Command Desk scopes. |
-| **SWS-OQ-011** | Can `continue M001` resolve the correct Scope, conversation, branch and runtime package without user reconstruction? | Conceptually validated / operationally Unverified | Run a controlled resume test and record files loaded, token/file footprint and result. |
-| **SWS-OQ-014** | Where is the authoritative Scope Alias Registry? | Missing | Decide canonical file location, alias uniqueness, collision handling, migration updates and deprecated-alias retention. |
-| **SWS-OQ-015** | Are classification, audience, redaction and evidence-access fields sufficient across public and private Context Packages? | Candidate | Validate one public SWS/Command Desk package and one private SAIG package without exposing protected data. |
+| **SWS-OQ-002** | What is the verified current professional status and owner of each pilot workstream? | Leadership-approved role matrices recorded; startup evidence still incomplete | Verify Package-specific access, locations, authority and execution readiness against SWS-DEC-015. |
+| **SWS-OQ-004** | Can Command Desk maintain the portfolio ledger reliably? | Partial evidence; portfolio ledger currently Stale / update pending | Execute the approved Safe Ledger Update method on one Portfolio Item and preserve exact commit/blob, full readback, diff, recovery point and independent review evidence. |
+| **SWS-OQ-010** | Where will each pilot Scope place its canonical Context Package, Active Decisions and Work Status? | Pilot Candidate paths approved; files not created | Package A exact private directory remains Missing; Package B and C candidate paths are approved under SWS-DEC-015 but require implementation and review. |
+| **SWS-OQ-011** | Can `continue M001` resolve the correct Scope, conversation, branch and runtime package without user reconstruction? | Conceptually validated / operationally Unverified | Confirm Alias authority and execution authorization, create approved files in a later authorized task, then run a controlled resume test. |
+| **SWS-OQ-014** | Where is the authoritative Scope Alias Registry? | Pilot Candidate path approved; authority Missing | Validate `docs/sws/PILOT_ALIAS_REGISTRY.md` only as a Pilot Candidate; confirm Alias owner, write authority and modification approval before creation. |
+| **SWS-OQ-015** | Are classification, audience, redaction and evidence-access fields sufficient across public and private Context Packages? | Candidate; Package A boundary approved but not implemented | Validate one public SWS/Command Desk package and one Internal-only SAIG package without exposing protected data. |
+
+## Package-specific Remaining Missing under SWS-DEC-015
+
+### Package A — SAIG
+
+- exact private Context Package directory;
+- Allen Liao and related-role actual access verification;
+- authorized submitting maintainer;
+- opaque `public_reference_id` and controlled private mapping;
+- final retention and review implementation;
+- private-source access test.
+
+### Package B — M001
+
+- Alias owner;
+- write authority;
+- Alias modification approval workflow;
+- Context Package files and Pilot Alias Registry do not yet exist;
+- required-file fingerprints;
+- actual resume-test environment and execution authorization.
+
+### Package C — Command Desk
+
+- Context Package files do not yet exist;
+- actual execution tools and permission verification;
+- write-time Ledger commit and blob SHA;
+- exact professional Report Back selected for the end-to-end test;
+- Safe Ledger Update demonstration and independent-review evidence.
 
 ## Priority B — usability and efficiency validation
 
@@ -55,6 +83,7 @@ No other prior Question ID is closed or deleted by this revision.
 - No existing conversations are migrated or deleted by this baseline.
 - The baseline is not frozen.
 - SAIG retains authority for AI privacy, retention, employee-data, audit and AI-record controls.
+- SWS-DEC-015 approves startup conditions only; it does not start a Package or create its files.
 
 ## Deferred broader work
 
