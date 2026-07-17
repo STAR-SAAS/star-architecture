@@ -3,59 +3,52 @@
 | Field | Value |
 |---|---|
 | **Document ID** | SWS-001 |
-| **Version / status** | v0.1.0 — Confirmed working baseline; not frozen |
+| **Version / status** | v0.2.1 — Confirmed working baseline; not frozen; PR #3 re-review pending |
 | **Owner** | STAR leadership |
 | **Maintainer** | STAR Architecture maintainers |
-| **Last reviewed** | 2026-07-14 (Asia/Singapore) |
-| **Review trigger** | Workspace architecture change, pilot finding, scope conflict, source-of-truth failure or freeze proposal |
-| **Authoritative working source** | `STARSAAS/star-architecture`, Draft PR #2, branch `agent/star-os-global-working-rules` |
-| **Scope** | STAR OS platform-level workspace information architecture |
+| **Last reviewed** | 2026-07-17 (Asia/Singapore) |
+| **Review trigger** | Workspace architecture change, pilot finding, source-of-truth failure, context-loading failure or freeze proposal |
+| **Authoritative working source** | Draft PR #2; PR #3 remains a proposed record version until merged into that branch |
+| **Scope** | STAR OS platform-level workspace and conversation architecture |
 | **Access** | Public architecture baseline; sensitive operational records remain in approved private systems |
 
 ## Purpose
 
-SWS-001 defines the long-term information architecture of STAR Workspace across Chat, Work, Codex, Projects, Memory, Knowledge Base, GitHub and future AI capabilities.
-
-It is a STAR OS platform-level architecture specification. It is not a product requirements document and does not make any current vendor interface the permanent architecture.
+SWS-001 defines STAR Workspace across Chat, Work, Codex, Projects, Memory, GitHub and future AI capabilities. It treats Workspace as scope-governed, record-backed and context-driven rather than binding the architecture permanently to one vendor interface.
 
 ## Current objective
 
-Establish and pilot the minimum STAR Command Center as the cross-project orchestration layer while preserving professional execution and authoritative records in their corresponding Projects, repositories and systems.
+Pilot the minimum STAR Command Center and STAR Conversation Governance while preserving professional execution and detailed truth in owning Projects, repositories and systems.
 
-## Current architecture direction
+## Architecture direction
 
-STAR Workspace is treated as a scope-governed, record-backed and context-driven platform.
+The working object model uses Scope, Actor, Capability, Activity, Record, Context Package and Typed Relationship.
 
-The current working object model uses:
+Runtime context follows:
 
-1. Scope;
-2. Actor;
-3. Capability;
-4. Activity;
-5. Record;
-6. Context Package;
-7. Typed Relationship as a structural primitive.
+```text
+Global → Domain → Product / Mission → Task → Evidence
+```
 
-These are confirmed working directions, not frozen architecture.
+GitHub is durable structured memory, not a raw chat archive. `CONTEXT_PACKAGE.md` is an entrypoint; `ACTIVE_DECISIONS.md` and concise `WORK_STATUS.md` are required payload. Full history and evidence load only on trigger.
+
+## Lifecycle direction
+
+Primary path:
+
+```text
+Intake → Routed → Bootstrapped → Active → Review → Closed
+```
+
+Waiting and Blocked are interrupt states with recorded recovery to the prior state. Transfer starts the receiver at Bootstrapped and ends the sender's active ownership. Closed is not silently reopened.
 
 ## Command Center boundary
 
-STAR Command Center is a separate Project whose initial version contains only one Chat: `⭐ STAR Command Desk`.
+`STAR Command Center` contains only `⭐ STAR Command Desk` during the pilot. Command Desk performs intake, priority, routing, portfolio coordination, blocker and decision visibility, report-back verification and concise feedback. Professional work remains in the relevant professional conversation.
 
-Command Desk is limited to:
+## Authoritative and working records
 
-- intake;
-- prioritization;
-- routing;
-- portfolio-level status tracking;
-- blocker, dependency and decision-needed visibility;
-- receiving report-backs;
-- updating the portfolio ledger;
-- concise feedback.
-
-Professional work remains in the relevant Project and professional conversation.
-
-## Authoritative records
+### Core SWS records
 
 1. [`01_DECISION_LOG.md`](01_DECISION_LOG.md)
 2. [`02_OPEN_QUESTIONS_AND_MISSING_EVIDENCE.md`](02_OPEN_QUESTIONS_AND_MISSING_EVIDENCE.md)
@@ -63,18 +56,32 @@ Professional work remains in the relevant Project and professional conversation.
 4. [`04_COMMAND_CENTER_MINIMUM_LAUNCH_SPECIFICATION.md`](04_COMMAND_CENTER_MINIMUM_LAUNCH_SPECIFICATION.md)
 5. [`command-center/STAR-PORTFOLIO-STATUS.md`](command-center/STAR-PORTFOLIO-STATUS.md)
 
-## Authority model
+### Conversation governance
 
-- This directory is authoritative for the current SWS-001 working baseline.
-- `STAR-PORTFOLIO-STATUS.md` is authoritative only for portfolio coordination status.
-- Detailed architecture, governance, product, code, test and operational truth remains in the relevant professional authoritative source.
+6. [`STAR_CONVERSATION_GOVERNANCE.md`](STAR_CONVERSATION_GOVERNANCE.md)
+7. [`STAR_CONVERSATION_CONTRACT_TEMPLATE.md`](STAR_CONVERSATION_CONTRACT_TEMPLATE.md)
+8. [`STAR_CONVERSATION_ROUTING_MATRIX.md`](STAR_CONVERSATION_ROUTING_MATRIX.md)
+9. [`STAR_CHAT_WORK_CODEX_MODE_SELECTION.md`](STAR_CHAT_WORK_CODEX_MODE_SELECTION.md)
+10. [`STAR_LAYERED_MEMORY_AND_CONTEXT_LOADING.md`](STAR_LAYERED_MEMORY_AND_CONTEXT_LOADING.md)
+11. [`STAR_CONTEXT_PACKAGE_TEMPLATE.md`](STAR_CONTEXT_PACKAGE_TEMPLATE.md)
+
+## Authority and data model
+
+- PR #3 content becomes part of the Draft PR #2 working baseline only after merge into `agent/star-os-global-working-rules`.
+- The portfolio ledger is authoritative only for portfolio coordination.
+- Professional truth remains in the relevant professional authoritative source.
+- Public repositories contain safe summaries and pointers only.
+- SAIG retains authority for AI privacy, retention, employee-data, audit and AI-record controls.
 - Chat history and AI memory are working context, not durable organizational authority.
 
 ## Current state
 
 - Minimum Command Center architecture: confirmed working direction.
-- `STAR Command Center` Project: reported created by the user.
-- `⭐ STAR Command Desk`: reported created by the user.
-- Portfolio ledger: created in this Draft PR by the SWS-001 authority-establishment task.
-- Initial three portfolio items: placeholders requiring professional-source verification before pilot activation.
-- SWS-001: active and incomplete; not approved or frozen.
+- Conversation-governance baseline: revised after DSP-001-005; ready for re-review, not frozen.
+- Decision-history correction: SWS-DEC-014 added while preserving SWS-DEC-006.
+- Layered memory: file-level fingerprint design added; operational pilot incomplete.
+- Direct mode transfer: Candidate / environment-dependent.
+- Scope Alias Registry: Missing; open question recorded.
+- `continue M001`: conceptually validated / operationally Unverified.
+- Command Center Portfolio Ledger: Stale / update pending.
+- No existing conversations are created, migrated or deleted by this work.
