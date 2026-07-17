@@ -3,14 +3,14 @@
 | Field | Value |
 |---|---|
 | **Type / scope** | Validation plan — Product Delivery foundation evidence and freeze gate |
-| **Version / status** | v0.1.6 — Candidate execution plan; not frozen |
+| **Version / status** | v0.2.0 — M001 baseline established; V1 walkthrough pending |
 | **Owner** | STAR leadership |
 | **Maintainer** | Product Delivery maintainers |
-| **Last reviewed** | 2026-07-12 |
-| **Review trigger** | New validation evidence, real-Mission selection, blocker change, freeze-gate change or proposed approval |
+| **Last reviewed** | 2026-07-17 |
+| **Review trigger** | New validation evidence, Mission-state change, blocker change, freeze-gate change or proposed approval |
 | **Authoritative working source** | This repository path in Draft PR #1; `main` only after approved merge |
 | **Affects** | Product Delivery foundation, Mission validation, role comprehension, AI controls and merge/freeze readiness |
-| **Supersession** | None |
+| **Supersession** | Replaces v0.1.6 current-readiness snapshot |
 | **Access** | Public; linked operational or customer evidence remains in its authorized source |
 
 ## What must be proven
@@ -26,9 +26,9 @@ Before the foundation can be frozen, STAR must show that it:
 
 ## Current readiness finding
 
-`16_ACTIVE_MISSION_INTAKE.md` shows that Mission-001 and Mission-002 are known only at a high level. Real validation cannot start until one Mission has authoritative owners, scope, dates, dependencies, approvals, current state and closure evidence.
+M001 now has an authoritative five-file Mission record set under `missions/M001/`. Mission Owner, Product / Service Owner, first-stage boundaries, first acceptance outcome and M0-M4 milestones are Confirmed.
 
-This is an **input-data blocker**, not evidence that the candidate model itself has failed. V3, desk-level V4 and parts of V5 can proceed independently using existing confirmed decisions and bounded reversible work.
+The Mission is `Candidate — Baseline Confirmed`, not Committed. V1 can be scheduled, but it has not passed. The named business acceptance representative remains Missing and must be confirmed before final business acceptance.
 
 ## Validation sequence
 
@@ -38,26 +38,32 @@ Apply the candidate Mission fields to STAR's existing active Missions without in
 
 **Pass evidence:** confirmed information and missing accountability, scope, dates, dependencies, risks and acceptance evidence are clearly separated.
 
-**Current result:** completed in `16_ACTIVE_MISSION_INTAKE.md`. The audit confirms that Mission-001 and Mission-002 have a high-level purpose and value direction, but do not yet have enough recorded detail for a real cross-functional walkthrough.
+**Current result:** complete. `16_ACTIVE_MISSION_INTAKE.md` records the M001 baseline and the remaining M002 gaps.
 
 ### V1 — Real Mission walkthrough
 
-Use `templates/MISSION_BRIEF.md` for one active SmartQuote or GateHub change.
+Use `missions/M001/MISSION_BRIEF.md` and `missions/M001/WALKTHROUGH_PREPARATION.md`.
 
-**Participants:** customer-facing representative, product manager, project/delivery manager, architect/tech lead, frontend/backend as relevant, QA, AI representative, operations/support and affected governance roles.
+**Minimum participants:** Robin, Jason Lin, Product representative, Architecture / technical authority, Backend representative, Frontend representative, QA representative, DevOps / operations representative and a Sales / Presales / Pricing / Operations business representative.
 
 **Pass evidence:**
 
-- value receiver, problem and measurable outcome are clear;
-- one Mission Owner and enduring Product/Service Owner are named;
-- scope, exclusions, risks, dependencies and approvals are visible;
-- every participant can state their next action and required evidence;
+- value receiver, problem and intended outcome are understood;
+- Mission Owner and Product / Service Owner accept their responsibility boundaries;
+- approved scope and exclusions are understood;
+- each role can state its next action, dependencies and required evidence;
+- risks, approval boundaries and Missing items are visible;
 - detailed information is linked rather than copied;
-- missing or unnecessary fields are recorded.
+- the walkthrough outcome and decisions are recorded;
+- leadership explicitly decides whether the Mission may move to Committed.
+
+**Current result:** Ready to schedule; not passed.
 
 ### V2 — Mission lifecycle observation
 
-Follow the same Mission through commitment, implementation, release/operation and outcome review.
+Follow M001 through commitment, implementation, release/operation and outcome review.
+
+**Entry condition:** V1 passed and leadership explicitly marks M001 Committed.
 
 **Pass evidence:**
 
@@ -69,19 +75,13 @@ Follow the same Mission through commitment, implementation, release/operation an
 
 ### V3 — Decision-record test
 
-Apply `templates/DECISION_RECORD.md` to:
+Apply `templates/DECISION_RECORD.md` across product/delivery, architecture/repository and governance/working-method decisions.
 
-1. one product/delivery decision;
-2. one architecture/repository decision;
-3. one governance/working-method decision.
-
-**Pass evidence:** one generic format remains understandable across all three. Create specialized record types only when a real gap is demonstrated.
-
-**Current result:** complete with limitation in `18_DECISION_RECORD_VALIDATION.md`. The generic format worked across `DEC-0030`, `DEC-0032` and `DEC-0034`; a prospective contested decision still needs testing.
+**Current result:** complete with limitation in `18_DECISION_RECORD_VALIDATION.md`. A prospective contested decision still needs testing.
 
 ### V4 — Role-view comprehension test
 
-Ask representative participants to open the Mission Brief without reading the research repository first.
+Ask representative participants to open the M001 Mission Brief without reading the research repository first.
 
 **Questions:**
 
@@ -93,38 +93,31 @@ Ask representative participants to open the Mission Brief without reading the re
 
 **Pass evidence:** answers are correct, fast and do not require the full theory. Record confusion by role instead of blaming the participant.
 
-**Current result:** partial. `20_ROLE_VIEW_DESK_WALKTHROUGH.md` completed a desk walkthrough across customer, leadership, product, project, architecture, engineering, QA, AI, operations, governance and partner views. The first-view structure passed orientation, but real participant comprehension remains untested.
+**Current result:** partial. Desk walkthrough complete; M001 real participant test is part of V1.
 
 ### V5 — AI work-control test
 
-Test `14_AI_WORK_GOVERNANCE.md` on:
+Test `14_AI_WORK_GOVERNANCE.md` on analysis/document work, code/test proposals, reversible branch or sandbox execution and high-impact dry runs.
 
-- one analysis/document task;
-- one code or test proposal;
-- one reversible tool execution in a branch or sandbox;
-- one high-impact scenario as a dry run only.
-
-**Pass evidence:** task scope, authorized context, allowed actions, reviewer, logs, stop conditions and outcome evidence are clear. AI does not silently acquire approval authority.
-
-**Current result:** partial. `19_AI_WORK_CONTROL_DRY_RUN.md` validated A1 documentation proposal and A2 reversible GitHub execution. `templates/AI_CONTEXT_PACKAGE.md` and `21_AI_CONTEXT_PACKAGE_TEST.md` validated the minimum context package for that A2 batch. `24_AI_A3_HIGH_IMPACT_DRY_RUN.md` completed the design-level A3 dry run without production, customer or sensitive-data action. AI-generated code/test work and a bounded non-document sandbox execution remain open.
+**Current result:** partial. A1/A2 and the design-level A3 dry run are evidenced. AI-generated code/test work and a bounded non-document sandbox execution remain open.
 
 ### V6 — Authoritative-source map
 
-Map STAR's actual issue tracking, CRM, support, observability, CI/CD, IAM, finance and legal/compliance systems against `13_INFORMATION_AND_KNOWLEDGE_GOVERNANCE.md`.
+Map STAR's actual issue tracking, CRM, support, observability, CI/CD, IAM, finance and legal/compliance systems.
 
-**Pass evidence:** every material information class has one owner and authoritative source; GitHub links to live systems instead of duplicating their mutable state.
+**Current result:** blocked by the missing actual enterprise system and owner map.
 
 ## Evidence register
 
 | Validation | Status | Owner | Evidence link | Findings / next action |
 |---|---|---|---|---|
-| V0 Active Mission intake audit | Complete | Product Delivery maintainers | `16_ACTIVE_MISSION_INTAKE.md` | Populate one real Mission Brief with owners, scope, dates and evidence |
-| V1 Real Mission walkthrough | Blocked — authoritative Mission baseline missing | To be named | `16_ACTIVE_MISSION_INTAKE.md`, `templates/ACTIVE_MISSION_INTAKE.md` | Select one active Mission and record real owners, scope, dates, dependencies, approvals and evidence |
-| V2 Mission lifecycle observation | Blocked by V1 | To be named |  | Begin only after the selected Mission is committed and observed through delivery |
+| V0 Active Mission intake audit | Complete | Product Delivery maintainers | `16_ACTIVE_MISSION_INTAKE.md` | M001 baseline established; keep M002 gaps explicit |
+| V1 Real Mission walkthrough | Ready to schedule; not passed | Robin | `missions/M001/MISSION_BRIEF.md`, `missions/M001/WALKTHROUGH_PREPARATION.md` | Confirm named role participants and run the walkthrough |
+| V2 Mission lifecycle observation | Blocked until V1 passes and M001 is Committed | Robin | `missions/M001/WORK_STATUS.md` | Do not start formal delivery before the commitment decision |
 | V3 Decision-record test | Complete with limitation | Product Delivery maintainers | `18_DECISION_RECORD_VALIDATION.md` | Use the generic template prospectively on one contested material decision |
-| V4 Role-view comprehension | Partial — desk walkthrough complete | Product Delivery maintainers; real participants to be named | `20_ROLE_VIEW_DESK_WALKTHROUGH.md` | Run the same questions with representative participants using a real Mission |
-| V5 AI work-control test | Partial — A1/A2 and A3 design dry run complete | Product Delivery / AI governance maintainers; accountable user | `19_AI_WORK_CONTROL_DRY_RUN.md`, `21_AI_CONTEXT_PACKAGE_TEST.md`, `24_AI_A3_HIGH_IMPACT_DRY_RUN.md` | Test AI code/test work and one bounded non-document sandbox action |
-| V6 Authoritative-source map | Blocked — actual enterprise tool map not recorded | To be named | `13_INFORMATION_AND_KNOWLEDGE_GOVERNANCE.md`, `22_KNOWLEDGE_METADATA_AUDIT.md` | Record the real systems, owners and review triggers for each information class |
+| V4 Role-view comprehension | Partial | Robin and representative participants | `20_ROLE_VIEW_DESK_WALKTHROUGH.md`, `missions/M001/WALKTHROUGH_PREPARATION.md` | Test actual M001 participants during V1 |
+| V5 AI work-control test | Partial | Product Delivery / AI governance maintainers; accountable user | `19_AI_WORK_CONTROL_DRY_RUN.md`, `21_AI_CONTEXT_PACKAGE_TEST.md`, `24_AI_A3_HIGH_IMPACT_DRY_RUN.md` | Test AI code/test work and one bounded non-document sandbox action |
+| V6 Authoritative-source map | Blocked | To be named | `13_INFORMATION_AND_KNOWLEDGE_GOVERNANCE.md`, `22_KNOWLEDGE_METADATA_AUDIT.md` | Record real systems, owners and review triggers |
 
 ## Freeze gate
 
@@ -136,6 +129,6 @@ The foundation may be proposed for freeze only when:
 - AI boundaries have been tested at the relevant work levels;
 - information ownership and source boundaries are explicit;
 - unresolved limitations are documented and accepted rather than hidden;
-- any new confirmed conclusions are recorded in the Decision Log.
+- new confirmed conclusions are recorded in the relevant Decision Log.
 
-A successful desk review is not enough to pass this gate.
+A confirmed Mission baseline or successful desk review is not enough to pass this gate.
