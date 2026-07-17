@@ -2,64 +2,58 @@
 
 | Field | Value |
 |---|---|
-| **Version / status** | v0.1.0 — Active; authority baseline established, pilot evidence incomplete |
+| **Version / status** | v0.2.0 — Active; conversation-governance working baseline prepared; pilot evidence incomplete |
 | **Owner** | STAR leadership |
 | **Maintainer** | STAR Architecture maintainers |
-| **Updated / last reviewed** | 2026-07-14 (Asia/Singapore) |
-| **Authoritative working source** | `STARSAAS/star-architecture`, Draft PR #2, branch `agent/star-os-global-working-rules` |
-| **Scope** | SWS-001 and minimum STAR Command Center pilot |
+| **Updated / last reviewed** | 2026-07-17 (Asia/Singapore) |
+| **Authoritative working source** | Draft PR #2 plus DSP-001-004 working branch until approved merge |
+| **Scope** | SWS-001, STAR Command Center and conversation-governance pilot |
 
 ## Current objective
 
-Establish and verify the authoritative source required by STAR Command Desk, then activate a controlled pilot across SWS-001, STAR AI Governance and Mission-001 SmartQuote Foundation.
+Establish a working baseline that routes, resumes, transfers and closes STAR conversations using durable GitHub memory and low-token incremental context loading.
 
 ## Verified completed work
 
-- Confirmed that Draft PR #2 is open, draft and unmerged.
-- Confirmed that the PR head branch is `agent/star-os-global-working-rules`.
-- Confirmed that no `docs/sws/README.md` existed on that branch before this task.
-- Established the minimum SWS-001 durable record set in `docs/sws/`.
-- Recorded the Command Center minimum launch specification as a versioned working baseline.
-- Established `docs/sws/command-center/STAR-PORTFOLIO-STATUS.md` as the authoritative portfolio-coordination ledger location.
-- Preserved the boundary that professional detail remains in professional authoritative sources.
-- Recorded open questions and evidence gaps rather than inventing current workstream status.
+- Loaded Draft PR #2 global working rules, Bootstrap Protocol, Handoff template, Command Center specification and SWS Decision Log.
+- Created the STAR Conversation Governance baseline, Contract template, Routing Matrix and Chat / Work / Codex selection model.
+- Added the layered memory and context-loading model and Context Package template.
+- Recorded confirmed working decisions SWS-DEC-010 through SWS-DEC-013.
+- Preserved the boundaries that no conversations are created, migrated or deleted and that the baseline is not frozen.
+- Validated the model conceptually against SAIG, Mission-001 SmartQuote and STAR Command Desk.
 
 ## Current state
 
 | Area | State |
 |---|---|
-| SWS-001 charter / specification index | Created; confirmed working baseline; not frozen |
-| Decision Log | Created; active working decisions |
-| Open Questions / Missing Evidence | Created; active |
-| Work Status | Created; active |
-| Command Center Minimum Launch Specification | Created; confirmed working baseline; pilot not yet validated |
-| Portfolio ledger location | Created in Draft PR #2 |
-| Initial SWS-001 portfolio item | Placeholder pending final source-link verification |
-| Initial SAIG portfolio item | Unknown pending authoritative Work Status review |
-| Initial SmartQuote portfolio item | Unknown pending authoritative Mission record review |
-| STAR Command Center Project | User-reported created; configuration not independently verified |
-| `⭐ STAR Command Desk` | User-reported created; operating behavior not yet validated |
+| Conversation scope, ownership and Contract | Working baseline created; pilot unverified |
+| Routing Gate and mismatch warnings | Working baseline created; pilot unverified |
+| Bootstrap, resume, handoff and closure | Working baseline created; pilot unverified |
+| Chat / Work / Codex matrix | Working baseline created; token thresholds remain Candidate |
+| Layered GitHub memory | Confirmed direction; implementation packages Missing in pilot scopes |
+| Short instruction such as `continue M001` | Designed; controlled runtime validation Missing |
+| Draft PR #2 | Open, Draft and unmerged |
+| Conversation-governance change set | Prepared on independent working branch; Draft PR pending |
 
-## Blockers and missing evidence
+## Current blockers and Missing evidence
 
-1. Installed STAR Command Center Project Instructions are not yet verified.
-2. The current authoritative status, owner, blocker and next action for each of the three pilot workstreams are not yet loaded into the portfolio ledger.
-3. No complete Dispatch → Execute → Report Back → Verify → Update Status cycle has been evidenced.
-4. Real portfolio information has not yet been classified for public/private repository suitability.
-5. Draft PR #2 remains unmerged, so `main` is not yet the authoritative source.
+1. Installed STAR Command Center Project Instructions remain unverified.
+2. Canonical Context Packages and Active Decisions projections have not yet been implemented in SAIG, M001 and Command Desk scopes.
+3. `continue M001` has not yet been tested against live branch/commit metadata.
+4. Token/file budgets and freshness thresholds are not validated.
+5. The public/private suitability of all future context package fields requires pilot review.
+6. Draft PR #2 remains the global working source until approved merge.
 
 ## Next three professional actions
 
-1. Verify STAR Command Center Project Instructions against the minimum launch specification and record any discrepancy.
-2. Load authoritative Work Status / Decision Log evidence for SWS-001, STAR AI Governance and Mission-001, then replace portfolio placeholders with verified entries.
-3. Run and document the first real Dispatch and Report Back cycle, including commit evidence for the ledger update.
+1. Review the conversation-governance Draft PR and correct any scope, authority or usability issue.
+2. Pilot one minimal Context Package in each of SAIG, M001 and Command Desk without moving or deleting conversations.
+3. Run controlled resume, routing, handoff and closure scenarios; record token/file footprint, freshness behavior and failure findings.
 
-## User or GitHub action required
+## User or leadership decision required
 
-- No merge is required now.
-- Keep Draft PR #2 open while the initial pilot evidence is collected and inconsistencies are corrected.
-- A user decision is required only if the installed Project Instructions differ materially, if sensitive portfolio status cannot remain in this public repository, or if a pilot workstream lacks an accountable owner.
+No immediate leadership decision is required for the reversible working-baseline PR. Pause later only if pilot evidence requires a new management surface, changes authority, exposes sensitive information, or proposes freeze.
 
 ## Completion boundary
 
-This task establishes the SWS-001 authority baseline. It does not complete, approve or freeze SWS-001, and it does not prove that STAR Command Center is operationally effective.
+This work creates a reviewable baseline only. It does not activate automatic synchronization, prove `continue M001`, freeze SWS-001, or replace professional Decision Logs and Work Status records.
