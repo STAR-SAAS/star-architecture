@@ -6,12 +6,44 @@
 | **Owner** | STAR leadership |
 | **Maintainer** | STAR Architecture maintainers |
 | **Updated / last reviewed** | 2026-07-17 (Asia/Singapore) |
-| **Authoritative working source** | Draft PR #2 working branch plus approved child Draft PR record version until merged |
-| **Scope** | SWS-001 and SWS Pilot startup readiness |
+| **Authoritative working source** | Draft PR #2 working branch plus PR #5 child Draft PR record version until approved merge |
+| **Scope** | SWS-001, conversation governance and SWS Pilot startup readiness |
 
 ## Current objective
 
-Record the leadership-approved pre-start role matrices, candidate locations, overlap exception and safety boundaries for SWS Pilot Packages A, B and C without starting any Package or creating any Pilot file.
+Record the leadership-approved pre-start role matrices, candidate locations, overlap exception and safety boundaries for SWS Pilot Packages A, B and C without starting any Package or creating any Pilot file, while preserving the previously verified SWS-001 lifecycle and governance status.
+
+## Verified completed revision work
+
+- Restored the original SWS-DEC-006 wording, including `STARSAAS/star-architecture`.
+- Added SWS-DEC-014 for the later transfer to `STAR-SAAS/star-architecture` without erasing historical wording.
+- Distinguished leadership-confirmed decision basis, child Draft PR proposed record version and authority after merge into Draft PR #2.
+- Replaced the linear lifecycle with a primary path plus Waiting / Blocked interrupt states and recorded recovery behavior.
+- Clarified transfer, closure and Contract reuse rules.
+- Added executable Context Package classification, audience, redaction, private-source, evidence-access and retention/review metadata.
+- Preserved SAIG authority for AI privacy, retention, employee-data, audit and AI-record controls.
+- Added required-file blob/version verification and metadata-only no-reload behavior.
+- Marked direct mode switching and seamless context inheritance Candidate / environment-dependent.
+- Added Closed / Superseded Questions provenance, including SWS-OQ-003.
+- Added SWS-OQ-014 for the authoritative Scope Alias Registry.
+- Kept `continue M001` as conceptually validated / operationally Unverified.
+
+## Revised lifecycle model
+
+Primary path:
+
+```text
+Intake → Routed → Bootstrapped → Active → Review → Closed
+```
+
+Interrupt behavior:
+
+- Waiting and Blocked may be entered from Routed, Bootstrapped, Active or Review.
+- `prior_state` is recorded before interruption.
+- Waiting returns to `prior_state` when awaited input arrives.
+- Blocked returns to `prior_state` after blocker resolution.
+- Transfer starts the receiver at Bootstrapped and ends the sender's active ownership.
+- Closed is not silently reopened; new work uses a new Activity / Contract unless a governed Reopened rule is approved.
 
 ## Leadership-approved startup conditions
 
@@ -131,7 +163,13 @@ Package C also permits Jason Lin to hold `accountable_owner` and `report_back_ap
 | Area | State |
 |---|---|
 | Conversation Governance | Revised working baseline; not frozen |
-| SWS Pilot startup decision | Recorded as SWS-DEC-015 in child Draft PR |
+| Decision history integrity | SWS-DEC-001 through SWS-DEC-015 preserved in canonical Decision Log; PR #5 review pending |
+| Lifecycle / Contract model | Revised baseline preserved; operational validation pending |
+| Sensitive-data controls | Revised generic structure; Package A Internal-only boundary approved; implementation Missing |
+| File-level freshness | Revised design; runtime pilot Missing |
+| Mode transfer | Candidate / environment-dependent |
+| Scope Alias Registry | Pilot Candidate path approved; owner/write authority/approval Missing; file not created |
+| `continue M001` | Not executed; conceptually validated / operationally Unverified |
 | Package A roles | Confirmed by leadership; execution readiness Blocked |
 | Package B roles | Confirmed by leadership; execution readiness Blocked |
 | Package C roles | Confirmed by leadership; execution readiness Blocked |
@@ -139,7 +177,6 @@ Package C also permits Jason Lin to hold `accountable_owner` and `report_back_ap
 | Pilot Alias Registry | Not created |
 | M001 Context Package | Not created |
 | Command Desk Context Package | Not created |
-| `continue M001` | Not executed; operationally Unverified |
 | Command Center Portfolio Ledger | Stale / update pending; not modified by DSP-001-015 |
 | Automatic context synchronization | Not authorized; inactive |
 | Wave A / Employee AI Use Policy / SAIG PILOT-001 | Not activated |
@@ -174,9 +211,16 @@ Package C also permits Jason Lin to hold `accountable_owner` and `report_back_ap
 4. Exact professional Report Back selected for the end-to-end test.
 5. Safe Ledger Update demonstration and independent-review evidence.
 
+### Broader Candidate items
+
+1. Numeric token and time-based freshness thresholds.
+2. Direct mode-transfer capability by environment.
+3. Manual versus generated/hybrid Context Package maintenance.
+4. Whether a governed Reopened state is eventually needed.
+
 ## Next actions
 
-1. Professionally review SWS-DEC-015 and the startup-readiness records in the child Draft PR.
+1. Professionally review SWS-DEC-015 and the startup-readiness records in PR #5.
 2. Confirm the role matrices and overlap exception were recorded without changing permissions or starting a Package.
 3. Keep all three Packages Blocked until their Package-specific Remaining Missing items are resolved through separately authorized work.
 4. Do not create Context Packages, the Pilot Alias Registry or update the Ledger without a later explicit Dispatch.
