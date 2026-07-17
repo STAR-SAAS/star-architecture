@@ -1,6 +1,6 @@
 # Repository Manifest
 
-**Version:** v0.2.1  
+**Version:** v0.3.0  
 **Status:** Live file index
 
 ## Integrity guidance
@@ -15,10 +15,10 @@ For an exact reviewed snapshot, use the commit SHA or merged pull-request SHA.
 |---|---|
 | `README.md` | Entry point and role-based reading order |
 | `00_PROJECT_CHARTER.md` | Purpose, scope and constraints |
-| `01_DECISION_LOG.md` | Confirmed decisions |
+| `01_DECISION_LOG.md` | Confirmed Product Delivery decisions |
 | `02_OPEN_QUESTIONS.md` | Unresolved questions |
 | `03_RESEARCH_CANON.md` | External methods and adoption posture |
-| `04_SUPERSEDED_IDEAS.md` | Rejected and replaced ideas |
+| `04_SUPERSEDED_IDEAS.md` | Rejected and explicitly replaced ideas |
 | `05_ASSUMPTIONS.md` | Unconfirmed hypotheses |
 | `06_STAKEHOLDER_MAP.md` | Stakeholder coverage |
 | `07_WORKING_METHOD.md` | Working and quality method |
@@ -30,7 +30,7 @@ For an exact reviewed snapshot, use the commit SHA or merged pull-request SHA.
 | `13_INFORMATION_AND_KNOWLEDGE_GOVERNANCE.md` | Information-source and knowledge-lifecycle candidate |
 | `14_AI_WORK_GOVERNANCE.md` | AI authority and validation candidate |
 | `15_VALIDATION_PLAN.md` | Validation status and freeze evidence plan |
-| `16_ACTIVE_MISSION_INTAKE.md` | Active Mission evidence-gap audit |
+| `16_ACTIVE_MISSION_INTAKE.md` | Active Mission intake and evidence-gap state |
 | `17_WORK_STATUS.md` | Current work, progress, blockers and next actions |
 | `18_DECISION_RECORD_VALIDATION.md` | Generic Decision Record validation evidence |
 | `19_AI_WORK_CONTROL_DRY_RUN.md` | AI A1/A2 work-control validation evidence |
@@ -39,8 +39,13 @@ For an exact reviewed snapshot, use the commit SHA or merged pull-request SHA.
 | `22_KNOWLEDGE_METADATA_AUDIT.md` | Durable-knowledge metadata audit |
 | `23_KNOWLEDGE_REVIEW_REGISTER.md` | Ownership and review register |
 | `24_AI_A3_HIGH_IMPACT_DRY_RUN.md` | Design-level A3 high-impact dry run |
-| `examples/MISSION_SMARTQUOTE_MERCHANT_DISCOUNT_RULE.md` | Concise SmartQuote desk example |
-| `examples/MISSION_GATEHUB_PSP_CONNECTOR.md` | Concise GateHub desk example |
+| `missions/M001/README.md` | Mission-001 authoritative record index |
+| `missions/M001/MISSION_BRIEF.md` | M001 Mission Brief v0.1.0 |
+| `missions/M001/DECISION_LOG.md` | M001 Mission-scoped Decision Log |
+| `missions/M001/WORK_STATUS.md` | M001 current state and next actions |
+| `missions/M001/WALKTHROUGH_PREPARATION.md` | M1 participant and evidence preparation |
+| `examples/MISSION_SMARTQUOTE_MERCHANT_DISCOUNT_RULE.md` | Concise SmartQuote desk example; not authoritative Mission evidence |
+| `examples/MISSION_GATEHUB_PSP_CONNECTOR.md` | Concise GateHub desk example; not authoritative Mission evidence |
 | `examples/decisions/DEC-0030_VALUE_TRACEABILITY.md` | Product/Delivery decision example |
 | `examples/decisions/DEC-0032_GITHUB_BASELINE_LOCATION.md` | Architecture/Repository decision example |
 | `examples/decisions/DEC-0034_STEPWISE_WORK_REPORTING.md` | Governance/Working Method decision example |
@@ -56,4 +61,4 @@ For an exact reviewed snapshot, use the commit SHA or merged pull-request SHA.
 
 ## Current count
 
-Draft PR #1 currently changes **40 Markdown files** under `docs/product-delivery/`.
+Draft PR #1 now includes the Product Delivery baseline plus the five-file authoritative M001 Mission record set. Use the live PR changed-file list for the exact count.
