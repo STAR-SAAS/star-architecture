@@ -2,11 +2,11 @@
 
 | Field | Value |
 |---|---|
-| **Version / status** | v0.2.2 — Active |
+| **Version / status** | v0.2.3 — Active |
 | **Owner** | STAR leadership |
 | **Maintainer** | STAR Architecture maintainers |
 | **Last reviewed** | 2026-07-17 (Asia/Singapore) |
-| **Authoritative working source** | Draft PR #2 working branch plus PR #5 child Draft PR record version until approved merge |
+| **Authoritative working source** | Draft PR #2 working branch plus DSP-001-018 child Draft PR record version until approved merge |
 | **Scope** | SWS-001, STAR Command Center pilot and conversation-governance pilot |
 
 Open questions and missing evidence must not be presented as confirmed architecture or verified operational state. Prior Question IDs remain visible when closed, superseded or reformulated.
@@ -16,40 +16,76 @@ Open questions and missing evidence must not be presented as confirmed architect
 | ID | Question or missing evidence | State | Required next evidence |
 |---|---|---|---|
 | **SWS-OQ-001** | Are final STAR Command Center Project Instructions installed closely enough to enforce orchestration-only behavior? | Missing | Compare installed Project Instructions with SWS-CC-001. |
-| **SWS-OQ-002** | What is the verified current professional status and owner of each pilot workstream? | Leadership-approved role matrices recorded; startup evidence still incomplete | Verify Package-specific access, locations, authority and execution readiness against SWS-DEC-015. |
-| **SWS-OQ-004** | Can Command Desk maintain the portfolio ledger reliably? | Partial evidence; portfolio ledger currently Stale / update pending | Execute the approved Safe Ledger Update method on one Portfolio Item and preserve exact commit/blob, full readback, diff, recovery point and independent review evidence. |
-| **SWS-OQ-010** | Where will each pilot Scope place its canonical Context Package, Active Decisions and Work Status? | Pilot Candidate paths approved; files not created | Package A exact private directory remains Missing; Package B and C candidate paths are approved under SWS-DEC-015 but require implementation and review. |
-| **SWS-OQ-011** | Can `continue M001` resolve the correct Scope, conversation, branch and runtime package without user reconstruction? | Conceptually validated / operationally Unverified | Confirm Alias authority and execution authorization, create approved files in a later authorized task, then run a controlled resume test. |
-| **SWS-OQ-014** | Where is the authoritative Scope Alias Registry? | Pilot Candidate path approved; authority Missing | Validate `docs/sws/PILOT_ALIAS_REGISTRY.md` only as a Pilot Candidate; confirm Alias owner, write authority and modification approval before creation. |
-| **SWS-OQ-015** | Are classification, audience, redaction and evidence-access fields sufficient across public and private Context Packages? | Candidate; Package A boundary approved but not implemented | Validate one public SWS/Command Desk package and one Internal-only SAIG package without exposing protected data. |
+| **SWS-OQ-002** | What is the verified current professional status and owner of each pilot workstream? | Leadership-approved role, identity and publishing models recorded; runtime evidence still incomplete | Verify Package-specific access, files, test execution and independent-review evidence against SWS-DEC-015 and SWS-DEC-016. |
+| **SWS-OQ-004** | Can Command Desk maintain the portfolio ledger reliably? | Safe-update method and PORT-003 input approved; execution Missing; portfolio ledger remains Stale / unmodified | Execute the approved Safe Ledger Update on PORT-003 using DSP-003-004, a runtime-generated opaque reference, exact commit/blob, full readback, diff, recovery point and Dorden review evidence. |
+| **SWS-OQ-010** | Where will each pilot Scope place its canonical Context Package, Active Decisions and Work Status? | Package A formal private directory approved; Package B and C Pilot Candidate paths approved; files not created | Create and review Package files only under later explicit Package-start or implementation authorization. |
+| **SWS-OQ-011** | Can `continue M001` resolve the correct Scope, conversation, branch and runtime package without user reconstruction? | Governance controls and isolated test environment approved; operationally Unverified | Create approved files and fingerprints in later authorized work, verify access capability, then run the isolated controlled `continue M001` test. |
+| **SWS-OQ-014** | Where is the authoritative Scope Alias Registry? | Pilot Candidate path and Alias authority approved; Registry not created | Create `docs/sws/PILOT_ALIAS_REGISTRY.md` only under later explicit authorization, then verify owner, publishing, modification approval and collision controls. |
+| **SWS-OQ-015** | Are classification, audience, redaction and evidence-access fields sufficient across public and private Context Packages? | Package A Internal classification, directory and ownership approved; implementation Unverified | Grant and verify minimum Read for `zhuangdongdong`, create Package A files only when authorized, and run the synthetic-data private-source access test. |
 
-## Package-specific Remaining Missing under SWS-DEC-015
+## Package-specific Remaining Missing under SWS-DEC-016
 
 ### Package A — SAIG
 
-- exact private Context Package directory;
-- Allen Liao and related-role actual access verification;
-- authorized submitting maintainer;
-- opaque `public_reference_id` and controlled private mapping;
-- final retention and review implementation;
-- private-source access test.
+Confirmed preparation decisions:
+
+- formal directory: `09-operations/context-packages/sws-package-a/`;
+- future files: `CONTEXT_PACKAGE.md`, `ACTIVE_DECISIONS.md`, `WORK_STATUS.md`, `REFERENCE_MAP.md`;
+- `retention_owner: Robin Koh`;
+- `review_owner: Dorden`;
+- `classification: Internal`;
+- future minimum necessary Read for `zhuangdongdong` approved;
+- future private-source access test restricted to purely synthetic data approved.
+
+Remaining Missing:
+
+- `zhuangdongdong` Read has not been granted or verified;
+- private-source access test has not been executed;
+- Package files have not been created;
+- runtime `public_reference_id` has not been allocated;
+- no Wave A, Employee AI Use Policy or SAIG PILOT-001 activation has occurred.
 
 ### Package B — M001
 
-- Alias owner;
-- write authority;
-- Alias modification approval workflow;
-- Context Package files and Pilot Alias Registry do not yet exist;
-- required-file fingerprints;
-- actual resume-test environment and execution authorization.
+Confirmed preparation decisions:
+
+- Alias owner: Robin;
+- human execution owner: Allen Liao;
+- authorized publishing maintainer: Robin Koh through `rkoh-star`;
+- modification approver: Jason Lin;
+- independent reviewer: Dorden;
+- exact unique M001 resolution, collision/Blocked handling, migration, deprecation, tombstone and Pilot-exit controls approved;
+- required-file fingerprint, metadata-only refresh, partial reload, runtime-package reload and stop/recovery rules approved;
+- isolated future test environment approved: ChatGPT Web / STAR OS / Work / isolated controlled test session / `🚀 Mission-001 · SmartQuote Foundation` / `continue M001`.
+
+Remaining Missing:
+
+- Package files and Pilot Alias Registry have not been created;
+- required-file fingerprints have not been generated;
+- access capability has not been executed or verified;
+- `continue M001` has not been run;
+- M1 has not passed;
+- leadership commitment has not passed;
+- M001 is not Committed and SmartQuote Delivery is not authorized.
 
 ### Package C — Command Desk
 
-- Context Package files do not yet exist;
-- actual execution tools and permission verification;
-- write-time Ledger commit and blob SHA;
-- exact professional Report Back selected for the end-to-end test;
-- Safe Ledger Update demonstration and independent-review evidence.
+Confirmed preparation decisions:
+
+- future target Portfolio Item: `PORT-003`;
+- selected professional input: `DSP-003-004 · Package B Remaining Missing Closure`;
+- runtime `public_reference_id` must be random, opaque and exclude persons, project risks, Issues, URLs and private paths;
+- the true mapping must remain outside the public Portfolio Ledger;
+- Safe Ledger Update controls from SWS-DEC-015 remain mandatory.
+
+Remaining Missing:
+
+- Package C files have not been created;
+- formal `public_reference_id` has not been generated;
+- write-time authoritative branch Head and Ledger blob SHA have not been obtained;
+- Safe Ledger Update has not been executed;
+- Portfolio Ledger and freshness remain unmodified;
+- Dorden has not independently reviewed the actual Ledger PR Exact Head.
 
 ## Priority B — usability and efficiency validation
 
@@ -84,6 +120,8 @@ No other prior Question ID is closed or deleted by this revision.
 - The baseline is not frozen.
 - SAIG retains authority for AI privacy, retention, employee-data, audit and AI-record controls.
 - SWS-DEC-015 approves startup conditions only; it does not start a Package or create its files.
+- SWS-DEC-016 closes named governance-design gaps only; it does not execute access, file creation, tests, Ledger updates or Package starts.
+- The DSP-001-018 publishing exception is temporary, scoped only to that Dispatch and expires on PR merge or Dispatch closure.
 
 ## Deferred broader work
 
