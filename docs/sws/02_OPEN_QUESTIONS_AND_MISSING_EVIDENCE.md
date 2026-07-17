@@ -2,49 +2,51 @@
 
 | Field | Value |
 |---|---|
-| **Version / status** | v0.1.0 — Active |
+| **Version / status** | v0.2.0 — Active |
 | **Owner** | STAR leadership |
 | **Maintainer** | STAR Architecture maintainers |
-| **Last reviewed** | 2026-07-14 (Asia/Singapore) |
-| **Authoritative working source** | Draft PR #2, branch `agent/star-os-global-working-rules` |
-| **Scope** | SWS-001 and STAR Command Center pilot |
+| **Last reviewed** | 2026-07-17 (Asia/Singapore) |
+| **Authoritative working source** | Draft PR #2 plus DSP-001-004 working branch until approved merge |
+| **Scope** | SWS-001, STAR Command Center pilot and conversation-governance pilot |
 
 Open questions and missing evidence must not be presented as confirmed architecture or verified operational state.
 
-## Priority A — required to activate the pilot
+## Priority A — required pilot evidence
 
-| ID | Question or missing evidence | Why it matters | Required next evidence |
+| ID | Question or missing evidence | State | Required next evidence |
 |---|---|---|---|
-| **SWS-OQ-001** | Are the final STAR Command Center Project Instructions installed exactly enough to enforce orchestration-only behavior? | The Project and Chat may exist without the required operating boundary. | Read or capture the installed Project Instructions and compare them with the minimum launch specification. |
-| **SWS-OQ-002** | What is the verified current professional status of SWS-001, STAR AI Governance and Mission-001 SmartQuote Foundation? | Initial portfolio entries cannot be activated from chat memory or placeholders. | Load each workstream's authoritative Decision Log / Work Status / active handoff and record the verified source and date. |
-| **SWS-OQ-003** | Who is the named accountable owner for each pilot workstream? | Missing ownership prevents reliable escalation and closure. | Verify named owners from authoritative records or record them explicitly as Missing. |
-| **SWS-OQ-004** | Can STAR Command Desk access and update the portfolio ledger reliably through the available GitHub workflow? | A ledger that cannot be maintained is not an operational authority. | Complete one verified update cycle and record commit/PR evidence. |
+| **SWS-OQ-001** | Are the final STAR Command Center Project Instructions installed exactly enough to enforce orchestration-only behavior? | Missing | Compare installed Project Instructions with SWS-CC-001. |
+| **SWS-OQ-002** | What is the verified current professional status and owner of each pilot workstream? | Partially verified; must remain source-linked | Load current Context Package / Decision Log / Work Status for SWS, SAIG and M001. |
+| **SWS-OQ-004** | Can Command Desk maintain the portfolio ledger reliably? | Evidence exists from real dispatch cycles; final pilot assessment pending | Record verified commits and failures across more than one cycle. |
+| **SWS-OQ-010** | Where will each pilot Scope place its canonical `CONTEXT_PACKAGE.md`, `ACTIVE_DECISIONS.md` and `WORK_STATUS.md`? | Candidate structure; implementation Missing | Implement and review packages in SAIG, M001 and Command Desk scopes. |
+| **SWS-OQ-011** | Can `continue M001` reliably resolve the correct Scope, conversation, branch and runtime package without user reconstruction? | Unverified | Run a controlled resume test and record files loaded, token/file footprint and result. |
 
-## Priority B — pilot validation
+## Priority B — usability and efficiency validation
 
-| ID | Question or missing evidence | Why it matters | Validation approach |
-|---|---|---|---|
-| **SWS-OQ-005** | Does the Dispatch package provide enough context without duplicating professional history? | Tests the boundary between orchestration and execution. | Run at least one real Dispatch for each pilot workstream. |
-| **SWS-OQ-006** | Is the Report Back format concise enough to be used consistently and complete enough to update the ledger? | Excessive ceremony or missing information will break the loop. | Collect and compare real report-backs. |
-| **SWS-OQ-007** | What makes a portfolio item Current, Stale or Unknown? | A single unvalidated age threshold may misrepresent work with different rates of change. | Observe actual reporting cadence before defining thresholds. |
-| **SWS-OQ-008** | Does one Command Desk remain sufficient after real usage? | Additional management conversations must be evidence-driven. | Record overload, routing failure or access-conflict findings rather than anticipating them. |
-| **SWS-OQ-009** | Does the public architecture repository remain appropriate for the portfolio ledger once real status is added? | Portfolio status may expose sensitive employee, customer, commercial or risk information. | Classify actual pilot entries and move sensitive detail to an approved private system if required. |
+| ID | Question or missing evidence | Validation approach |
+|---|---|---|
+| **SWS-OQ-005** | Does the Dispatch package provide enough context without duplicating professional history? | Compare real dispatches across SWS, SAIG and M001. |
+| **SWS-OQ-006** | Is Report Back concise and complete enough to update durable status? | Compare actual report-backs and ledger updates. |
+| **SWS-OQ-007** | What makes a Scope Current, Stale or Unverified? | Observe change cadence before fixing thresholds. |
+| **SWS-OQ-008** | Does one Command Desk remain sufficient? | Record actual overload, routing failure or access conflict. |
+| **SWS-OQ-009** | Is the public architecture repository appropriate for each coordination record? | Classify real entries; keep sensitive detail in private sources. |
+| **SWS-OQ-012** | What token/file budgets are safe and useful for Chat, Work and Codex? | Measure required and optional loads during the three pilots. |
+| **SWS-OQ-013** | Should context packages be manually maintained, generated, or hybrid? | Pilot manual packages before proposing automation. |
 
-## Priority C — broader SWS work deferred by this task
+## Confirmed matters not to reopen without new evidence
+
+- Correct Project and professional conversation are stated proactively.
+- Brief warnings are used for Chat / Work / Codex mismatch.
+- Users are not asked to repeat decisions available in authoritative records.
+- GitHub stores durable structured memory, not raw chat archives.
+- Runtime loading is progressive and incremental; whole-repository and full-history loading are not default.
+- No existing conversations are migrated or deleted by this baseline.
+- The baseline is not frozen.
+
+## Deferred broader work
 
 - complete Activity and Work Model;
-- Memory lifecycle and correction model;
-- Knowledge Base authority and promotion model;
-- connector synchronization and conflict resolution;
+- automated context-package generation and synchronization;
 - future Agent orchestration;
-- Workspace experience and role-specific views.
-
-These areas are intentionally not redesigned during the Command Center authority-establishment task.
-
-## Known evidence state
-
-- The STAR Command Center Project and `⭐ STAR Command Desk` were reported created by the user.
-- Their exact Project Instructions have not yet been verified from an authoritative source.
-- The three initial workstream statuses have not yet been verified for the portfolio ledger.
-- The minimum SWS durable records did not exist in GitHub before this task.
-- The records are now being established in Draft PR #2; this does not make SWS-001 complete, approved or frozen.
+- final role-specific Workspace views;
+- full Memory and Knowledge lifecycle beyond the current structured-memory baseline.
