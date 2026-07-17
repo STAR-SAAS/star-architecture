@@ -2,38 +2,41 @@
 
 | Mode | Primary use | Default context budget | Required freshness behavior | Escalate or switch when |
 |---|---|---|---|---|
-| Chat | clarification, decisions, concise status, lightweight drafting | smallest: context package + active decisions + current Work Status | verify only the operational facts used in the answer | sustained research, multi-file artifacts or repository implementation begins |
-| Work | research, analysis, document design, cross-source synthesis and professional review | medium: required manifest plus selected optional files | verify source metadata and load evidence progressively | code, tests, CI or repeated repository writes dominate |
-| Codex | code, repository files, tests, CI, structured GitHub execution | task-specific: context package + active decisions + Work Status + repository tree/diff/tests needed for the task | check branch, commit, PR and CI state before claiming current implementation | a product, governance or leadership decision is Missing |
+| Chat | clarification, decisions, concise status, lightweight drafting | smallest: entrypoint + active decisions + current Work Status | verify only operational facts used; compare required-file fingerprints where relevant | sustained research, multi-file artifacts or repository implementation begins |
+| Work | research, analysis, document design, cross-source synthesis and professional review | medium: required payload plus selected optional files | verify source metadata and changed required-file blobs; load evidence progressively | code, tests, CI or repeated repository writes dominate |
+| Codex | code, repository files, tests, CI, structured GitHub execution | task-specific: required payload + relevant tree/diff/tests | check branch, commit, required-file fingerprints, PR and CI before claiming current implementation | product, governance or leadership decision is Missing |
 
 ## Selection principles
 
-1. Select the mode by the dominant work, not by where the conversation happened to begin.
+1. Recommend or use the most suitable **available** mode according to dominant work.
 2. A brief mismatch warning is enough when work can continue safely.
-3. Mode does not grant authority; named humans remain accountable.
-4. Do not load the whole repository or full Decision Log by default.
-5. Load evidence only when the active task or conflict requires it.
-6. Switch modes without making the user repeat confirmed context; preserve the Contract and Handoff.
+3. Mode does not grant authority; named humans and authoritative records remain controlling.
+4. Direct mode switching and seamless context inheritance are Candidate and environment-dependent.
+5. Where direct transfer is unavailable, preserve the existing Contract and create a Handoff.
+6. Never require the user to repeat authoritative context merely because the mode changes.
+7. Do not load the whole repository or full Decision Log by default.
 
-## Token-budget strategy
+## Token tiers
 
-- **Tier 0 — Resume header:** scope ID, branch, commit, last verified time, objective, next action and blocker.
-- **Tier 1 — Required runtime set:** `CONTEXT_PACKAGE.md`, `ACTIVE_DECISIONS.md`, `WORK_STATUS.md`.
-- **Tier 2 — Conditional records:** Open Questions, active brief, policy, architecture or latest Handoff.
-- **Tier 3 — Evidence:** specific PR, issue, diff, test, research or historical Decision Log sections.
+- **Tier 0:** Scope ID, classification, branch, commit, required-file versions, objective, next action and blocker.
+- **Tier 1:** `CONTEXT_PACKAGE.md` entrypoint plus `ACTIVE_DECISIONS.md` and `WORK_STATUS.md` payload.
+- **Tier 2:** Open Questions, brief, policy, architecture or latest Handoff when triggered.
+- **Tier 3:** specific PR, issue, diff, test, research or Decision Log section.
 
-Start at the lowest tier that can safely answer or execute. Expand only on trigger.
+Start at the lowest tier that can safely answer or execute.
 
 ## Freshness strategy
 
-- Compare the context package's recorded branch and commit with the live source.
-- If unchanged, reuse the verified runtime set and avoid reloading history.
-- If changed, load changed required files first, then only affected optional records.
-- Mark unavailable live state as Unverified; mark an aged operational record as Stale.
-- Do not treat a recent file modification timestamp alone as proof that all content is current.
+- Branch unchanged: reuse the verified runtime package.
+- Branch changed but required-file blobs unchanged: package may remain Current.
+- Required-file blob changed: reload only that file.
+- Optional/evidence changes load only on trigger.
+- Context metadata-only changes do not trigger full reload.
+- Modification time alone is not proof of content freshness.
+- Unavailable live state is Unverified; aged required operational content is Stale.
 
 ## Examples
 
-- `continue M001`: Work loads the M001 required runtime set; switches to Codex only when the next action is implementation.
-- `summarize SAIG status`: Chat loads SAIG context package and Work Status; evidence is loaded only for disputed or recent facts.
-- `update the Command Desk ledger`: Chat verifies linked professional reports; Codex/GitHub workflow performs the repository update.
+- `continue M001`: conceptually resolves the M001 package and recommends Work or Codex from the next action; operational behavior remains Unverified until pilot evidence exists.
+- `summarize SAIG status`: Chat loads the private SAIG entrypoint and Work Status; sensitive evidence loads only when authorized and necessary.
+- `update the Command Desk ledger`: Chat verifies report-back sources; an available GitHub/Codex workflow performs repository writes. If transfer is unavailable, create a Handoff.
