@@ -41,7 +41,7 @@
 | **SWS-DEC-013** | Scope-level `CONTEXT_PACKAGE.md`, `ACTIVE_DECISIONS.md` and concise `WORK_STATUS.md` form the default runtime set. Loading is incremental by branch, required-file version and freshness metadata; whole-repository and full-history loading are not default. | Leadership-confirmed basis; proposed record version in PR #3; not frozen | Runtime context loading | Additional confirmed requirement in DSP-001-004 |
 | **SWS-DEC-014** | The repository containing the SWS-001 portfolio ledger was subsequently transferred from `STARSAAS/star-architecture` to `STAR-SAAS/star-architecture`. The portfolio-ledger governance intent of SWS-DEC-006 remains active; only the repository-location identity is corrected, and the original confirmed decision remains historically visible. | Leadership-confirmed repository-state correction; proposed record version in PR #3; not frozen | SWS-001 / STAR Command Center pilot | Repository transfer verified after SWS-DEC-006; does not silently rewrite SWS-DEC-006 |
 | **SWS-DEC-015** | Leadership approves the pre-start role matrices, controlled role-overlap exception, candidate locations and safety boundaries for SWS Pilot Packages A, B and C. Package A uses the existing private `STAR-SAAS/star-ai-governance` repository with Internal-only classification and no raw Confidential/Restricted data; Package B uses the approved Pilot Candidate Alias and M001 package paths; Package C uses the approved Command Desk context paths and Safe Ledger Update method. Allen Liao may hold maintainer and execution-owner roles for these three Packages only until Pilot closure, while Dorden remains the independent professional reviewer. These approvals do not start any Package, create any file, change access, update the Ledger, activate automation or authorize SmartQuote Delivery. | Leadership-approved startup conditions; implementation Missing; not a Pilot start authorization | SWS Pilot Packages A, B and C | DSP-001-015; approved by Jason Lin; overlap expires at Pilot closure and is reviewed on Package completion, role/access change, material finding or Pilot closure |
-| **SWS-DEC-016** | Leadership confirms the GitHub identity bindings and the next-stage preparation controls for SWS Pilot Packages A, B and C. The normal publishing model remains Robin Koh through `rkoh-star`, with Allen Liao as human execution owner, Dorden as independent professional reviewer through `zhuangdongdong`, and Jason Lin as report-back approver through `STARSAAS`. For DSP-001-018 only, Jason Lin is authorized to use `STARSAAS` to create the dedicated branch, commits and Draft PR because the connected environment is authenticated only as `STARSAAS`; Robin Koh remains the authorized publishing maintainer. Package A receives its formal private directory, retention/review ownership and future minimum Read/access-test authorization; Package B receives its Alias authority, control rules and isolated test environment; Package C selects DSP-003-004 as the future PORT-003 Safe Ledger Update input. These decisions close governance-design gaps only and do not start any Package, change permissions, create Package files, run `continue M001`, update the Ledger/freshness, activate policy or authorize SmartQuote Delivery. | Leadership-approved next-stage preparation; runtime remains Blocked; not a Package start authorization | SWS Pilot Packages A, B and C | DSP-001-018; one-time publishing exception expires on PR merge or Dispatch closure and creates no lasting role, permission or governance-model change |
+| **SWS-DEC-016** | Leadership confirms the GitHub identity bindings and the next-stage preparation controls for SWS Pilot Packages A, B and C. The normal publishing model remains Robin Koh through `rkoh-star`, with Allen Liao as human execution owner, Dorden as independent professional reviewer through `zhuangdongdong`, and Jason Lin as report-back approver through `STARSAAS`. For DSP-001-018 only, Jason Lin is authorized to use `STARSAAS` to create the dedicated branch, commits and Draft PR because the connected environment is authenticated only as `STARSAAS`; Robin Koh remains the authorized publishing maintainer. Package A's accurate Internal private location and future file scope are leadership-approved but excluded from public SWS; the public record retains only approval status, ownership, classification, opaque-reference status and safe implementation summary. Package B receives its Alias authority, control rules and isolated test environment; Package C selects DSP-003-004 as the future PORT-003 Safe Ledger Update input. These decisions close governance-design gaps only and do not start any Package, change permissions, create Package files, run `continue M001`, update the Ledger/freshness, activate policy or authorize SmartQuote Delivery. | Leadership-approved next-stage preparation; runtime remains Blocked; not a Package start authorization | SWS Pilot Packages A, B and C | DSP-001-018; one-time publishing exception expires on PR merge or Dispatch closure and creates no lasting role, permission or governance-model change |
 
 ## SWS-DEC-015 approved role matrices and boundaries
 
@@ -125,14 +125,24 @@ The exception permits Jason Lin / `STARSAAS` only to create the DSP-001-018 bran
 
 ### Package A — approved next-stage preparation
 
-- formal private directory: `09-operations/context-packages/sws-package-a/`;
-- future files: `CONTEXT_PACKAGE.md`, `ACTIVE_DECISIONS.md`, `WORK_STATUS.md`, `REFERENCE_MAP.md`;
-- `retention_owner: Robin Koh`;
-- `review_owner: Dorden`;
-- `classification: Internal`;
-- future grant of minimum necessary Read on `STAR-SAAS/star-ai-governance` to `zhuangdongdong` is approved but not executed;
+```yaml
+private_location_status:
+  leadership_approved: true
+  recorded_in_public_sws: false
+  authoritative_private_record: Pending implementation in SAIG
+classification: Internal
+retention_owner: Robin Koh
+review_owner: Dorden
+public_reference_id: Pending runtime allocation
+```
+
+Package A's accurate Internal private location and future file scope are leadership-approved. Accurate location and file details may be recorded only in the private SAIG authoritative source. Public SWS retains only approval status, owners, classification, opaque-reference status and a safe implementation summary.
+
+- future minimum necessary Read for `zhuangdongdong` is approved but not executed;
 - a future private-source access test using purely synthetic data is approved but not executed;
 - no Package A file is created and Wave A, Employee AI Use Policy and SAIG PILOT-001 remain inactive.
+
+Public-record control from SWS-DEC-016 onward uses opaque references and safe summaries for private Package A sources. Earlier public historical records, including SWS-DEC-015 text, are not silently rewritten by this correction. Their classification remediation requires a separately authorized governance action.
 
 ### Package B — approved next-stage preparation
 
