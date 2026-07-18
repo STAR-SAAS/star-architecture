@@ -9,8 +9,9 @@ conversation: 🚀 Mission-001 · SmartQuote Foundation
 repository: STAR-SAAS/star-architecture
 authoritative_branch: agent/star-os-product-delivery-baseline
 package_branch: agent/sws-pilot-package-b-m001-context
-source_snapshot_commit: fb66ee5b462cedc48e56ac2fb61f3f07682b70e9
-last_verified_at: 2026-07-18T12:45:00+08:00
+integrity_repair_branch: agent/dsp-003-006-restore-m001-work-status
+source_snapshot_commit: 519c8df381bd5615614ae95b7d1e510d177fabdb
+last_verified_at: 2026-07-18 (Asia/Singapore)
 freshness: Current
 classification: Public
 repository_visibility: public
@@ -20,7 +21,7 @@ sensitive_fields_redacted: true
 evidence_access_boundary: Public-safe governance and Mission summaries only
 content_preparation_owner: Allen Liao
 independent_review_owner: Dorden
-context_generation: 3
+context_generation: 4
 entrypoint: CONTEXT_PACKAGE.md
 alias_registry:
   path: docs/sws/PILOT_ALIAS_REGISTRY.md
@@ -32,11 +33,11 @@ required_file_versions:
   ACTIVE_DECISIONS.md:
     version: v0.1.0
     expected_blob_sha: 85b37af0b41cfcae4bf52576246b5306feb76dfa
-    verified_at: 2026-07-18T12:45:00+08:00
+    verified_at: 2026-07-18 (Asia/Singapore)
   WORK_STATUS.md:
-    version: v0.2.1
-    expected_blob_sha: 79dd683f91221ed105d467114b1a29de5df2ce1f
-    verified_at: 2026-07-18T12:45:00+08:00
+    version: v0.3.0
+    expected_blob_sha: 7ec87d78cffcf0c710e2cc1d7ef74a4e661370b6
+    verified_at: 2026-07-18 (Asia/Singapore)
 optional_files:
   - MISSION_BRIEF.md
   - DECISION_LOG.md
@@ -50,12 +51,12 @@ optional_files:
 - **Current state:** Candidate — Baseline Confirmed; not Committed.
 - **Mission Owner:** Robin.
 - **Product / Service Owner:** Jason Lin.
-- **Current task:** SWS Pilot Package B controlled context-recovery validation.
-- **Package B test result:** Passed with findings; independent review pending.
-- **Next Mission action:** name M1 participants and conduct the cross-functional walkthrough.
-- **Primary Mission blocker:** required M1 participants, especially the business acceptance representative, remain Missing.
+- **Package B result:** Passed with findings; real `continue M001` evidence remains valid.
+- **Current Mission action:** confirm M1 participants and conduct the cross-functional walkthrough.
+- **Primary Mission blocker:** required M1 participants, especially the business acceptance representative and Architecture / technical authority, remain Missing.
 - **Leadership decision required for formal delivery:** M1 must pass and leadership must explicitly authorize commitment.
 - **SmartQuote Delivery:** Not started.
+- **Integrity status:** DSP-003-006 restores the complete Work Status and closes the current fingerprints; it does not alter Alias, Scope, active decisions, required-file set or recovery semantics.
 
 ## Package ownership and operational exception
 
@@ -73,11 +74,11 @@ report_back_approver: Jason Lin
 operational_exception:
   approved: true
   authenticated_account: STARSAAS
-  scope: DSP-003-005 only
+  scope: DSP-003-006 only
   expiry: child PR merge or Dispatch closure
 ```
 
-Allen Liao's roles are limited to maintenance coordination, human execution and content preparation. They do not create Repository Write, publishing, approval or merge authority. Dorden owns independent review. Robin Koh / `rkoh-star` remains the normal authorized publishing maintainer. No repository permissions are changed by this Package.
+Allen Liao's roles are limited to maintenance coordination, human execution and content preparation. They do not create Repository Write, publishing, approval or merge authority. Dorden owns independent review. Robin Koh / `rkoh-star` remains the normal authorized publishing maintainer. No repository permissions are changed by this repair.
 
 ## Loading and fingerprint rules
 
@@ -106,16 +107,15 @@ Stop and mark `Blocked` when:
 Recovery record:
 
 ```yaml
-current_status: Blocked
-prior_state: Bootstrapped
-last_verified_commit: fb66ee5b462cedc48e56ac2fb61f3f07682b70e9
+current_status: Bootstrapped
+last_verified_commit: 519c8df381bd5615614ae95b7d1e510d177fabdb
 recovery_owner: Allen Liao
 independent_review_owner: Dorden
 approval_owner: Jason Lin
 handoff_required: true
 ```
 
-`recovery_owner` means human recovery coordination and content preparation only; it does not grant Repository Write, publishing, approval or merge authority. After correction, return to the recorded prior state; do not infer Active or Passed.
+`recovery_owner` means human recovery coordination and content preparation only; it does not grant Repository Write, publishing, approval or merge authority. After a verified correction, preserve the last verified Mission state; do not infer M1 Passed, Committed or Delivery started.
 
 ## Resume-test expected result
 
@@ -131,6 +131,10 @@ A valid `continue M001` recovery must state:
 - SmartQuote Delivery has not started;
 - user history reconstruction is not required.
 
+## Retest decision
+
+A new real platform test is not required for DSP-003-006 because the repair restores record completeness and refreshes fingerprints without changing Alias, Scope, required-file set, active decisions or recovery semantics. The existing `RESUME_TEST_EVIDENCE.md` remains the authoritative real-test evidence.
+
 ## Independent gates
 
-Package B is context-recovery evidence only. It does not pass M1, authorize Mission commitment, start SmartQuote Delivery, approve production release, or modify product scope or architecture.
+Package B and this integrity repair are context-governance evidence only. They do not pass M1, authorize Mission commitment, start SmartQuote Delivery, approve production release, or modify product scope or architecture.
