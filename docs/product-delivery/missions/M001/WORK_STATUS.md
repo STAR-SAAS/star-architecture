@@ -47,7 +47,8 @@ Prepare and pass the M1 cross-functional walkthrough without starting formal imp
 | **Authenticated publishing account** | `STARSAAS` under a leadership-approved operational exception |
 | **Exception scope** | DSP-003-005 only |
 | **Exception expiry** | Child PR merge or Dispatch closure |
-| **Test result** | Passed with findings — see `RESUME_TEST_EVIDENCE.md` |\n| **Formal delivery effect** | None — does not pass M1, commit M001 or start SmartQuote Delivery |
+| **Test result** | Passed with findings — see `RESUME_TEST_EVIDENCE.md` |
+| **Formal delivery effect** | None — does not pass M1, commit M001 or start SmartQuote Delivery |
 
 ### Completed Package B preparation and verification
 
@@ -57,7 +58,8 @@ Prepare and pass the M1 cross-functional walkthrough without starting formal imp
 - validated deterministic unique resolution and collision-stop behavior in an isolated local harness;
 - validated migration, deprecation, tombstone and Pilot-exit rules;
 - validated metadata-only refresh, partial reload, runtime-package reload and stop/recovery decisions;
-- preserved the boundary against M1, Mission commitment and SmartQuote Delivery activation;\n- executed the platform-level `continue M001` test in ChatGPT Web / STAR OS / Work and recorded exact resolution, fingerprint, file-load and self-review evidence.
+- preserved the boundary against M1, Mission commitment and SmartQuote Delivery activation;
+- executed the platform-level `continue M001` test in ChatGPT Web / STAR OS / Work and recorded exact resolution, fingerprint, file-load and self-review evidence.
 
 ### Platform test result and remaining review gate
 
