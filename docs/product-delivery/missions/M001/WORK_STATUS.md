@@ -2,16 +2,16 @@
 
 | Field | Value |
 |---|---|
-| **Version / status** | v0.3.0 — Candidate — Baseline Confirmed; not Committed |
+| **Version / status** | v0.2.0 — Candidate — Baseline Confirmed; not Committed |
 | **Mission Owner** | Robin |
 | **Product / Service Owner** | Jason Lin |
-| **Updated / last reviewed** | 2026-07-18T12:10:10+08:00 |
+| **Updated / last reviewed** | 2026-07-17T19:10:39+08:00 |
 | **Authoritative working source** | Draft PR #1 on `agent/star-os-product-delivery-baseline`; Package B child PR is a review-only proposal |
 | **Review trigger** | Material decision, milestone change, blocker change, walkthrough result, Package B result, evidence update or routing decision |
 
 ## Current objective
 
-Prepare and pass the M1 cross-functional walkthrough without starting formal implementation or expanding the approved first-stage boundary. SWS Pilot Package B has executed the platform-level controlled context-recovery test; independent review and Report Back remain.
+Prepare and pass the M1 cross-functional walkthrough without starting formal implementation or expanding the approved first-stage boundary. In parallel, SWS Pilot Package B is testing whether M001 context can be reconstructed from controlled records without user history reconstruction.
 
 ## Current actual state
 
@@ -38,7 +38,7 @@ Prepare and pass the M1 cross-functional walkthrough without starting formal imp
 |---|---|
 | **Dispatch** | DSP-003-005 |
 | **Package purpose** | Controlled Context Package and `continue M001` resume-test evidence |
-| **Package lifecycle state** | Review — platform resume test Passed with findings; final Exact Head pending Dorden |
+| **Package lifecycle state** | Blocked after all executable repository/static checks |
 | **Prior state** | Bootstrapped |
 | **Accountable owner / Alias owner** | Robin |
 | **Maintainer / human execution owner** | Allen Liao |
@@ -47,7 +47,6 @@ Prepare and pass the M1 cross-functional walkthrough without starting formal imp
 | **Authenticated publishing account** | `STARSAAS` under a leadership-approved operational exception |
 | **Exception scope** | DSP-003-005 only |
 | **Exception expiry** | Child PR merge or Dispatch closure |
-| **Test result** | Passed with findings — see `RESUME_TEST_EVIDENCE.md` |
 | **Formal delivery effect** | None — does not pass M1, commit M001 or start SmartQuote Delivery |
 
 ### Completed Package B preparation and verification
@@ -58,19 +57,14 @@ Prepare and pass the M1 cross-functional walkthrough without starting formal imp
 - validated deterministic unique resolution and collision-stop behavior in an isolated local harness;
 - validated migration, deprecation, tombstone and Pilot-exit rules;
 - validated metadata-only refresh, partial reload, runtime-package reload and stop/recovery decisions;
-- preserved the boundary against M1, Mission commitment and SmartQuote Delivery activation;
-- executed the platform-level `continue M001` test in ChatGPT Web / STAR OS / Work and recorded exact resolution, fingerprint, file-load and self-review evidence.
+- preserved the boundary against M1, Mission commitment and SmartQuote Delivery activation.
 
-### Platform test result and remaining review gate
+### Single remaining Package B blocker
 
-The platform-level `continue M001` test completed with **Passed with findings**. Exact Alias resolution, authoritative branch Head, required-file fingerprints, recovered constraints, Remaining Missing and non-activation boundaries all passed.
+**A separately launchable blank ChatGPT Web / STAR OS / Work conversation is not available through the current execution tools.** Therefore the deterministic isolated reconstruction harness is complete, but the requested platform-level `continue M001` session remains operationally Unverified and Package B cannot be marked Passed.
 
-Two non-blocking findings are recorded in `RESUME_TEST_EVIDENCE.md`:
-
-1. the minimal user prompt ran with partial Project-provided context, so strict blank-context purity is not independently provable; controlled GitHub records were used as the only authority;
-2. the runtime exposed no exact model tokenizer, so exact character and UTF-8 byte counts were recorded without inferring a token count.
-
-Dorden's independent review of the final Exact Head remains mandatory. This child PR must stay Draft and must not merge until that review is complete unless leadership explicitly defers it.
+**Recovery owner:** Allen Liao  
+**Recovery action:** use an approved blank ChatGPT Web Work conversation in the `STAR OS` Project, enter `continue M001`, resolve the committed child-PR records, capture the exact output and tool/file-load evidence, then submit the final Exact Head to Dorden.
 
 ## Next three Mission actions
 
@@ -107,4 +101,4 @@ Dorden's independent review of the final Exact Head remains mandatory. This chil
 ## Current readiness recommendations
 
 - **M1 walkthrough execution:** Not Ready; required participant names remain unresolved.
-- **Package B:** Platform resume test Passed with findings; final Exact Head and evidence are pending Dorden's independent review. The child PR must remain Draft and unmerged until that review is complete unless leadership explicitly defers it.
+- **Package B:** Blocked only on the unavailable separately launchable blank ChatGPT Web Work session. Repository artifacts and deterministic control tests may proceed to Dorden review, but the child PR must not merge until Dorden reviews the final Exact Head and the platform test is either completed or explicitly deferred by leadership.
