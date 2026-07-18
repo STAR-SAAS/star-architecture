@@ -5,13 +5,14 @@
 | **Registry status** | Pilot Candidate — DSP-003-005 controlled implementation |
 | **Repository / branch** | `STAR-SAAS/star-architecture` / `agent/sws-pilot-package-b-m001-context` |
 | **Alias owner** | Robin |
-| **Write authority** | Allen Liao, limited to the approved Package B Alias entry and Pilot lifecycle |
+| **Human execution / content preparation responsibility** | Allen Liao — prepares controlled Package B content and evidence only; this does not grant Repository Write, publishing, approval or merge authority |
+| **Normal authorized publishing maintainer** | Robin Koh / `rkoh-star` |
 | **Modification approver** | Jason Lin |
 | **Independent reviewer** | Dorden |
 | **Authenticated publishing account** | `STARSAAS` under leadership-approved operational exception |
 | **Exception scope** | DSP-003-005 only |
 | **Exception expiry** | Child PR merge or Dispatch closure |
-| **Last verified** | 2026-07-17T19:10:39+08:00 |
+| **Last verified** | 2026-07-18 (Asia/Singapore) |
 
 ## Active entries
 
@@ -41,23 +42,25 @@ On collision:
 2. set the affected Package state to `Blocked`;
 3. preserve the last verified Registry commit and blob SHA;
 4. record the conflicting entries and authoritative sources;
-5. Allen Liao prepares the smallest correction;
+5. Allen Liao prepares the smallest correction as human execution / content preparation work only;
 6. Robin confirms the correct M001 Scope;
 7. Dorden performs independent review;
 8. Jason Lin approves the modification;
-9. restore the prior lifecycle state only after verified correction.
+9. Robin Koh / `rkoh-star`, or an explicitly approved operational exception account, performs authorized publishing;
+10. restore the prior lifecycle state only after verified correction.
 
 AI must not choose a likely mapping.
 
 ## Modification workflow
 
 1. Robin proposes or confirms the M001 Alias meaning.
-2. Allen Liao prepares a minimal change on a dedicated child branch.
+2. Allen Liao prepares a minimal content correction and evidence package; this does not grant Repository Write, publishing, approval or merge authority.
 3. The change records old value, new value, reason, actor, source, timestamp and recovery point.
 4. Dorden independently reviews uniqueness, provenance, collision handling and non-target impact.
 5. Robin confirms the resulting M001 Scope mapping.
 6. Jason Lin approves the modification and Report Back.
-7. The approved change may be merged only after all required gates are satisfied.
+7. Robin Koh / `rkoh-star`, or an explicitly approved operational exception account, performs authorized publishing.
+8. The approved change may be merged only after all required gates are satisfied.
 
 ## Migration, deprecation and exit
 
@@ -68,4 +71,4 @@ AI must not choose a likely mapping.
 
 ## Authority boundary
 
-This Registry does not pass M1, mark M001 Committed, authorize SmartQuote Delivery, approve product scope or architecture, or replace the authoritative M001 Decision Log and Work Status.
+This Registry does not grant Allen Liao Repository Write, publishing, approval or merge authority. It does not pass M1, mark M001 Committed, authorize SmartQuote Delivery, approve product scope or architecture, or replace the authoritative M001 Decision Log and Work Status.
