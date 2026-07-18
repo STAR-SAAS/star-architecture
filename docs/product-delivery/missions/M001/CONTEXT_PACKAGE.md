@@ -10,7 +10,7 @@ repository: STAR-SAAS/star-architecture
 authoritative_branch: agent/star-os-product-delivery-baseline
 package_branch: agent/sws-pilot-package-b-m001-context
 source_snapshot_commit: fb66ee5b462cedc48e56ac2fb61f3f07682b70e9
-last_verified_at: 2026-07-18T12:30:00+08:00
+last_verified_at: 2026-07-18T12:45:00+08:00
 freshness: Current
 classification: Public
 repository_visibility: public
@@ -18,12 +18,13 @@ permitted_audience: STAR team and approved reviewers
 public_summary_allowed: true
 sensitive_fields_redacted: true
 evidence_access_boundary: Public-safe governance and Mission summaries only
-retention_or_review_owner: Allen Liao
-context_generation: 2
+content_preparation_owner: Allen Liao
+independent_review_owner: Dorden
+context_generation: 3
 entrypoint: CONTEXT_PACKAGE.md
 alias_registry:
   path: docs/sws/PILOT_ALIAS_REGISTRY.md
-  expected_blob_sha: 7c08534d80efc1dc51fead13e775e3731458b98e
+  expected_blob_sha: f1a45c16260aae4a6b29b6c8ba4d795d16eda3d6
 required_files:
   - ACTIVE_DECISIONS.md
   - WORK_STATUS.md
@@ -31,11 +32,11 @@ required_file_versions:
   ACTIVE_DECISIONS.md:
     version: v0.1.0
     expected_blob_sha: 85b37af0b41cfcae4bf52576246b5306feb76dfa
-    verified_at: 2026-07-18T12:30:00+08:00
+    verified_at: 2026-07-18T12:45:00+08:00
   WORK_STATUS.md:
     version: v0.2.1
     expected_blob_sha: 79dd683f91221ed105d467114b1a29de5df2ce1f
-    verified_at: 2026-07-18T12:30:00+08:00
+    verified_at: 2026-07-18T12:45:00+08:00
 optional_files:
   - MISSION_BRIEF.md
   - DECISION_LOG.md
@@ -63,9 +64,10 @@ accountable_owner: Robin
 alias_owner: Robin
 maintainer: Allen Liao
 human_execution_owner: Allen Liao
-authorized_publishing_maintainer: Robin Koh
+content_preparation_owner: Allen Liao
+normal_authorized_publishing_maintainer: Robin Koh
 normal_publishing_github_account: rkoh-star
-independent_reviewer: Dorden
+independent_review_owner: Dorden
 modification_approver: Jason Lin
 report_back_approver: Jason Lin
 operational_exception:
@@ -75,7 +77,7 @@ operational_exception:
   expiry: child PR merge or Dispatch closure
 ```
 
-No repository permissions are changed by this Package.
+Allen Liao's roles are limited to maintenance coordination, human execution and content preparation. They do not create Repository Write, publishing, approval or merge authority. Dorden owns independent review. Robin Koh / `rkoh-star` remains the normal authorized publishing maintainer. No repository permissions are changed by this Package.
 
 ## Loading and fingerprint rules
 
@@ -108,12 +110,12 @@ current_status: Blocked
 prior_state: Bootstrapped
 last_verified_commit: fb66ee5b462cedc48e56ac2fb61f3f07682b70e9
 recovery_owner: Allen Liao
-independent_reviewer: Dorden
+independent_review_owner: Dorden
 approval_owner: Jason Lin
 handoff_required: true
 ```
 
-After correction, return to the recorded prior state; do not infer Active or Passed.
+`recovery_owner` means human recovery coordination and content preparation only; it does not grant Repository Write, publishing, approval or merge authority. After correction, return to the recorded prior state; do not infer Active or Passed.
 
 ## Resume-test expected result
 
