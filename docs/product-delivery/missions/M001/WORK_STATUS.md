@@ -2,7 +2,7 @@
 
 | Field | Value |
 |---|---|
-| **Version / status** | v0.2.0 — Candidate — Baseline Confirmed; not Committed |
+| **Version / status** | v0.3.0 — Candidate — Baseline Confirmed; not Committed |
 | **Mission Owner** | Robin |
 | **Product / Service Owner** | Jason Lin |
 | **Updated / last reviewed** | 2026-07-17T19:10:39+08:00 |
