@@ -2,8 +2,9 @@
 
 | Field | Value |
 |---|---|
-| **Version / status** | v0.2.1 — Candidate — Baseline Confirmed; not Committed |
+| **Version / status** | v0.3.0 — Candidate — Baseline Confirmed; not Committed |
+| **Portfolio / Mission** | `PORT-003 · Mission-001 · SmartQuote Foundation` |
+| **Primary Alias** | `M001` |
 | **Mission Owner** | Robin |
 | **Product / Service Owner** | Jason Lin |
-| **Updated / last reviewed** | 2026-07-18 (Asia/Singapore) |
-| **Authoritative working source** | Draft PR #1 on `agent/star-os-product-delivery-baseline`; Package B
+| **Updated
