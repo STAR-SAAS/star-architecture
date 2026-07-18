@@ -10,7 +10,7 @@ repository: STAR-SAAS/star-architecture
 authoritative_branch: agent/star-os-product-delivery-baseline
 package_branch: agent/sws-pilot-package-b-m001-context
 source_snapshot_commit: fb66ee5b462cedc48e56ac2fb61f3f07682b70e9
-last_verified_at: 2026-07-17T19:10:39+08:00
+last_verified_at: 2026-07-18T12:30:00+08:00
 freshness: Current
 classification: Public
 repository_visibility: public
@@ -19,7 +19,7 @@ public_summary_allowed: true
 sensitive_fields_redacted: true
 evidence_access_boundary: Public-safe governance and Mission summaries only
 retention_or_review_owner: Allen Liao
-context_generation: 1
+context_generation: 2
 entrypoint: CONTEXT_PACKAGE.md
 alias_registry:
   path: docs/sws/PILOT_ALIAS_REGISTRY.md
@@ -31,15 +31,16 @@ required_file_versions:
   ACTIVE_DECISIONS.md:
     version: v0.1.0
     expected_blob_sha: 85b37af0b41cfcae4bf52576246b5306feb76dfa
-    verified_at: 2026-07-17T19:10:39+08:00
+    verified_at: 2026-07-18T12:30:00+08:00
   WORK_STATUS.md:
-    version: v0.2.0
-    expected_blob_sha: a19d4bb324c23a787e8222d5374699628d2d97a2
-    verified_at: 2026-07-17T19:10:39+08:00
+    version: v0.2.1
+    expected_blob_sha: 79dd683f91221ed105d467114b1a29de5df2ce1f
+    verified_at: 2026-07-18T12:30:00+08:00
 optional_files:
   - MISSION_BRIEF.md
   - DECISION_LOG.md
   - WALKTHROUGH_PREPARATION.md
+  - RESUME_TEST_EVIDENCE.md
 ```
 
 ## Runtime summary
@@ -49,6 +50,7 @@ optional_files:
 - **Mission Owner:** Robin.
 - **Product / Service Owner:** Jason Lin.
 - **Current task:** SWS Pilot Package B controlled context-recovery validation.
+- **Package B test result:** Passed with findings; independent review pending.
 - **Next Mission action:** name M1 participants and conduct the cross-functional walkthrough.
 - **Primary Mission blocker:** required M1 participants, especially the business acceptance representative, remain Missing.
 - **Leadership decision required for formal delivery:** M1 must pass and leadership must explicitly authorize commitment.
