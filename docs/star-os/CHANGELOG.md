@@ -1,5 +1,19 @@
 # STAR OS Global Governance Changelog
 
+## [0.1.1] — 2026-07-19
+
+### Added
+
+- `GDEC-0012` — Architecture-First Founder-led Fast Track Covenant.
+- `docs/programs/pdap/` as the authoritative STAR Pre-Development Architecture Program record set.
+- PDAP Master Program, Architecture Readiness Gates, Readiness Matrix and runtime Context Package.
+
+### Boundaries
+
+- No technology stack, product architecture, Architecture Gate, M1, Product Commitment, Shared Foundation engineering start, SmartQuote Delivery or GateHub Delivery is approved by this change.
+- Specialist participation remains minimum-necessary and question-specific.
+- Target dates remain targets rather than automatic authorization.
+
 ## [0.1.0] — 2026-07-13
 
 ### Added
