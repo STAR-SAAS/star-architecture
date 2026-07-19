@@ -3,15 +3,21 @@
 - PDAP Founder-led Fast Track is leadership confirmed.
 - Jason Lin is Accountable Owner and Decision Approver.
 - Jason Lin with approved AI capabilities is the default pre-development execution model.
-- Other employees or specialists participate only for a clearly defined question and with minimum-necessary scope, evidence and duration.
-- From 2026-07-19 through 2026-07-26, Jason Lin with approved AI capabilities will continue PDAP pre-development work without assigning execution tasks to Dorden, Robin or Allen. They will review only the consolidated conclusions when requested by Jason Lin.
-- Dorden independently reviews the PDAP authority package and final Exact Head publication integrity only; this review may be deferred during the temporary founder-led week and does not block read-only Phase 0 preparation.
+- From 2026-07-19 through 2026-07-26, no execution task is assigned to Dorden, Robin or Allen; they review only consolidated conclusions when requested.
+- Dorden reviews PDAP governance and final publication integrity only and is not the sole professional reviewer.
 - Allen enters execution coordination only after explicit Product Commitment and Delivery start.
-- Approved target starts are: Phase 0 on 2026-07-20; Shared Foundation engineering on 2026-07-27; SmartQuote formal development on 2026-08-03; GateHub formal development on 2026-08-10.
+- Approved target starts remain: Shared Foundation engineering 2026-07-27; SmartQuote formal development 2026-08-03; GateHub formal development 2026-08-10.
 - Target dates are not automatic Gate passage, Commitment or development authorization.
+- Shared Foundation uses an engineering-foundation-first boundary; shared business capabilities require demonstrated stable cross-product need.
+- Merchant ownership is layered across Merchant Identity, Commercial Profile, Onboarding/KYC, Quote Reference and Operational Account; unresolved owners remain explicit.
+- Identity/Tenant/Security minimum boundaries are approved as design inputs, not final architecture.
+- `STAR-SAAS/star-platform` is a Candidate Shared Foundation engineering repository; it is not ready and engineering start is not authorized.
+- GateHub has an approved Candidate authority baseline and must not inherit SmartQuote architecture automatically.
+- AA-01 through AA-04 are approved until their stated expiry or applicable Gate disposition.
+- AA-05 and AA-06 remain Candidate and are not approved for use.
+- Ka Chen is a Shared Foundation application engineering owner candidate; Eric is a platform/infrastructure/operations owner candidate. These are not task assignments or engineering authorization.
 - Only high-cost difficult-to-reverse decisions, cross-product architecture conflicts, core data ownership, Identity/Tenant/Security boundaries, legal/compliance/material risk, or technical questions that cannot advance safely through an Approved Assumption may block a target.
 - Reversible matters use an Approved Assumption or enter an ADR/RFC backlog.
 - Every PDAP Dispatch must map to a Phase, Gate, target date, accountable owner, executor and evidence requirement.
 - Work that bypasses a Gate returns to STAR Command Desk.
-- A delay must identify blocker, owner, decision or closure date, recovery plan and revised target.
 - This record does not approve a technology stack, product architecture, engineering start, M1, Product Commitment, SmartQuote Delivery or GateHub Delivery.
