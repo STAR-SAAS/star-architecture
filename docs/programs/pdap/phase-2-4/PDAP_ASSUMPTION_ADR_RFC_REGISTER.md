@@ -8,13 +8,15 @@
 | AA-02 | Product ownership by default | Approved temporary | 2026-07-31 or Gate 4 |
 | AA-03 | SmartQuote internal API may precede external platform selection | Approved temporary | 2026-07-31 or Gate 2 |
 | AA-04 | GateHub independent authority | Approved temporary | 2026-07-31 or Gate 3 |
+| AA-05 | Technology-neutral observability outcomes for bounded Gate 1 use | Approved temporary | 2026-08-07 or RFC-PLT-007 approval, whichever occurs first |
+| AA-06 | Tool-neutral CI quality-control outcomes for bounded Gate 1 use | Approved temporary | 2026-08-07 or RFC-PLT-004 approval, whichever occurs first |
 
 Each assumption retains owner, scope, rationale, risk, validation trigger, expiry and reversal path.
 
+AA-05 requires structured logs, correlation, health, failure visibility, redaction and minimum audit evidence. AA-06 requires repeatable build, unit test, lint/static check, secret check, dependency visibility, artifact identity and explicit pass/fail evidence. Neither assumption authorizes implementation, Gate passage, engineering start or an evidence-free merge.
+
 ## Candidate assumptions — not approved for use
 
-- AA-05: technology-neutral observability outcome;
-- AA-06: tool-neutral CI quality-control outcome;
 - AA-07: product-local persistence first;
 - AA-08: GateHub first slice excludes transaction routing as an assumption; the exclusion itself is already an approved first-stage boundary;
 - AA-09: Merchant Identity may initially be a stable reference contract.
