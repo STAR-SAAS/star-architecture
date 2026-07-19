@@ -3,12 +3,12 @@
 | Field | Value |
 |---|---|
 | **Document ID** | SWS-001 |
-| **Version / status** | v0.2.1 — Confirmed working baseline; not frozen; PR #3 re-review pending |
+| **Version / status** | v0.2.2 — Confirmed working baseline; not frozen; tooling-access baseline added |
 | **Owner** | STAR leadership |
 | **Maintainer** | STAR Architecture maintainers |
-| **Last reviewed** | 2026-07-17 (Asia/Singapore) |
-| **Review trigger** | Workspace architecture change, pilot finding, source-of-truth failure, context-loading failure or freeze proposal |
-| **Authoritative working source** | Draft PR #2; PR #3 remains a proposed record version until merged into that branch |
+| **Last reviewed** | 2026-07-19 (Asia/Singapore) |
+| **Review trigger** | Workspace architecture change, pilot finding, source-of-truth failure, context-loading failure, access-boundary change or freeze proposal |
+| **Authoritative working source** | Draft PR #2 working branch; child Draft PR records become authoritative after merge into `agent/star-os-global-working-rules` |
 | **Scope** | STAR OS platform-level workspace and conversation architecture |
 | **Access** | Public architecture baseline; sensitive operational records remain in approved private systems |
 
@@ -55,33 +55,36 @@ Waiting and Blocked are interrupt states with recorded recovery to the prior sta
 3. [`03_WORK_STATUS.md`](03_WORK_STATUS.md)
 4. [`04_COMMAND_CENTER_MINIMUM_LAUNCH_SPECIFICATION.md`](04_COMMAND_CENTER_MINIMUM_LAUNCH_SPECIFICATION.md)
 5. [`command-center/STAR-PORTFOLIO-STATUS.md`](command-center/STAR-PORTFOLIO-STATUS.md)
+6. [`GIT_GITHUB_CODEX_ACCESS_BASELINE.md`](GIT_GITHUB_CODEX_ACCESS_BASELINE.md)
 
 ### Conversation governance
 
-6. [`STAR_CONVERSATION_GOVERNANCE.md`](STAR_CONVERSATION_GOVERNANCE.md)
-7. [`STAR_CONVERSATION_CONTRACT_TEMPLATE.md`](STAR_CONVERSATION_CONTRACT_TEMPLATE.md)
-8. [`STAR_CONVERSATION_ROUTING_MATRIX.md`](STAR_CONVERSATION_ROUTING_MATRIX.md)
-9. [`STAR_CHAT_WORK_CODEX_MODE_SELECTION.md`](STAR_CHAT_WORK_CODEX_MODE_SELECTION.md)
-10. [`STAR_LAYERED_MEMORY_AND_CONTEXT_LOADING.md`](STAR_LAYERED_MEMORY_AND_CONTEXT_LOADING.md)
-11. [`STAR_CONTEXT_PACKAGE_TEMPLATE.md`](STAR_CONTEXT_PACKAGE_TEMPLATE.md)
+7. [`STAR_CONVERSATION_GOVERNANCE.md`](STAR_CONVERSATION_GOVERNANCE.md)
+8. [`STAR_CONVERSATION_CONTRACT_TEMPLATE.md`](STAR_CONVERSATION_CONTRACT_TEMPLATE.md)
+9. [`STAR_CONVERSATION_ROUTING_MATRIX.md`](STAR_CONVERSATION_ROUTING_MATRIX.md)
+10. [`STAR_CHAT_WORK_CODEX_MODE_SELECTION.md`](STAR_CHAT_WORK_CODEX_MODE_SELECTION.md)
+11. [`STAR_LAYERED_MEMORY_AND_CONTEXT_LOADING.md`](STAR_LAYERED_MEMORY_AND_CONTEXT_LOADING.md)
+12. [`STAR_CONTEXT_PACKAGE_TEMPLATE.md`](STAR_CONTEXT_PACKAGE_TEMPLATE.md)
 
 ## Authority and data model
 
-- PR #3 content becomes part of the Draft PR #2 working baseline only after merge into `agent/star-os-global-working-rules`.
+- Child PR content becomes part of the Draft PR #2 working baseline only after merge into `agent/star-os-global-working-rules`.
 - The portfolio ledger is authoritative only for portfolio coordination.
 - Professional truth remains in the relevant professional authoritative source.
 - Public repositories contain safe summaries and pointers only.
 - SAIG retains authority for AI privacy, retention, employee-data, audit and AI-record controls.
 - Chat history and AI memory are working context, not durable organizational authority.
+- Tooling access evidence records current capability only and never grants change authority.
 
 ## Current state
 
 - Minimum Command Center architecture: confirmed working direction.
-- Conversation-governance baseline: revised after DSP-001-005; ready for re-review, not frozen.
+- Conversation-governance baseline: revised working baseline; not frozen.
 - Decision-history correction: SWS-DEC-014 added while preserving SWS-DEC-006.
 - Layered memory: file-level fingerprint design added; operational pilot incomplete.
 - Direct mode transfer: Candidate / environment-dependent.
 - Scope Alias Registry: Missing; open question recorded.
 - `continue M001`: conceptually validated / operationally Unverified.
-- Command Center Portfolio Ledger: Stale / update pending.
+- Command Center Portfolio Ledger: calibrated through DSP-001-028 publication; future material changes still require verification.
+- Git / GitHub / Codex access baseline: recorded with separate user-verified local evidence and connector-verified cloud evidence.
 - No existing conversations are created, migrated or deleted by this work.
