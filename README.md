@@ -7,5 +7,6 @@ Material changes are reviewed through pull requests. Working baselines are not c
 ## Governance entry points
 
 - [STAR OS Global Governance](docs/star-os/README.md) — cross-conversation working rules, bootstrap protocol, scoped decisions and handoff.
+- [STAR Pre-Development Architecture Program](docs/programs/pdap/README.md) — founder-led, time-boxed readiness program for Shared Foundation, SmartQuote and GateHub.
 
 Sensitive employee, AI-account, customer and operational risk records must be kept in an approved private governance system, not this public repository.
