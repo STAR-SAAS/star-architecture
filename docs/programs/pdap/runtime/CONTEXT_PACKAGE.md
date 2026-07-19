@@ -7,7 +7,7 @@ project: STAR OS
 conversation: 📚 STAR Architecture Framework (SAF)
 repository: STAR-SAAS/star-architecture
 authoritative_working_branch: agent/star-os-global-working-rules
-last_verified_authority_commit: 76bc15d90da44d2c9612cf420e2a8a1221fc435a
+last_verified_authority_commit: f49af4efdef92d704ef377645bf7455f300477ce
 last_verified_at: 2026-07-19 Asia/Singapore
 freshness: Current working authority; Draft PR #2 unmerged to main
 classification: Public
@@ -21,18 +21,18 @@ private_authoritative_source: none for baseline package
 sensitive_fields_redacted: true
 evidence_access_boundary: public-safe program coordination only
 retention_or_review_owner: Jason Lin
-context_generation: 3
+context_generation: 4
 entrypoint: CONTEXT_PACKAGE.md
 required_files:
   - ACTIVE_DECISIONS.md
   - WORK_STATUS.md
 required_file_versions:
   ACTIVE_DECISIONS.md:
-    blob_sha: 1b2837d23476cc4fb41001389102eda904c54a54
-    verified_at: DSP-001-026 publication branch
+    blob_sha: 48b7ad85e869c1dbf0f247d46a799a35e77e9896
+    verified_at: DSP-001-028 publication branch
   WORK_STATUS.md:
-    blob_sha: ff2bdb3c0d8fb6bf1abe8c53baa9026ad64e3a27
-    verified_at: DSP-001-026 publication branch
+    blob_sha: 581415b06aa92e021072dc464f6f3a91f9181c50
+    verified_at: DSP-001-028 publication branch
 optional_files:
   - ../PDAP_MASTER_PROGRAM.md
   - ../PDAP_ARCHITECTURE_READINESS_GATES.md
@@ -40,44 +40,41 @@ optional_files:
   - ../phase-0/README.md
   - ../phase-1/README.md
   - ../phase-2-4/README.md
-  - ../phase-2-4/PDAP_SHARED_FOUNDATION_GATE_1_PACKAGE.md
-  - ../phase-2-4/PDAP_SMARTQUOTE_GATE_2_PACKAGE.md
-  - ../phase-2-4/PDAP_GATEHUB_GATE_3_PACKAGE.md
-  - ../phase-2-4/PDAP_CROSS_PRODUCT_CONFLICT_PREVIEW.md
-  - ../phase-2-4/PDAP_CORE_DATA_AND_SECURITY_REGISTER.md
-  - ../phase-2-4/PDAP_ASSUMPTION_ADR_RFC_REGISTER.md
-  - ../phase-2-4/PDAP_BLOCKER_RECOVERY_AND_SCHEDULE_REGISTER.md
-  - ../phase-2-4/PDAP_GATE_1_3_PREPARATION_REPORT_BACK.md
+  - ../phase-2/gate-1-disposition/README.md
+  - ../phase-2/gate-1-disposition/PDAP_GATE_1_CRITERIA_BLOCKER_AND_RECOVERY_DISPOSITION.md
+  - ../phase-2/gate-1-disposition/PDAP_BOUNDED_BOOTSTRAP_AND_MINIMUM_START_EVIDENCE.md
+  - ../phase-2/gate-1-disposition/PDAP_GATE_1_ASSUMPTION_DISPOSITION.md
+  - ../phase-2/gate-1-disposition/PDAP_GATE_1_INTERNAL_DISPOSITION_REPORT_BACK.md
 ```
 
 ## Runtime summary
 
-- Objective: publish Gate 1–3 preparation authority and proceed to Gate 1 internal disposition.
-- Current state: Gate 1 Recovery required recommendation; Gate 2 Conditional pass candidate recommendation; Gate 3 Recovery required recommendation; no Gate passed.
-- Gate 4 remains not started; preview only.
-- Accountable owner and decision approver: Jason Lin.
-- Primary executor: Jason Lin with approved AI capabilities.
-- Current task: DSP-001-026 publication.
-- Shared Foundation, SmartQuote and GateHub forecasts are At risk for 2026-07-27, 2026-08-03 and 2026-08-10.
+- Gate 1 internal disposition is leadership approved for publication.
+- Gate 1 remains Recovery required and has not passed.
+- Bounded bootstrap is eligible for separate authorization but is not authorized.
+- Shared Foundation 2026-07-27 is retained conditionally with a 2026-07-24 cutoff and remains At risk.
+- SmartQuote Gate 2 remains Conditional pass candidate only; GateHub Gate 3 remains Recovery required; Gate 4 has not started.
+- AA-05 and AA-06 are approved for bounded Gate 1 use within their recorded scope and expiry. AA-07 through AA-09 remain Candidate.
+- Actual engineering ownership and executable environment/build/CI/test/secrets/recovery evidence remain Missing.
 - Engineering, M1, Commitment and Delivery remain not started/not passed.
 
 ## Active boundaries
 
-- Shared Foundation is engineering-foundation-first and `star-platform` remains Candidate and empty.
+- `STAR-SAAS/star-platform` remains Candidate, empty and unmodified.
+- Publication does not close B-01 through B-04.
+- Ka Chen and Eric remain future owner candidates only; no task or role acceptance is recorded.
+- Staging and Production may be deferred only for a separately authorized bounded non-production increment with no live credentials, sensitive data or product business implementation.
 - Merchant Identity remains for Gate 4; reusable channel-cost ownership must close before Gate 2 disposition.
 - Identity/Tenant/Security direction is a design input, not final architecture.
-- GateHub first stage excludes routing, transaction execution, settlement and ledger.
-- AA-01 through AA-04 are approved temporary assumptions; AA-05 through AA-09 remain Candidate.
-- Ka Chen and Eric are future owner candidates only; Dorden, Robin and Allen receive no execution tasks through 2026-07-26.
 
 ## Loading instructions
 
 1. Load STAR OS global governance.
-2. Verify Draft PR #2 and the current PDAP publication PR Head before relying on status.
+2. Verify Draft PR #2 and the current publication PR Head before relying on status.
 3. Load this entrypoint, `ACTIVE_DECISIONS.md` and `WORK_STATUS.md`.
-4. Load the relevant phase package and the Readiness Gates/Matrix.
+4. Load the Gate 1 disposition package for any bootstrap or engineering-start decision.
 5. Do not infer Missing evidence from chat memory.
-6. Recommendations do not equal Gate passage.
+6. Recommendations and eligibility do not equal Gate passage or authorization.
 7. Replace publication-branch fingerprints only after child PR merge verification.
 
 ## Boundary
