@@ -1,28 +1,39 @@
 # PDAP Work Status
 
 ```yaml
-current_objective: Continue founder-led PDAP preparation and begin Phase 0 evidence work without assigning execution tasks to Dorden, Robin or Allen during the temporary review-only week
+current_objective: Persist verified Phase 0 and approved Phase 1 authority, then continue Gate 1 and product-readiness evidence without starting engineering or Delivery
 approved_dates:
-  Phase_0_start: 2026-07-20
   Shared_Foundation_engineering_target_start: 2026-07-27
   SmartQuote_formal_development_target_start: 2026-08-03
   GateHub_formal_development_target_start: 2026-08-10
-current_phase: Pre-Phase-0 authority persistence and Phase 0 preparation
-current_gate: Phase 0 Evidence Gate — preparation allowed; Gate not passed
+current_phase: Phase 1 completed; Phase 2 and Phase 3 preparation allowed
+current_gate: Gate 1 preparation — not passed
 accountable_owner: Jason Lin
 primary_executor: Jason Lin + approved AI capabilities
 temporary_participation_window:
   start: 2026-07-19
   end: 2026-07-26
-  Dorden: review-only when requested; no execution task
+  Dorden: consolidated governance/publication review only when requested; no execution task
   Robin: consolidated-conclusion review only; no execution task
   Allen: consolidated-conclusion review only; no execution task
+approved_inputs:
+  - Shared Foundation engineering-foundation-first boundary
+  - Merchant layered ownership candidates
+  - Identity/Tenant/Security minimum boundary
+  - STAR-SAAS/star-platform Candidate repository status
+  - GateHub Candidate authority baseline
+  - AA-01 through AA-04
+candidate_not_approved:
+  - AA-05 technology-neutral observability signals
+  - AA-06 tool-neutral CI quality controls
+engineering_owner_candidates:
+  Shared_Foundation_application: Ka Chen
+  platform_infrastructure_operations: Eric
 allowed_work:
-  - authority drafting and publication
-  - read-only evidence inventory
+  - authority publication
+  - Gate evidence and minimum architecture-package preparation
   - source and freshness mapping
-  - readiness criteria definition
-  - Approved Assumption preparation
+  - Approved Assumption and ADR/RFC maintenance
   - bounded specialist-question preparation for later use
 prohibited_work:
   - technology-stack approval
@@ -32,24 +43,32 @@ prohibited_work:
   - SmartQuote Delivery start
   - GateHub Delivery start
 current_blockers:
-  - authoritative child PR remains unmerged
+  - Gate 1 repository/environment/CI/test evidence incomplete
+  - post-start engineering owner not assigned
+  - SmartQuote architecture and sensitive-data disposition incomplete
+  - GateHub architecture evidence Missing
 current_decisions_needed:
-  - child PR merge after final verification and separate authorization
+  - no immediate leadership decision beyond publication of this authority package
 next_action:
-  - keep PR #11 Draft
-  - proceed with founder-led read-only Phase 0 evidence preparation
-  - consolidate findings before requesting Dorden, Robin or Allen review
-  - verify final Exact Head before any merge decision
-schedule_variance: none currently identified
-recovery_action: not required
+  - publish and verify DSP-001-024 child PR
+  - continue Shared Foundation minimum engineering-start evidence
+  - continue SmartQuote minimum architecture package
+  - continue GateHub minimum architecture package from Candidate authority baseline
+schedule_variance:
+  Shared_Foundation: At risk
+  SmartQuote: At risk but recoverable
+  GateHub: At risk
+recovery_action: close only applicable Gate blockers; use Approved Assumptions for reversible matters
 ```
 
 ## Current readiness
 
 | Area | State | Freshness |
 |---|---|---|
-| PDAP | Leadership Confirmed; persistence pending | Current |
-| Shared Foundation | Readiness not verified | Unverified |
-| SmartQuote | Candidate baseline; Gate not passed; M1 not passed; not Committed | Current |
-| GateHub | Evidence inventory not established | Missing / Unverified |
-| Cross-product review | Not started | Current coordination status |
+| PDAP | Phase 0 and Phase 1 completed; no Gate declared passed | Current |
+| Shared Foundation | Candidate boundary and repository; engineering readiness not verified | Current / partially Unverified |
+| SmartQuote | Mission baseline current; Gate 2 not passed; M1 not passed; not Committed | Current |
+| GateHub | Candidate authority baseline; architecture evidence Missing | Current Candidate / Unverified implementation |
+| Cross-product review | Not started; conflict candidates identified | Current coordination status |
+
+PR #11 was merged into the Draft PR #2 working branch at `449ceae125cc839c869c7cc0f830cd7661de52bd`. Draft PR #2 remains open, draft and unmerged to `main`.
