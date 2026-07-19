@@ -4,7 +4,8 @@
 - Jason Lin is Accountable Owner and Decision Approver.
 - Jason Lin with approved AI capabilities is the default pre-development execution model.
 - Other employees or specialists participate only for a clearly defined question and with minimum-necessary scope, evidence and duration.
-- Dorden independently reviews the PDAP authority package and final Exact Head publication integrity only.
+- From 2026-07-19 through 2026-07-26, Jason Lin with approved AI capabilities will continue PDAP pre-development work without assigning execution tasks to Dorden, Robin or Allen. They will review only the consolidated conclusions when requested by Jason Lin.
+- Dorden independently reviews the PDAP authority package and final Exact Head publication integrity only; this review may be deferred during the temporary founder-led week and does not block read-only Phase 0 preparation.
 - Allen enters execution coordination only after explicit Product Commitment and Delivery start.
 - Approved target starts are: Phase 0 on 2026-07-20; Shared Foundation engineering on 2026-07-27; SmartQuote formal development on 2026-08-03; GateHub formal development on 2026-08-10.
 - Target dates are not automatic Gate passage, Commitment or development authorization.
