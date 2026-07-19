@@ -2,22 +2,20 @@
 
 - PDAP Founder-led Fast Track is leadership confirmed.
 - Jason Lin is Accountable Owner and Decision Approver.
-- Jason Lin with approved AI capabilities is the default pre-development execution model.
-- From 2026-07-19 through 2026-07-26, no execution task is assigned to Dorden, Robin or Allen; they review only consolidated conclusions when requested.
-- Dorden reviews PDAP governance and final publication integrity only and is not the sole professional reviewer.
-- Allen enters execution coordination only after explicit Product Commitment and Delivery start.
-- Approved target starts remain: Shared Foundation engineering 2026-07-27; SmartQuote formal development 2026-08-03; GateHub formal development 2026-08-10.
-- Target dates are not automatic Gate passage, Commitment or development authorization.
-- Shared Foundation uses an engineering-foundation-first boundary; shared business capabilities require demonstrated stable cross-product need.
-- Merchant ownership is layered across Merchant Identity, Commercial Profile, Onboarding/KYC, Quote Reference and Operational Account; unresolved owners remain explicit.
-- Identity/Tenant/Security minimum boundaries are approved as design inputs, not final architecture.
-- `STAR-SAAS/star-platform` is a Candidate Shared Foundation engineering repository; it is not ready and engineering start is not authorized.
-- GateHub has an approved Candidate authority baseline and must not inherit SmartQuote architecture automatically.
-- AA-01 through AA-04 are approved until their stated expiry or applicable Gate disposition.
-- AA-05 and AA-06 remain Candidate and are not approved for use.
-- Ka Chen is a Shared Foundation application engineering owner candidate; Eric is a platform/infrastructure/operations owner candidate. These are not task assignments or engineering authorization.
-- Only high-cost difficult-to-reverse decisions, cross-product architecture conflicts, core data ownership, Identity/Tenant/Security boundaries, legal/compliance/material risk, or technical questions that cannot advance safely through an Approved Assumption may block a target.
-- Reversible matters use an Approved Assumption or enter an ADR/RFC backlog.
-- Every PDAP Dispatch must map to a Phase, Gate, target date, accountable owner, executor and evidence requirement.
-- Work that bypasses a Gate returns to STAR Command Desk.
-- This record does not approve a technology stack, product architecture, engineering start, M1, Product Commitment, SmartQuote Delivery or GateHub Delivery.
+- Jason Lin with approved AI capabilities remains the default pre-development execution model.
+- Through 2026-07-26, Dorden, Robin and Allen receive no execution tasks; Ka Chen and Eric remain future owner candidates only.
+- Approved target starts remain: Shared Foundation engineering 2026-07-27; SmartQuote formal development 2026-08-03; GateHub formal development 2026-08-10. All are At risk and are not automatic authorization.
+- Gate 1 recommendation is Recovery required; Gate 1 has not passed and engineering start is not authorized.
+- SmartQuote Gate 2 recommendation is Conditional pass candidate only; Gate 2, M1 and Product Commitment have not passed.
+- GateHub Gate 3 recommendation is Recovery required; Gate 3 has not passed.
+- Gate 4 has not started; the cross-product record is preview only.
+- Shared Foundation may continue bounded bootstrap preparation without writing to `star-platform` or starting engineering.
+- GateHub first stage excludes payment routing, transaction execution, settlement and ledger.
+- Merchant Identity remains for Gate 4 disposition; neither SmartQuote nor GateHub may claim unilateral ownership.
+- Reusable channel-cost source ownership must close before actual Gate 2 disposition.
+- AA-01 through AA-04 remain approved temporary assumptions.
+- AA-05 through AA-09 remain Candidate and are not approved for use.
+- Identity/Tenant/Security minimum boundaries remain design inputs, not final architecture.
+- `STAR-SAAS/star-platform` remains a Candidate repository and is not engineering-ready.
+- Reversible matters use an Approved Assumption or ADR/RFC backlog; unresolved high-cost, cross-product, core-data, security, legal/compliance or non-reversible matters may block a Gate.
+- This record does not approve a technology stack, final product architecture, engineering start, M1, Product Commitment, SmartQuote Delivery or GateHub Delivery.
