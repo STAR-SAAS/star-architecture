@@ -2,10 +2,10 @@
 
 | Field | Value |
 |---|---|
-| **Version / status** | v0.1.0 — Active confirmed working decisions; not frozen |
+| **Version / status** | v0.1.1 — Active confirmed working decisions; not frozen |
 | **Owner** | STAR leadership |
 | **Maintainer** | STAR OS governance maintainers |
-| **Last reviewed** | 2026-07-13 |
+| **Last reviewed** | 2026-07-19 |
 | **Review trigger** | New global decision, supersession, cross-domain conflict or freeze proposal |
 | **Scope** | All STAR work unless a decision states otherwise |
 | **Access** | Public; sensitive governance records belong in approved private systems |
@@ -32,12 +32,14 @@
 | **GDEC-0009** | Do not claim completion, synchronization, validation, approval or freeze unless the relevant state has been verified. | Global | Confirmed integrity constraint; Product Delivery `DEC-0025`–`DEC-0027` |
 | **GDEC-0010** | Routine reversible work within confirmed scope continues without repeated approval; leadership is asked only for strategic, broad, high-risk or genuinely preference-dependent decisions. | Global | Explicit/accepted working method; Product Delivery `DEC-0007`–`DEC-0008` |
 | **GDEC-0011** | Missing owners, dates, permissions, customer facts or evidence must remain explicit gaps; examples and assumptions must not be promoted into facts. | Global | Accepted evidence discipline and repeated validation finding |
+| **GDEC-0012** | STAR adopts the PDAP Founder-led Fast Track as the mandatory pre-development readiness covenant for Shared Foundation, SmartQuote and GateHub. Formal development requires the applicable Architecture Readiness and Product Commitment / Delivery Start Gates. Jason Lin and approved AI capabilities are the default pre-development executors; specialist participation is minimum-necessary and question-specific. Approved dates, blocker classes, assumptions, delay controls and detailed implementation rules are governed by the authoritative PDAP Master Program. | Global; direct propagation to PDAP, Shared Foundation, SmartQuote, GateHub, Command Desk and Product Delivery commitment boundaries | Leadership-confirmed DSP-001-021 |
 
 ## Propagation status
 
 | Target | Current action |
 |---|---|
 | STAR global governance | Implemented in the Global Working Rules and Bootstrap Protocol |
+| PDAP | Implemented in `docs/programs/pdap/`; publication and merge verification pending |
 | Product Delivery | Existing Decision Log remains the domain record; future updates should link to these global decisions instead of duplicating them |
 | STAR AI Governance | New conversation should bootstrap from this directory, then load AI Governance-specific records |
 | Other STAR domains / Missions | Apply at the next conversation bootstrap or domain-governance update |
