@@ -3,14 +3,14 @@
 | Field | Value |
 |---|---|
 | **Document ID** | STAR-PORTFOLIO-001 |
-| **Version / status** | v0.3.0 — Third-batch acceptance status calibrated; all Packages remain inactive; not frozen |
+| **Version / status** | v0.4.0 — PDAP Gate 1 disposition and coordination status calibrated; not frozen |
 | **Scope** | STAR Command Center portfolio coordination |
 | **Owner** | STAR leadership |
 | **Maintainer** | STAR Command Desk |
 | **Authoritative working source** | `STAR-SAAS/star-architecture`, Draft PR #2, branch `agent/star-os-global-working-rules` |
 | **Authoritative for** | Portfolio priority, routing, high-level status, next action, blocker, decision needed and freshness |
 | **Not authoritative for** | Professional detail, product requirements, architecture decisions, governance registers, code, tests or sensitive records |
-| **Last reviewed** | 2026-07-18 (Asia/Singapore) |
+| **Last reviewed** | 2026-07-19 (Asia/Singapore) |
 | **Review trigger** | Material status, routing, priority, blocker, decision, closure, evidence or freshness change |
 | **Pilot workstreams** | SWS-001; STAR AI Governance; Mission-001 SmartQuote Foundation |
 | **Project Instructions** | Verified in the current STAR Command Center Project context against SWS-CC-001 on 2026-07-14 |
@@ -33,133 +33,152 @@
 
 | Priority / condition | Count | Note |
 |---|---:|---|
-| Now | 1 | SWS-001 third-batch acceptance and next professional assessment |
+| Now | 1 | PORT-001 PDAP Gate 1 disposition publication and bounded-bootstrap decision |
 | Next | 2 | SAIG deferred validations; M001 M1 preparation and authority closure |
 | Review | 0 | |
 | Waiting | 0 | |
 | Later | 0 | |
 | Parked | 0 | |
-| Active blockers | 2 | SAIG deferred validations; M001 M1 participants, authorities, dates and source inventory |
-| Decision Needed | 2 | SAIG deferred-review disposition; M001 participant and release/closure authority assignments |
+| Active blockers | 3 | PDAP Gate 1 evidence; SAIG deferred validations; M001 M1 gaps |
+| Decision Needed | 3 | bounded-bootstrap authorization/owners; SAIG deferred-review disposition; M001 participant and authority assignments |
 | Stale / requires re-verification | 1 | Legacy SAIG migration/access blocker details require separate professional re-verification |
 
 ## 3. Current portfolio
 
 | Item ID | Title | Workstream | Type | Priority | Status | Professional Project | Professional Conversation | Accountable Owner | Current Focus | Next Action | Blocker | Decision Needed | Authoritative Source | Last Reported At | Last Verified At | Freshness |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| PORT-001 | SWS-001 · STAR Workspace Specification | STAR Workspace | Specification | Now | Active | STAR OS | 📚 STAR Architecture Framework (SAF) | STAR leadership | Third-batch acceptance calibration completed and verified; child PR merge pending | After PR #10 merges, start the Company Git & GitHub Operating Baseline professional assessment covering company authority, local working-copy boundaries, identity, devices, credentials, commit identity/signing, branch/PR/merge, automation accounts, offboarding, audit and recovery | None for this Ledger calibration | None | DSP-001-020 and Draft PR #2 working branch | 2026-07-18 | 2026-07-18 | Current |
-| PORT-002 | STAR AI Governance | AI Governance | Governance | Next | Hold | STAR AI Governance | ⭐ STAR AI Governance | Robin — COO / AI Governance Owner | Package A records are Published and `zhuangdongdong` Repository Read is Verified; Independent Review and Personal Marker Readback remain Deferred, not Passed; Package A remains Not Active | Complete or explicitly dispose of the two Deferred validations before any activation decision; keep Wave A, Employee AI Use Policy and SAIG PILOT-001 inactive | Two Deferred validations remain; legacy migration/access blocker details are Stale and require separate professional re-verification | Deferred-review disposition | PR #21 merge commit `7809a0f5ec92b130bbc311a981ab5ded8c8f8fa7`; public-safe summary using the approved opaque-reference model | 2026-07-18 | 2026-07-18 | Current |
-| PORT-003 | Mission-001 · SmartQuote Foundation | SmartQuote | Mission | Next | Candidate — Baseline Confirmed | SmartQuote / Mission-001 | 🚀 M001 · SmartQuote Foundation | Robin | Package B Passed with findings; context recovery, required-file fingerprints and the real-platform `continue M001` test are complete; M1 has not passed, M001 is not Committed, SmartQuote Delivery and formal implementation have not started | Assign required M1 participants and authorities, set target dates, define Security/Compliance/Finance review responsibilities, and complete the prior SmartQuote source inventory before M1 | Required M1 participant assignments; business acceptance representative; Architecture / technical authority; target dates; release / closure authority; Security, Compliance and Finance review responsibilities; prior SmartQuote source inventory | Product / Service Owner: Jason Lin; remaining participant and authority assignments | Draft PR #1 branch `agent/star-os-product-delivery-baseline` at `bb44bc43eca1245a4a92082a78fa4df45f5b82a6`; Work Status blob `7ec87d78cffcf0c710e2cc1d7ef74a4e661370b6`; DSP-003-006 | 2026-07-18 | 2026-07-18 | Current |
+| PORT-001 | SWS-001 · STAR Workspace Specification / PDAP coordination | STAR Workspace | Specification / Program coordination | Now | Active — Gate 1 Recovery required | STAR OS | 📚 STAR Architecture Framework (SAF) | STAR leadership / Jason Lin for PDAP | Gate 1 internal disposition approved for publication; bounded bootstrap eligible for separate authorization but not authorized; engineering not started | Publish and merge DSP-001-028 under separate authorization, then decide bounded bootstrap and actual engineering ownership separately | B-01 to B-04 evidence remains open: implemented bootstrap, accepted owners, executable environment/build/CI/test, secrets/deployment/recovery | Separate bounded-bootstrap authorization; accepted application and platform/operations ownership; retain or reforecast 2026-07-27 based on evidence | Draft PR #2 working branch at `f49af4efdef92d704ef377645bf7455f300477ce`; PR #13 merge; DSP-001-027 and DSP-001-028 | 2026-07-19 | 2026-07-19 | Current |
+| PORT-002 | STAR AI Governance | AI Governance | Governance | Next | Hold | STAR AI Governance | ⭐ STAR AI Governance | Robin — COO / AI Governance Owner | Package A records Published; `zhuangdongdong` Repository Read Verified; Independent Review and Personal Marker Readback Deferred, not Passed; all related capabilities inactive | Complete or explicitly dispose of the two Deferred validations before any activation decision | Two Deferred validations remain; legacy migration/access detail is Stale | Deferred-review disposition | PR #21 merge commit `7809a0f5ec92b130bbc311a981ab5ded8c8f8fa7`; approved public-safe summary | 2026-07-18 | 2026-07-18 | Current |
+| PORT-003 | Mission-001 · SmartQuote Foundation | SmartQuote | Mission | Next | Candidate — Baseline Confirmed | SmartQuote / Mission-001 | 🚀 M001 · SmartQuote Foundation | Robin | M1 has not passed; M001 is not Committed; SmartQuote Delivery and formal implementation have not started; Gate 2 recommendation is Conditional pass candidate only | Close M1 assignments, authorities, dates, responsibilities and prior-source inventory; separately close Gate 2 conditions | Required M1 participants/authorities and Gate 2 SoR, repository/environment, security/test evidence remain open | Product / Service Owner Jason Lin; remaining participant, architecture and release/closure authority assignments | Draft PR #1 at `bb44bc43eca1245a4a92082a78fa4df45f5b82a6`; DSP-003-006; PDAP Gate 2 preparation records | 2026-07-19 | 2026-07-19 | Current |
 
 ## 4. Decisions needed
 
 | Decision ID | Portfolio Item | Decision required | Why needed | Owner | Trigger | Status |
 |---|---|---|---|---|---|---|
-| PDR-001 | PORT-002 | Confirm the exact company-controlled GitHub Organization name and at least two Organization Owner usernames | Historical migration prerequisite | STAR leadership with AI Governance Owner | Historical | Closed 2026-07-14 — `STAR-SAAS`; Owners `STARSAAS`, `rkoh-star` |
-| PDR-002 | PORT-001 | Confirm `STAR-SAAS` Owners, second-Owner coverage and GitHub App installation | Historical repository-transfer prerequisite | STAR leadership / Organization Owners | Historical | Closed 2026-07-14 — two Owners verified; ChatGPT Codex Connector installed |
-| PDR-003 | PORT-002 | Legacy Eric target-role decision | Current relevance not established by third-batch evidence | STAR AI Governance | Separate professional re-verification | Stale — do not infer closure |
-| PDR-004 | PORT-002 | Legacy authorized direct-submitter population decision | Current relevance not established by third-batch evidence | STAR AI Governance | Separate professional re-verification | Stale — do not infer closure |
-| PDR-005 | PORT-002 | Legacy Team-based versus direct-role model decision | Current relevance not established by third-batch evidence | STAR AI Governance | Separate professional re-verification | Stale — do not infer closure |
-| PDR-006 | PORT-002 | Legacy branch protection, reviewer and bypass controls | Current relevance not established by third-batch evidence | STAR AI Governance | Separate professional re-verification | Stale — do not infer closure |
-| PDR-007 | PORT-002 | Complete or explicitly dispose of Independent Review and Personal Marker Readback | Both validations remain Deferred and must not be represented as Passed | STAR leadership / AI Governance Owner | Before Package A or related governance activation | Open |
-| PDR-008 | PORT-003 | Assign M1 participants, business acceptance, architecture authority and release/closure authority | M1 cannot pass and M001 cannot become Committed without named accountability | Mission Owner / Product & Service Owner | Before M1 | Open |
+| PDR-001 | PORT-002 | Confirm company-controlled Organization and two Owners | Historical migration prerequisite | STAR leadership | Historical | Closed 2026-07-14 — `STAR-SAAS`; Owners `STARSAAS`, `rkoh-star` |
+| PDR-002 | PORT-001 | Confirm Owners, second-Owner coverage and GitHub App installation | Historical repository prerequisite | STAR leadership | Historical | Closed 2026-07-14 |
+| PDR-003 | PORT-002 | Legacy Eric target-role decision | Current relevance not established | STAR AI Governance | Separate re-verification | Stale |
+| PDR-004 | PORT-002 | Legacy authorized direct-submitter population | Current relevance not established | STAR AI Governance | Separate re-verification | Stale |
+| PDR-005 | PORT-002 | Legacy Team versus direct-role model | Current relevance not established | STAR AI Governance | Separate re-verification | Stale |
+| PDR-006 | PORT-002 | Legacy branch protection/reviewer/bypass controls | Current relevance not established | STAR AI Governance | Separate re-verification | Stale |
+| PDR-007 | PORT-002 | Complete or dispose of Independent Review and Personal Marker Readback | Both remain Deferred | STAR leadership / AI Governance Owner | Before activation | Open |
+| PDR-008 | PORT-003 | Assign M1 participants, business acceptance, architecture authority and release/closure authority | M1 and Commitment require named accountability | Mission Owner / Product & Service Owner | Before M1 | Open |
+| PDR-009 | PORT-001 | Approve Gate 1 Recovery required, conditional schedule, owner preconditions and AA-05/AA-06 | Required for current disposition authority | Jason Lin | DSP-001-027 | Closed 2026-07-19 — approved under DSP-001-028 |
+| PDR-010 | PORT-001 | Decide whether to authorize bounded bootstrap | Eligibility is not authorization | Jason Lin | After DSP-001-028 publication | Open |
+| PDR-011 | PORT-001 | Confirm accepted application engineering and platform/operations owners | Candidate status cannot satisfy Gate 1 or engineering-start accountability | Jason Lin with relevant professionals | Before Gate 1 passage and engineering start | Open |
 
 ## 5. Cross-project dependencies
 
 | Dependency ID | From item | Depends on | Dependency | Current state | Owner | Next action | Source |
 |---|---|---|---|---|---|---|---|
-| DEP-001 | PORT-001 | PORT-002 and PORT-003 | Pilot requires verified professional-source entries for all three workstreams | Satisfied for current coordination status; ongoing freshness verification required | STAR Command Desk | Reverify after material professional changes | SWS-CC-001 and current professional Report Backs |
-| DEP-002 | PORT-002 | PORT-001 | SAIG relies on company GitHub governance | Current legacy detail requires separate re-verification; no activation authorized | STAR leadership / SAF / SAIG | Use Company Git & GitHub Operating Baseline assessment for future cross-cutting controls without changing SAIG activation state here | DSP-001-020 |
-| DEP-003 | PORT-003 | M1 participants and authorities | Candidate baseline must pass M1 before commitment or Delivery | Open | Robin / Jason Lin | Close named assignments, dates, responsibilities and source inventory | Draft PR #1 M001 records |
+| DEP-001 | PORT-001 | PORT-002 and PORT-003 | Pilot requires verified professional-source entries | Satisfied for current coordination; ongoing freshness required | STAR Command Desk | Reverify after material changes | SWS-CC-001 and Report Backs |
+| DEP-002 | PORT-002 | PORT-001 | SAIG relies on company GitHub governance | Legacy detail requires separate re-verification; no activation authorized | STAR leadership / SAF / SAIG | Use future cross-cutting controls without changing SAIG activation here | DSP-001-020 |
+| DEP-003 | PORT-003 | M1 participants and authorities | Candidate baseline must pass M1 before Commitment or Delivery | Open | Robin / Jason Lin | Close assignments, dates, responsibilities and source inventory | Draft PR #1 |
+| DEP-004 | PORT-001 | Application engineering and platform/operations accountability | Gate 1 and engineering start require actual accepted owners and executable evidence | Open; candidates only | Jason Lin | After temporary window, prepare two concentrated validations under separate Dispatch | DSP-001-027 |
 
 ## 6. Blockers
 
 | Blocker ID | Portfolio item | Blocker | Impact | Owner | Required resolution | Since | Source | Status |
 |---|---|---|---|---|---|---|---|---|
-| BLK-001 | PORT-001 | Installed STAR Command Center Project Instructions were not verified against SWS-CC-001 | Pilot start condition was not satisfied | STAR Command Desk | Compare current Project Instructions with SWS-CC-001 | 2026-07-14 | Current Project context and SWS-CC-001 | Resolved 2026-07-14 |
-| BLK-002 | PORT-001 | PORT-002 and PORT-003 statuses were not verified from professional authoritative sources | Initial portfolio could not be treated as current | STAR Command Desk | Obtain and verify both professional Report Backs | 2026-07-14 | RPT-002 and RPT-003 | Resolved 2026-07-14 |
-| BLK-003 | PORT-001 | No complete Dispatch → Execute → Report Back → Verify → Update Status cycle was evidenced | Command Center pilot effectiveness remained unproven | STAR Command Desk | Complete and record the first real loop | 2026-07-14 | DSP-002-001, DSP-003-001, RPT-002, RPT-003 | Resolved 2026-07-14 |
-| BLK-004 | PORT-002 | Legacy migration/access and human-review blocker description | May no longer represent the current professional state | STAR AI Governance | Re-verify against current SAIG authority before reuse | 2026-07-14 | Historical Ledger state | Stale — requires separate professional re-verification |
-| BLK-005 | PORT-003 | Authoritative Mission baseline and real delivery facts were missing | Historical blocker was superseded by the confirmed Candidate baseline and completed Package B validation work | Mission-001 professional scope | Retain provenance; use BLK-010 for current M1 blockers | 2026-07-14 | Draft PR #1 current Mission records and DSP-003-006 | Closed 2026-07-18 — replaced by BLK-010 |
-| BLK-006 | PORT-001 | `STAR-SAAS` Organization governance and connector visibility were unverified | Pilot repository transfer could not be authorized or verified | STAR leadership / Organization Owners | Verify Owners, install App and complete pilot transfer | 2026-07-14 | SWS migration evidence | Resolved 2026-07-14 |
-| BLK-007 | PORT-001 | Admin-only settings for `STARSAAS/star-platform` were unverified | Transfer authorization was blocked | STAR leadership / repository administrator | Confirm administration pages | 2026-07-15 | User verification | Resolved 2026-07-15 |
-| BLK-008 | PORT-002 | Legacy identity, permission and branch-control detail | Third-batch evidence does not establish whether every legacy sub-item remains open | STAR AI Governance | Re-verify separately; do not infer closure | 2026-07-15 | Historical Ledger state | Stale — requires separate professional re-verification |
-| BLK-009 | PORT-002 | PR #14 initially had four professional-review findings | Original Hold record was not ready to merge | STAR AI Governance | Revise and re-review | 2026-07-15 | Review ID `4701570854` | Resolved 2026-07-15 |
-| BLK-010 | PORT-003 | M1 participant, authority, date, responsibility and source-inventory gaps remain | M1 cannot pass; M001 cannot be Committed; Delivery and formal implementation cannot start | Robin / Jason Lin | Assign required participants and authorities, set dates, define review responsibilities and complete prior-source inventory | 2026-07-18 | Draft PR #1 and DSP-003-006 | Open |
-| BLK-011 | PORT-002 | Independent Review and Personal Marker Readback remain Deferred | Package A and related governance capabilities must remain inactive | STAR AI Governance / leadership | Complete or explicitly dispose of both validations | 2026-07-18 | PR #21 and DSP-002-009 | Open |
+| BLK-001 | PORT-001 | Project Instructions not verified | Pilot launch blocked historically | STAR Command Desk | Compare with SWS-CC-001 | 2026-07-14 | Current Project context | Resolved 2026-07-14 |
+| BLK-002 | PORT-001 | PORT-002 and PORT-003 status not verified | Portfolio could not be current | STAR Command Desk | Verify professional Report Backs | 2026-07-14 | RPT-002/RPT-003 | Resolved 2026-07-14 |
+| BLK-003 | PORT-001 | No complete operating loop evidenced | Pilot effectiveness unproven | STAR Command Desk | Complete first loop | 2026-07-14 | Dispatch/Report Back evidence | Resolved 2026-07-14 |
+| BLK-004 | PORT-002 | Legacy migration/access and human-review description | May not represent current state | STAR AI Governance | Reverify before reuse | 2026-07-14 | Historical Ledger | Stale |
+| BLK-005 | PORT-003 | Mission authority previously missing | Historical blocker superseded | Mission-001 | Use BLK-010 for current gaps | 2026-07-14 | Draft PR #1 | Closed 2026-07-18 |
+| BLK-006 | PORT-001 | Organization governance and connector visibility unverified | Migration blocked historically | STAR leadership | Verify Owners/App | 2026-07-14 | SWS migration evidence | Resolved 2026-07-14 |
+| BLK-007 | PORT-001 | `star-platform` admin settings unverified | Transfer blocked historically | Repository administrator | Confirm administration pages | 2026-07-15 | User verification | Resolved 2026-07-15 |
+| BLK-008 | PORT-002 | Legacy identity/permission/branch-control detail | Current relevance unknown | STAR AI Governance | Reverify separately | 2026-07-15 | Historical Ledger | Stale |
+| BLK-009 | PORT-002 | PR #14 had professional-review findings | Hold record not ready | STAR AI Governance | Revise/re-review | 2026-07-15 | Review evidence | Resolved 2026-07-15 |
+| BLK-010 | PORT-003 | M1 participant, authority, date, responsibility and source-inventory gaps | M1, Commitment and Delivery blocked | Robin / Jason Lin | Close named gaps | 2026-07-18 | Draft PR #1 / DSP-003-006 | Open |
+| BLK-011 | PORT-002 | Independent Review and Personal Marker Readback Deferred | Package A and related capabilities remain inactive | STAR AI Governance / leadership | Complete or dispose of both validations | 2026-07-18 | PR #21 / DSP-002-009 | Open |
+| BLK-012 | PORT-001 | Gate 1 B-01 to B-04 evidence incomplete | Gate 1 and engineering start cannot be authorized | Jason Lin pending accepted engineering owners | Implement bounded bootstrap only under separate authorization; confirm owners; produce executable environment/build/CI/test and secrets/recovery evidence | 2026-07-19 | DSP-001-027 Gate 1 disposition | Open — Recovery required |
 
 ## 7. Dispatch log
 
-| Dispatch ID | Portfolio item | Dispatched at | Destination Project | Destination conversation | Objective | Expected output | Status |
-|---|---|---|---|---|---|---|---|
-| DSP-002-001 | PORT-002 | 2026-07-14 | STAR AI Governance | ⭐ STAR AI Governance | Verify current authoritative SAIG status | Source-backed professional Report Back | Completed — Verified |
-| DSP-003-001 | PORT-003 | 2026-07-14 | SmartQuote / Mission-001 | 🚀 M001 · SmartQuote Foundation | Verify current authoritative Mission-001 status | Source-backed professional Report Back | Completed — Verified |
-| DSP-002-002 | PORT-002 | 2026-07-14 | STAR AI Governance | ⭐ STAR AI Governance | Correct stale pointers and prepare access decision | Corrected records and Report Back | Completed — Verified |
-| DSP-001-001 | PORT-001 | 2026-07-14 | STAR OS | 📚 STAR Architecture Framework (SAF) | Assess controlled migration of company repositories | Assessment and exact next action | Completed — Verified |
-| DSP-001-002 | PORT-001 | 2026-07-14 | STAR OS | 📚 STAR Architecture Framework (SAF) | Execute `star-domains` migration Pilot | Pre/post-transfer evidence | Completed — Verified |
-| DSP-001-003 | PORT-001 | 2026-07-15 | STAR OS | 📚 STAR Architecture Framework (SAF) | Assess and transfer `star-platform` | Source/target and post-transfer evidence | Completed — Verified |
-| DSP-002-003 | PORT-002 | 2026-07-15 | STAR AI Governance | ⭐ STAR AI Governance | Reconcile SAIG authority and assess migration | Hold recommendation | Completed — Verified |
-| DSP-002-004 | PORT-002 | 2026-07-15 | STAR AI Governance | ⭐ STAR AI Governance | Review PR #14 and prepare control decisions | Review disposition | Completed — Verified |
-| DSP-002-005 | PORT-002 | 2026-07-15 | STAR AI Governance | ⭐ STAR AI Governance | Revise and merge approved Hold record | Merge evidence | Completed — Verified |
-| DSP-002-009 | PORT-002 | 2026-07-18 | STAR AI Governance | ⭐ STAR AI Governance | Third-batch acceptance correction for Package A | Published records, verified Read and deferred validations | Completed — Verified |
-| DSP-003-006 | PORT-003 | 2026-07-18 | SmartQuote / Mission-001 | 🚀 M001 · SmartQuote Foundation | Third-batch acceptance for Package B and Mission baseline | Current Mission and Package B evidence | Completed — Verified |
-| DSP-001-020 | PORT-001 | 2026-07-18 | STAR OS | 📚 STAR Architecture Framework (SAF) | Final public Safe Ledger Update | Calibrated public Ledger and Draft child PR | Completed — Verified |
+| Dispatch ID | Portfolio item | Dispatched at | Destination | Objective | Status |
+|---|---|---|---|---|---|
+| DSP-002-001 | PORT-002 | 2026-07-14 | ⭐ STAR AI Governance | Verify current SAIG status | Completed — Verified |
+| DSP-003-001 | PORT-003 | 2026-07-14 | 🚀 M001 · SmartQuote Foundation | Verify Mission-001 status | Completed — Verified |
+| DSP-002-002 | PORT-002 | 2026-07-14 | ⭐ STAR AI Governance | Correct stale pointers and prepare access decision | Completed — Verified |
+| DSP-001-001 | PORT-001 | 2026-07-14 | 📚 SAF | Assess controlled repository migration | Completed — Verified |
+| DSP-001-002 | PORT-001 | 2026-07-14 | 📚 SAF | Execute `star-domains` migration Pilot | Completed — Verified |
+| DSP-001-003 | PORT-001 | 2026-07-15 | 📚 SAF | Assess and transfer `star-platform` | Completed — Verified |
+| DSP-002-003 | PORT-002 | 2026-07-15 | ⭐ STAR AI Governance | Reconcile authority and assess migration | Completed — Verified |
+| DSP-002-004 | PORT-002 | 2026-07-15 | ⭐ STAR AI Governance | Review PR #14 | Completed — Verified |
+| DSP-002-005 | PORT-002 | 2026-07-15 | ⭐ STAR AI Governance | Revise and merge Hold record | Completed — Verified |
+| DSP-002-009 | PORT-002 | 2026-07-18 | ⭐ STAR AI Governance | Third-batch Package A correction | Completed — Verified |
+| DSP-003-006 | PORT-003 | 2026-07-18 | 🚀 M001 · SmartQuote Foundation | Third-batch Package B acceptance | Completed — Verified |
+| DSP-001-020 | PORT-001 | 2026-07-18 | 📚 SAF | Final public Safe Ledger Update | Completed — Verified |
+| DSP-001-021 | PORT-001 | 2026-07-19 | 📚 SAF | Publish PDAP Founder-led Fast Track authority | Completed — PR #11 merged |
+| DSP-001-022 | PORT-001 | 2026-07-19 | 📚 SAF | Phase 0 evidence inventory | Completed — Verified |
+| DSP-001-023 | PORT-001 | 2026-07-19 | 📚 SAF | Phase 1 shared constraints and ownership | Completed — Verified |
+| DSP-001-024 | PORT-001 | 2026-07-19 | 📚 SAF | Publish Phase 0/1 authority | Completed — PR #12 merged |
+| DSP-001-025 | PORT-001 | 2026-07-19 | 📚 SAF | Gate 1–3 parallel preparation | Completed — Verified |
+| DSP-001-026 | PORT-001 | 2026-07-19 | 📚 SAF | Publish Gate 1–3 preparation authority | Completed — PR #13 merged |
+| DSP-001-027 | PORT-001 | 2026-07-19 | 📚 SAF | Gate 1 internal disposition | Completed — Verified |
+| DSP-001-028 | PORT-001 | 2026-07-19 | 📚 SAF / Command Desk ledger | Publish Gate 1 disposition and calibrate Ledger | In progress — Draft child PR pending |
 
 ## 8. Report Back log
 
-| Report ID | Portfolio item | Reported at | Professional Scope | Reported status | Result | Authoritative record | Next action | Blocker | Decision needed | Verification state |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| RPT-001 | PORT-001 | 2026-07-14 | SWS-001 authority establishment | Active | Minimum authoritative SWS record set created | `docs/sws/03_WORK_STATUS.md` | Operate pilot | None | None | Verified |
-| RPT-002 | PORT-003 | 2026-07-14 | Mission status verification | Intake | Historical evidence-gap finding | Draft PR #1 historical intake | Establish Mission authority | Historical BLK-005 | None | Superseded by RPT-012 for current coordination status |
-| RPT-003 | PORT-002 | 2026-07-14 | SAIG status verification | Active | Historical SAIG baseline status | Historical SAIG records | Reverify after material changes | Legacy detail | None | Historical |
-| RPT-004 | PORT-002 | 2026-07-14 | Wave A backup and access preparation | Review | Historical access preparation | PR #13 | Continue governance work | Historical | None | Historical |
-| RPT-005 | PORT-001 | 2026-07-14 | Repository migration assessment | Assessment | Repository inventory and Pilot selection | Professional Report Back | Verify Organization governance | None | None | Verified |
-| RPT-006 | PORT-001 | 2026-07-14 | `star-domains` migration | Successful | Controlled migration completed | Live GitHub evidence | Assess later repositories separately | None | None | Verified |
-| RPT-007 | PORT-001 | 2026-07-15 | `star-platform` migration | Successful | Controlled migration completed | Live GitHub and user evidence | Keep later migrations separately gated | None | None | Verified |
-| RPT-008 | PORT-002 | 2026-07-15 | SAIG pre-transfer assessment | Hold | Historical Hold recommendation | PR #14 | Reverify current relevance separately | Legacy details | Historical decisions | Historical |
-| RPT-009 | PORT-002 | 2026-07-15 | PR #14 professional review | Hold | Four revisions required | Review ID `4701570854` | Revise PR #14 | Historical | Historical | Verified historical review |
-| RPT-010 | PORT-002 | 2026-07-15 | PR #14 Hold-record merge | Hold | Approved Hold record merged | Merge commit `d0284118b98066b584484b6b675dcdc6388ef025` | Continue separately authorized governance work | Legacy details | None | Verified historical merge |
-| RPT-011 | PORT-002 | 2026-07-18 | Package A third-batch acceptance | Hold / Not Active | Records Published; `zhuangdongdong` Repository Read Verified; Independent Review and Personal Marker Readback Deferred, not Passed; Wave A inactive; policy not effective; PILOT-001 not started | PR #21 merge commit `7809a0f5ec92b130bbc311a981ab5ded8c8f8fa7` and public-safe opaque-reference summary | Complete or explicitly dispose of Deferred validations before activation | BLK-011 | PDR-007 | Verified for public coordination status |
-| RPT-012 | PORT-003 | 2026-07-18 | Package B and M001 third-batch acceptance | Candidate — Baseline Confirmed | Mission Owner Robin; Product / Service Owner Jason Lin; Package B Passed with findings; context recovery, fingerprints and real-platform `continue M001` completed; M1 not passed; M001 not Committed; Delivery and formal implementation not started | Draft PR #1 head `bb44bc43eca1245a4a92082a78fa4df45f5b82a6`, Work Status blob `7ec87d78cffcf0c710e2cc1d7ef74a4e661370b6`, DSP-003-006 | Close M1 assignments, dates, responsibilities and source inventory | BLK-010 | PDR-008 | Verified for public coordination status |
-| RPT-013 | PORT-001 | 2026-07-18 | Final Safe Ledger Update | Completed | Final third-batch public Safe Ledger Update completed and independently verified; awaiting approved child PR merge | DSP-001-020 child Draft PR | Merge PR #10 into Draft PR #2 working branch, then close the temporary operational exception | None | None | Verified by STAR Command Desk |
+| Report ID | Portfolio item | Reported at | Scope | Result | Next action | Verification state |
+|---|---|---|---|---|---|---|
+| RPT-001 | PORT-001 | 2026-07-14 | SWS authority establishment | Minimum SWS record set created | Operate pilot | Verified |
+| RPT-002 | PORT-003 | 2026-07-14 | Mission status verification | Historical evidence-gap finding | Establish Mission authority | Superseded by RPT-012 |
+| RPT-003 | PORT-002 | 2026-07-14 | SAIG status verification | Historical baseline | Reverify after changes | Historical |
+| RPT-004 | PORT-002 | 2026-07-14 | Wave A backup/access preparation | Historical access preparation | Continue governance work | Historical |
+| RPT-005 | PORT-001 | 2026-07-14 | Repository migration assessment | Inventory and Pilot selection | Verify Organization governance | Verified |
+| RPT-006 | PORT-001 | 2026-07-14 | `star-domains` migration | Successful controlled migration | Assess later repositories separately | Verified |
+| RPT-007 | PORT-001 | 2026-07-15 | `star-platform` migration | Successful controlled migration | Keep later migrations separately gated | Verified |
+| RPT-008 | PORT-002 | 2026-07-15 | SAIG pre-transfer assessment | Historical Hold recommendation | Reverify current relevance | Historical |
+| RPT-009 | PORT-002 | 2026-07-15 | PR #14 review | Four revisions required | Revise PR #14 | Verified historical review |
+| RPT-010 | PORT-002 | 2026-07-15 | PR #14 merge | Approved Hold record merged | Continue separately authorized work | Verified historical merge |
+| RPT-011 | PORT-002 | 2026-07-18 | Package A acceptance | Published; Read Verified; two validations Deferred; inactive | Complete/dispose of Deferred validations | Verified for coordination |
+| RPT-012 | PORT-003 | 2026-07-18 | Package B and M001 acceptance | Candidate baseline; M1 not passed; Delivery not started | Close M1 gaps | Verified for coordination |
+| RPT-013 | PORT-001 | 2026-07-18 | Safe Ledger Update | Third-batch Ledger calibration published through PR #10 | Continue PDAP coordination | Verified |
+| RPT-014 | PORT-001 | 2026-07-19 | PDAP Phase 0 | Evidence inventory completed; Gate 0 not declared passed | Proceed to Phase 1 | Verified |
+| RPT-015 | PORT-001 | 2026-07-19 | PDAP Phase 1 | Shared constraints and Candidate authority established | Prepare Gate packages | Verified |
+| RPT-016 | PORT-001 | 2026-07-19 | PDAP Gate 1–3 preparation | Gate 1 Recovery required; Gate 2 Conditional pass candidate; Gate 3 Recovery required | Conduct Gate 1 disposition | Verified |
+| RPT-017 | PORT-001 | 2026-07-19 | Gate 1 internal disposition | Recovery required; bounded bootstrap eligible for separate authorization; 2026-07-27 retained conditionally | Publish disposition, then decide bootstrap separately | Verified |
 
 ## 9. Closed items
 
-| Item ID | Title | Closed at | Closure reason | Final result | Authoritative evidence | Follow-up Scope |
-|---|---|---|---|---|---|---|
-| MIG-PILOT-001 | `star-domains` ownership migration Pilot | 2026-07-14 | All transfer and post-transfer checks passed | Successful controlled migration | Live GitHub evidence | Assess later repositories separately |
-| MIG-002 | `star-platform` ownership migration | 2026-07-15 | Pre-transfer, admin-page and post-transfer checks passed | Successful controlled migration | Live GitHub and user evidence | No later migration automatically authorized |
+| Item ID | Title | Closed at | Final result | Follow-up Scope |
+|---|---|---|---|---|
+| MIG-PILOT-001 | `star-domains` ownership migration Pilot | 2026-07-14 | Successful controlled migration | Assess later repositories separately |
+| MIG-002 | `star-platform` ownership migration | 2026-07-15 | Successful controlled migration | No later migration automatically authorized |
 
 ## 10. Freshness review
 
 | Item ID | Last verified at | Freshness | Reason | Required action |
 |---|---|---|---|---|
-| PORT-001 | 2026-07-18 | Current | DSP-001-020 source branch and Ledger baseline verified before this controlled update | PR #10 independently verified; merge the approved child PR, then start the separately scoped Company Git & GitHub Operating Baseline assessment |
-| PORT-002 | 2026-07-18 | Current | Public coordination status verified from PR #21 evidence; Deferred validations remain explicitly not Passed | Complete or explicitly dispose of Deferred validations; keep all governance capabilities inactive |
-| PORT-003 | 2026-07-18 | Current | Candidate baseline, owners, Package B result, context recovery, fingerprints and real-platform test verified from Draft PR #1 professional records | Close M1 participant, authority, date, responsibility and source-inventory gaps before commitment |
+| PORT-001 | 2026-07-19 | Current | PR #13 merge, Draft PR #2 Head and DSP-001-027 Report Back verified | Complete DSP-001-028 publication; decide bounded bootstrap separately |
+| PORT-002 | 2026-07-18 | Current | Public coordination status verified; Deferred validations explicit | Complete/dispose of Deferred validations; keep inactive |
+| PORT-003 | 2026-07-19 | Current | M001 status and PDAP Gate 2 preparation remain consistent | Close M1 and Gate 2 conditions before Commitment |
 
 ## 11. Pilot findings
 
-| Finding ID | Date | Observation | Impact | Proposed change | Status |
-|---|---|---|---|---|---|
-| PF-001 | 2026-07-14 | SWS-001 initially lacked durable GitHub authority | Command Desk could not cite SWS source | Establish `docs/sws/` records | Addressed |
-| PF-002 | 2026-07-14 | Project Instructions match SWS-CC-001 | Launch condition satisfied | Reverify after instruction changes | Verified |
-| PF-003 | 2026-07-14 | SmartQuote discussions initially lacked authoritative Mission status | PORT-003 was Intake / Unknown | Establish Mission Brief and records | Addressed for Candidate baseline; M1 remains open |
-| PF-004 | 2026-07-14 | SAIG stale source pointer was corrected | Professional status source restored | Keep pointers current | Addressed |
-| PF-005 | 2026-07-14 | First complete operating loop finished without professional execution in Command Desk | Minimum loop evidenced | Continue evidence collection | Verified |
-| PF-006 | 2026-07-14 | PR descriptions cannot substitute for file-level verification | Overstatement risk | Require file-level verification | Verified finding |
-| PF-007 | 2026-07-14 | GitHub App installation scope affected migration evidence | Migration risk | Use Organization-controlled installation and least privilege | Addressed historically |
-| PF-008 | 2026-07-14 | Empty repositories offered a low-risk migration-validation surface | Enabled controlled Pilot | Reuse only with separate approval | Verified |
-| PF-009 | 2026-07-14 | `star-domains` transfer preserved required controls | Migration method validated | Retain repository-by-repository gating | Verified |
-| PF-010 | 2026-07-15 | A professional Report Back reused an existing Dispatch ID | Evidence-chain ambiguity | Normalize IDs | Addressed |
-| PF-011 | 2026-07-15 | Connector evidence cannot prove all admin settings | Admin evidence gap | Keep webpage checks as a gate | Addressed historically |
-| PF-012 | 2026-07-15 | `star-platform` admin evidence passed | Transfer gate satisfied | Authorize only scoped transfer | Completed |
-| PF-013 | 2026-07-15 | `star-platform` transfer preserved required controls | Checklist validated again | Keep separate gates | Verified |
-| PF-014 | 2026-07-15 | Private governance repositories require domain-specific access evidence | Generic migration evidence is insufficient | Keep SAIG-specific controls | Verified finding |
-| PF-015 | 2026-07-15 | PR #14 required metadata and traceability corrections | Incomplete authority risk | Require independent verification | Addressed |
-| PF-016 | 2026-07-15 | Record approval does not equal operational activation | Premature activation risk | Preserve separate activation gates | Verified |
-| PF-017 | 2026-07-18 | Deferred validation must not be represented as Passed | Governance-state accuracy risk | Preserve Deferred state until completed or explicitly disposed | Verified finding |
-| PF-018 | 2026-07-18 | Candidate Mission baseline and Package B validation close the old Unknown-state blocker without passing M1 | Portfolio status can be current while delivery remains gated | Replace obsolete blockers with precise M1 gaps | Verified finding |
+| Finding ID | Date | Observation | Status |
+|---|---|---|---|
+| PF-001 | 2026-07-14 | SWS initially lacked durable GitHub authority | Addressed |
+| PF-002 | 2026-07-14 | Project Instructions match SWS-CC-001 | Verified |
+| PF-003 | 2026-07-14 | SmartQuote initially lacked authoritative Mission status | Addressed for Candidate baseline |
+| PF-004 | 2026-07-14 | SAIG stale source pointer corrected | Addressed |
+| PF-005 | 2026-07-14 | First complete operating loop finished outside professional execution | Verified |
+| PF-006 | 2026-07-14 | PR descriptions cannot replace file-level verification | Verified finding |
+| PF-007 | 2026-07-14 | GitHub App scope affects migration evidence | Addressed historically |
+| PF-008 | 2026-07-14 | Empty repositories support low-risk migration validation only | Verified |
+| PF-009 | 2026-07-14 | `star-domains` transfer preserved controls | Verified |
+| PF-010 | 2026-07-15 | Duplicate Dispatch ID created evidence ambiguity | Addressed |
+| PF-011 | 2026-07-15 | Connector evidence cannot prove all admin settings | Addressed historically |
+| PF-012 | 2026-07-15 | `star-platform` admin evidence passed | Completed |
+| PF-013 | 2026-07-15 | `star-platform` transfer preserved controls | Verified |
+| PF-014 | 2026-07-15 | Private governance repositories need domain-specific access evidence | Verified finding |
+| PF-015 | 2026-07-15 | PR #14 required metadata/traceability corrections | Addressed |
+| PF-016 | 2026-07-15 | Record approval does not equal operational activation | Verified |
+| PF-017 | 2026-07-18 | Deferred validation must not be represented as Passed | Verified |
+| PF-018 | 2026-07-18 | Candidate Mission status may be current while Delivery stays gated | Verified |
+| PF-019 | 2026-07-19 | Documentation completion does not close engineering-readiness blockers | Verified |
+| PF-020 | 2026-07-19 | Eligibility for separate authorization is not authorization | Verified |
 
 ## 12. Expansion review
 
@@ -169,16 +188,6 @@ Do not add another management conversation or Dashboard unless pilot evidence de
 
 | Version | Date | Change | Basis |
 |---|---|---|---|
-| v0.1.0 | 2026-07-14 | Established initial pilot ledger and three items | SWS-DEC-005 to SWS-DEC-009 |
-| v0.1.1 | 2026-07-14 | Verified PORT-001 and recorded launch blockers | SWS-CC-001 and SWS Work Status |
-| v0.2.0 | 2026-07-14 | Populated PORT-002 and PORT-003 and evidenced first loop | DSP/RPT verification |
-| v0.2.1 | 2026-07-14 | Set PORT-002 to Review and recorded Organization prerequisite | RPT-004 and live GitHub verification |
-| v0.2.2 | 2026-07-14 | Recorded repository migration assessment | DSP-001-001 and RPT-005 |
-| v0.2.3 | 2026-07-14 | Closed `star-domains` migration Pilot | DSP-001-002 and RPT-006 |
-| v0.2.4 | 2026-07-15 | Recorded `star-platform` assessment and normalized duplicate Dispatch ID | DSP-001-003 and RPT-007 |
-| v0.2.5 | 2026-07-15 | Accepted clean admin-page evidence | User verification |
-| v0.2.6 | 2026-07-15 | Closed `star-platform` migration | Live verification |
-| v0.2.7 | 2026-07-15 | Recorded SAIG Hold recommendation | DSP-002-003 and RPT-008 |
-| v0.2.8 | 2026-07-15 | Recorded PR #14 professional review | DSP-002-004 and RPT-009 |
-| v0.2.9 | 2026-07-15 | Recorded PR #14 merge and retained Hold | DSP-002-005 and RPT-010 |
-| v0.3.0 | 2026-07-18 | Calibrated third-batch public coordination status for PORT-001, PORT-002 and PORT-003; replaced obsolete PORT-003 blockers; marked unverified legacy SAIG details Stale; preserved all inactive and uncommitted boundaries | DSP-002-009, DSP-003-006 and DSP-001-020 |
+| v0.1.0–v0.2.9 | 2026-07-14 to 2026-07-15 | Established pilot, verified workstreams and completed controlled migrations / historical SAIG Hold records | SWS and Dispatch evidence |
+| v0.3.0 | 2026-07-18 | Calibrated third-batch public coordination status; preserved inactive/uncommitted boundaries | DSP-002-009, DSP-003-006, DSP-001-020 |
+| v0.4.0 | 2026-07-19 | Recorded PDAP Phase 0–4 preparation, Gate 1 internal disposition, open engineering-readiness blockers, conditional schedule and separate bounded-bootstrap decision | DSP-001-021 through DSP-001-028 |
