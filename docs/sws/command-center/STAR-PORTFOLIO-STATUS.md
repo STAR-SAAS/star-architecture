@@ -3,7 +3,7 @@
 | Field | Value |
 |---|---|
 | **Document ID** | STAR-PORTFOLIO-001 |
-| **Version / status** | v0.6.0 — bounded-bootstrap squash merge recorded; post-merge workflow root-contract blocker identified; Gate 1 remains Recovery required; not frozen |
+| **Version / status** | v0.7.0 — post-merge workflow correction verified and squash-merged; workflow blocker closed; Gate 1 remains Recovery required; not frozen |
 | **Scope** | STAR Command Center portfolio coordination |
 | **Owner** | STAR leadership |
 | **Maintainer** | STAR Command Desk |
@@ -33,21 +33,21 @@
 
 | Priority / condition | Count | Note |
 |---|---:|---|
-| Now | 1 | PORT-001 post-merge workflow correction and Gate 1 recovery ownership |
+| Now | 1 | PORT-001 Gate 1 recovery ownership confirmation |
 | Next | 2 | SAIG deferred validations; M001 M1 preparation and authority closure |
 | Review | 0 | |
 | Waiting | 0 | |
 | Later | 0 | |
 | Parked | 0 | |
-| Active blockers | 3 | PDAP accepted engineering ownership and post-merge workflow defect; SAIG deferred validations; M001 M1 gaps |
-| Decision Needed | 3 | workflow correction / accepted engineering owners; SAIG deferred-review disposition; M001 participant and authority assignments |
+| Active blockers | 3 | PDAP accepted engineering ownership; SAIG deferred validations; M001 M1 gaps |
+| Decision Needed | 3 | accepted engineering owners; SAIG deferred-review disposition; M001 participant and authority assignments |
 | Stale / requires re-verification | 1 | Legacy SAIG migration/access blocker details require separate professional re-verification |
 
 ## 3. Current portfolio
 
 | Item ID | Title | Workstream | Type | Priority | Status | Professional Project | Professional Conversation | Accountable Owner | Current Focus | Next Action | Blocker | Decision Needed | Authoritative Source | Last Reported At | Last Verified At | Freshness |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| PORT-001 | SWS-001 · STAR Workspace Specification / PDAP coordination | STAR Workspace | Specification / Program coordination | Now | Active — Gate 1 Recovery required | STAR OS | 📚 STAR Architecture Framework (SAF) | STAR leadership / Jason Lin for PDAP | Bounded bootstrap was squash-merged to `STAR-SAAS/star-platform` main at `faa8d4e5dcdcee703f59d0eb60befec86ca748ae`; PR #1 is closed and merged; formal engineering has not started | Route a bounded correction for the workflow root-contract assertion, then confirm accepted application engineering and platform/operations ownership before any Gate 1 or engineering-start decision | Workflow on `main` still asserts `origin/main` equals the original root SHA and may fail on future runs; accepted application engineering and platform/operations owners remain unconfirmed; Gate 1 remains Recovery required | Authorize a workflow-only correction under separate Dispatch; confirm accepted application engineering and platform/operations owners; retain or reforecast 2026-07-27 based on remaining evidence | `STAR-SAAS/star-platform` PR #1 squash merge `faa8d4e5dcdcee703f59d0eb60befec86ca748ae`; prior CI run `29717645667`; job `88273936772`; PR #14 merge `d1f96badce5dd0149932f5097de5d71ec70cf125`; PR #15 merge `201e38cca7f810b9df079b96a8d33b491c2182d6` | 2026-07-20 | 2026-07-20 | Current |
+| PORT-001 | SWS-001 · STAR Workspace Specification / PDAP coordination | STAR Workspace | Specification / Program coordination | Now | Active — Gate 1 Recovery required | STAR OS | 📚 STAR Architecture Framework (SAF) | STAR leadership / Jason Lin for PDAP | Bounded bootstrap and the post-merge workflow correction are squash-merged to `STAR-SAAS/star-platform` main; workflow verification passed; formal engineering has not started | Confirm accepted application engineering and platform/operations ownership before any Gate 1 or engineering-start decision | Accepted application engineering and platform/operations owners remain unconfirmed; Gate 1 remains Recovery required | Accepted application engineering and platform/operations owners; retain or reforecast 2026-07-27 based on remaining evidence | `STAR-SAAS/star-platform` PR #1 merge `faa8d4e5dcdcee703f59d0eb60befec86ca748ae`; PR #2 merge `9e01e9c0f5ae3145f2dad2595def0483f2d2131e`; workflow run `29731532817`; job `88316911381` | 2026-07-20 | 2026-07-20 | Current |
 | PORT-002 | STAR AI Governance | AI Governance | Governance | Next | Hold | STAR AI Governance | ⭐ STAR AI Governance | Robin — COO / AI Governance Owner | Package A records Published; `zhuangdongdong` Repository Read Verified; Independent Review and Personal Marker Readback Deferred, not Passed; all related capabilities inactive | Complete or explicitly dispose of the two Deferred validations before any activation decision | Two Deferred validations remain; legacy migration/access detail is Stale | Deferred-review disposition | PR #21 merge commit `7809a0f5ec92b130bbc311a981ab5ded8c8f8fa7`; approved public-safe summary | 2026-07-18 | 2026-07-18 | Current |
 | PORT-003 | Mission-001 · SmartQuote Foundation | SmartQuote | Mission | Next | Candidate — Baseline Confirmed | SmartQuote / Mission-001 | 🚀 M001 · SmartQuote Foundation | Robin | M1 has not passed; M001 is not Committed; SmartQuote Delivery and formal implementation have not started; Gate 2 recommendation is Conditional pass candidate only | Close M1 assignments, authorities, dates, responsibilities and prior-source inventory; separately close Gate 2 conditions | Required M1 participants/authorities and Gate 2 SoR, repository/environment, security/test evidence remain open | Product / Service Owner Jason Lin; remaining participant, architecture and release/closure authority assignments | Draft PR #1 at `bb44bc43eca1245a4a92082a78fa4df45f5b82a6`; DSP-003-006; PDAP Gate 2 preparation records | 2026-07-19 | 2026-07-19 | Current |
 
@@ -67,7 +67,7 @@
 | PDR-010 | PORT-001 | Decide whether to authorize bounded bootstrap | Eligibility was not authorization | Jason Lin | After DSP-001-028 publication | Closed 2026-07-20 — DSP-001-033 and controlled recovery DSP-001-033-R1 through R5 authorized; bootstrap and CI evidence completed and verified |
 | PDR-011 | PORT-001 | Confirm accepted application engineering and platform/operations owners | Candidate status cannot satisfy Gate 1 or engineering-start accountability | Jason Lin with relevant professionals | Before Gate 1 passage and engineering start | Open |
 | PDR-012 | PORT-001 | Decide whether to merge `STAR-SAAS/star-platform` Draft PR #1 | Successful bounded-bootstrap evidence did not itself authorize merge | Jason Lin | After DSP-001-036 verification | Closed 2026-07-20 — DSP-001-037 authorized Ready for review and squash merge; merged as `faa8d4e5dcdcee703f59d0eb60befec86ca748ae` |
-| PDR-013 | PORT-001 | Authorize a bounded correction to the post-merge root-contract workflow assertion | Current workflow compares `origin/main` to the original root SHA, which is no longer true after merge | Jason Lin | Post-merge verification under DSP-001-037 | Open |
+| PDR-013 | PORT-001 | Authorize a bounded correction to the post-merge root-contract workflow assertion | Current workflow compared `origin/main` to the original root SHA after main advanced | Jason Lin | Post-merge verification under DSP-001-037 | Closed 2026-07-20 — DSP-001-039-R1 corrected the assertion; CI passed; DSP-001-040 squash-merged PR #2 as `9e01e9c0f5ae3145f2dad2595def0483f2d2131e` |
 
 ## 5. Cross-project dependencies
 
@@ -76,8 +76,8 @@
 | DEP-001 | PORT-001 | PORT-002 and PORT-003 | Pilot requires verified professional-source entries | Satisfied for current coordination; ongoing freshness required | STAR Command Desk | Reverify after material changes | SWS-CC-001 and Report Backs |
 | DEP-002 | PORT-002 | PORT-001 | SAIG relies on company GitHub governance | Legacy detail requires separate re-verification; no activation authorized | STAR leadership / SAF / SAIG | Use future cross-cutting controls without changing SAIG activation here | DSP-001-020 |
 | DEP-003 | PORT-003 | M1 participants and authorities | Candidate baseline must pass M1 before Commitment or Delivery | Open | Robin / Jason Lin | Close assignments, dates, responsibilities and source inventory | Draft PR #1 |
-| DEP-004 | PORT-001 | Application engineering and platform/operations accountability | Gate 1 and engineering start require actual accepted owners; executable bounded-bootstrap evidence is available | Open — ownership remains unconfirmed | Jason Lin | Prepare concentrated owner validation under separate Dispatch | DSP-001-027; DSP-001-033 through DSP-001-037 |
-| DEP-005 | PORT-001 | Correct default-branch workflow semantics | Future PR verification must not require `main` to equal the historical root commit | Open | Product Delivery / repository maintainer under separate authorization | Prepare exact workflow-only correction and proof plan | DSP-001-037 post-merge verification |
+| DEP-004 | PORT-001 | Application engineering and platform/operations accountability | Gate 1 and engineering start require actual accepted owners; executable bounded-bootstrap evidence is available | Open — ownership remains unconfirmed | Jason Lin | Prepare concentrated owner validation under separate Dispatch | DSP-001-027; DSP-001-033 through DSP-001-040 |
+| DEP-005 | PORT-001 | Correct default-branch workflow semantics | Future PR verification must validate historical-root ancestry without requiring `main` to equal the root | Satisfied 2026-07-20 | Product Delivery / repository maintainer | Preserve corrected invariant in future workflow changes | DSP-001-039-R1; DSP-001-040; merge `9e01e9c0f5ae3145f2dad2595def0483f2d2131e` |
 
 ## 6. Blockers
 
@@ -94,8 +94,8 @@
 | BLK-009 | PORT-002 | PR #14 had professional-review findings | Hold record not ready | STAR AI Governance | Revise/re-review | 2026-07-15 | Review evidence | Resolved 2026-07-15 |
 | BLK-010 | PORT-003 | M1 participant, authority, date, responsibility and source-inventory gaps | M1, Commitment and Delivery blocked | Robin / Jason Lin | Close named gaps | 2026-07-18 | Draft PR #1 / DSP-003-006 | Open |
 | BLK-011 | PORT-002 | Independent Review and Personal Marker Readback Deferred | Package A and related capabilities remain inactive | STAR AI Governance / leadership | Complete or dispose of both validations | 2026-07-18 | PR #21 / DSP-002-009 | Open |
-| BLK-012 | PORT-001 | Gate 1 evidence and accountability incomplete | Gate 1 and engineering start cannot be authorized | Jason Lin pending accepted engineering owners | Confirm accepted application engineering and platform/operations owners; retain recovery and non-production boundaries | 2026-07-19 | DSP-001-027; `star-platform` PR #1; workflow run `29717645667`; merge `faa8d4e5dcdcee703f59d0eb60befec86ca748ae` | Partially resolved 2026-07-20 — repository bootstrap, executable environment/build/CI/test, secret and synthetic-data checks verified and merged; ownership and Gate 1 passage remain open |
-| BLK-013 | PORT-001 | Default-branch workflow root-contract assertion is stale after squash merge | Future PR verification may fail because `origin/main` no longer equals `b8ca6ed444f972af2968c007c3be1e3342347efa` | Product Delivery / repository maintainer under separate authorization | Replace the historical-main equality check with an invariant that validates the root commit without requiring current `main` to equal it; verify on a bounded PR | 2026-07-20 | `.github/workflows/bootstrap-checks.yml` on main at merge `faa8d4e5dcdcee703f59d0eb60befec86ca748ae` | Open — discovered during DSP-001-037 post-merge verification |
+| BLK-012 | PORT-001 | Gate 1 evidence and accountability incomplete | Gate 1 and engineering start cannot be authorized | Jason Lin pending accepted engineering owners | Confirm accepted application engineering and platform/operations owners; retain recovery and non-production boundaries | 2026-07-19 | DSP-001-027; `star-platform` PR #1; workflow runs `29717645667` and `29731532817`; merges `faa8d4e5dcdcee703f59d0eb60befec86ca748ae` and `9e01e9c0f5ae3145f2dad2595def0483f2d2131e` | Partially resolved 2026-07-20 — repository bootstrap and corrected executable CI evidence are verified and merged; ownership and Gate 1 passage remain open |
+| BLK-013 | PORT-001 | Default-branch workflow root-contract assertion was stale after squash merge | Future PR verification would fail because `origin/main` no longer equaled the original root SHA | Product Delivery / repository maintainer | Replace equality with historical-root ancestry and verify through bounded CI | 2026-07-20 | DSP-001-038 through DSP-001-040 | Resolved 2026-07-20 — PR #2 CI succeeded and squash merge `9e01e9c0f5ae3145f2dad2595def0483f2d2131e` is on main |
 
 ## 7. Dispatch log
 
@@ -135,6 +135,10 @@
 | DSP-001-035 | PORT-001 | 2026-07-20 | 🏗️ STAR OS · Product Delivery | Final professional acceptance and merge recommendation | Completed — Merge-ready after metadata-only correction |
 | DSP-001-036 | PORT-001 | 2026-07-20 | 🏗️ STAR OS · Product Delivery | Apply PR #1 metadata-only correction | Completed — Verified |
 | DSP-001-037 | PORT-001 | 2026-07-20 | ⭐ STAR Command Desk | Mark PR #1 Ready and execute authorized squash merge | Completed — PR #1 merged as `faa8d4e5dcdcee703f59d0eb60befec86ca748ae`; post-merge workflow blocker identified |
+| DSP-001-038 | PORT-001 | 2026-07-20 | 🏗️ STAR OS · Product Delivery | Assess post-merge workflow root-contract defect | Completed — correction required; exact bounded patch ready |
+| DSP-001-039 | PORT-001 | 2026-07-20 | 🏗️ STAR OS · Product Delivery | Execute exact one-line workflow correction with local pre-validation | Stopped safely — local DNS/network unavailable; zero GitHub write impact |
+| DSP-001-039-R1 | PORT-001 | 2026-07-20 | ⭐ STAR Command Desk | Execute one-line correction through GitHub Connector and verify through hosted CI | Completed — Verified; PR #2 CI success |
+| DSP-001-040 | PORT-001 | 2026-07-20 | ⭐ STAR Command Desk | Mark PR #2 Ready and execute authorized squash merge | Completed — PR #2 merged as `9e01e9c0f5ae3145f2dad2595def0483f2d2131e` |
 
 ## 8. Report Back log
 
@@ -161,6 +165,7 @@
 | RPT-019 | PORT-001 | 2026-07-20 | Bounded-bootstrap CI verification | No-op commit `dbb1f47d1eb3569d05d131e0e9ae38c9ab68b766` triggered workflow run `29717645667`; job `88273936772` and all verification steps succeeded | Decide PR #1 merge and engineering owners separately | Verified |
 | RPT-020 | PORT-001 | 2026-07-20 | PR #1 final acceptance and metadata correction | Merge-ready after metadata-only correction; authorized body applied without repository changes | Execute separately authorized merge | Verified |
 | RPT-021 | PORT-001 | 2026-07-20 | PR #1 squash merge and post-merge verification | PR #1 merged as `faa8d4e5dcdcee703f59d0eb60befec86ca748ae`; Gate 1 and engineering start unchanged; stale root-contract assertion discovered on main | Route workflow-only correction; retain ownership blocker | Verified |
+| RPT-022 | PORT-001 | 2026-07-20 | Workflow root-contract correction and merge | One-line ancestry correction passed run `29731532817`, job `88316911381`, and PR #2 was squash-merged as `9e01e9c0f5ae3145f2dad2595def0483f2d2131e` | Confirm accepted engineering owners; keep Gate 1 Recovery required | Verified |
 
 ## 9. Closed items
 
@@ -173,7 +178,7 @@
 
 | Item ID | Last verified at | Freshness | Reason | Required action |
 |---|---|---|---|---|
-| PORT-001 | 2026-07-20 | Current | `star-platform` PR #1 was marked Ready and squash-merged as `faa8d4e5dcdcee703f59d0eb60befec86ca748ae`; workflow presence on main verified; stale root-contract assertion identified | Correct workflow under separate authorization; confirm accepted application engineering and platform/operations owners; keep Gate 1 Recovery required |
+| PORT-001 | 2026-07-20 | Current | `star-platform` PR #1 and PR #2 are squash-merged; corrected ancestry assertion is present on main; workflow run `29731532817` and job `88316911381` succeeded | Confirm accepted application engineering and platform/operations owners; keep Gate 1 Recovery required |
 | PORT-002 | 2026-07-18 | Current | Public coordination status verified; Deferred validations explicit | Complete/dispose of Deferred validations; keep inactive |
 | PORT-003 | 2026-07-19 | Current | M001 status and PDAP Gate 2 preparation remain consistent | Close M1 and Gate 2 conditions before Commitment |
 
@@ -203,7 +208,8 @@
 | PF-020 | 2026-07-19 | Eligibility for separate authorization is not authorization | Verified |
 | PF-021 | 2026-07-20 | Successful bounded-bootstrap CI evidence does not pass Gate 1, authorize engineering start or authorize PR merge | Verified |
 | PF-022 | 2026-07-20 | A no-op branch update can provide a reversible `pull_request: synchronize` trigger without changing repository content | Verified |
-| PF-023 | 2026-07-20 | A successful pre-merge root-contract assertion can become stale after the default branch advances | Verified finding — correction required |
+| PF-023 | 2026-07-20 | A successful pre-merge root-contract assertion can become stale after the default branch advances | Addressed — ancestry invariant merged through PR #2 |
+| PF-024 | 2026-07-20 | Low-risk single-file corrections should use a minimal-change, hosted-CI and single-report loop when local execution is unavailable | Verified finding |
 
 ## 12. Expansion review
 
@@ -218,3 +224,4 @@ Do not add another management conversation or Dashboard unless pilot evidence de
 | v0.4.0 | 2026-07-19 | Recorded PDAP Phase 0–4 preparation, Gate 1 internal disposition, open engineering-readiness blockers, conditional schedule and separate bounded-bootstrap decision | DSP-001-021 through DSP-001-028 |
 | v0.5.0 | 2026-07-20 | Recorded PR #14/#15 publication, bounded-bootstrap authorization, recovery, exact 34-path repository result, successful GitHub Actions verification, remaining ownership blocker and separate PR #1 merge decision | DSP-001-029 through DSP-001-034 |
 | v0.6.0 | 2026-07-20 | Recorded DSP-001-035/036 acceptance and metadata correction, DSP-001-037 Ready transition and squash merge, final main commit, and newly discovered post-merge workflow root-contract blocker | DSP-001-035 through DSP-001-037 |
+| v0.7.0 | 2026-07-20 | Recorded DSP-001-038 assessment, safe stop under DSP-001-039, hosted-CI recovery under DSP-001-039-R1, PR #2 squash merge under DSP-001-040, and closure of the workflow blocker | DSP-001-038 through DSP-001-040 |
