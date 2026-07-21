@@ -1,5 +1,25 @@
 # STAR OS Global Governance Changelog
 
+## [0.1.2] — 2026-07-21
+
+### Consolidated
+
+- recalibrated Draft PR #2 body to current Global Governance, SWS-001, Command Center, Context Package and Alias Registry status;
+- reduced `docs/sws/03_WORK_STATUS.md` to current objective, state, blockers, active decisions, next action and freshness;
+- consolidated current SWS open questions and marked replaced Pilot-start questions as Superseded;
+- added a minimal Scope Alias Registry Pilot with one verified alias only;
+- added a bounded public/private remediation register without private paths, mappings, markers or sensitive detail;
+- added consolidation-readiness and independent trace-review checklists.
+
+### Boundaries
+
+- Global Governance remains a Working Baseline.
+- SWS-001, STAR Command Center, Context Package, Scope Alias Registry and Portfolio Ledger remain Pilot.
+- Automatic context loading remains Not started.
+- Mode transfer and future AI capability integration remain Candidate.
+- This consolidation does not activate policy, pass any Gate, commit a product, start Delivery, freeze or merge Draft PR #2.
+- Professional truth remains in owning professional sources.
+
 ## [0.1.1] — 2026-07-19
 
 ### Added
