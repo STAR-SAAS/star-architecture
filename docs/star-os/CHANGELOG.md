@@ -1,5 +1,30 @@
 # STAR OS Global Governance Changelog
 
+## [0.1.3] — 2026-07-21
+
+### Added
+
+- `GDEC-0013` through `GDEC-0019` recording seven confirmed company Authority principles.
+- `STAR_COMPANY_GOVERNANCE_AUTHORITY_MODEL.md` as a Candidate Authority Model.
+- `STAR_CORPORATE_DELEGATION_RISK_CONTROL_BASELINE.md` as the Candidate preparation record for the next governance batch.
+- a Candidate Authority acceptance mechanism requiring designation, explicit acceptance, scope, accountability, independence checks, Source of Record, effective date, review/expiry, access verification and replacement/revocation.
+
+### Status
+
+- Leadership decisions: Confirmed.
+- Authority Model: Candidate.
+- Policy effective status: Not Effective.
+- Named appointments and Authority-holder appointments: None.
+- Monetary, commercial, risk, delegation-duration and emergency-duration thresholds: Missing.
+
+### Boundaries
+
+- No person or committee is appointed.
+- No policy becomes effective.
+- No system permission becomes decision Authority.
+- No Architecture Gate, M1, Product Commitment, Engineering Start, Delivery, Release, Freeze or Merge is authorized.
+- SAIG, SmartQuote and GateHub professional status remains unchanged.
+
 ## [0.1.2] — 2026-07-21
 
 ### Consolidated
