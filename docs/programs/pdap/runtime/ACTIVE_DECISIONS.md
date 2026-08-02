@@ -1,0 +1,25 @@
+# PDAP Active Decisions
+
+- PDAP Founder-led Fast Track is leadership confirmed.
+- Jason Lin is Accountable Owner and Decision Approver.
+- Jason Lin with approved AI capabilities remains the default pre-development execution model.
+- Through 2026-07-26, Dorden, Robin and Allen receive no execution tasks; Ka Chen and Eric remain future owner candidates only.
+- Shared Foundation 2026-07-27 is retained conditionally with a 2026-07-24 disposition cutoff. SmartQuote 2026-08-03 and GateHub 2026-08-10 remain At risk. Dates are not automatic authorization.
+- Gate 1 recommendation is Recovery required; Gate 1 has not passed and engineering start is not authorized.
+- Bounded bootstrap is eligible for separate authorization only. No bounded bootstrap is authorized by this record.
+- Actual application engineering and platform/infrastructure/operations owners are required before Gate 1 passage and engineering start. Candidate status is insufficient and is not an assignment.
+- SmartQuote Gate 2 recommendation is Conditional pass candidate only; Gate 2, M1 and Product Commitment have not passed.
+- GateHub Gate 3 recommendation is Recovery required; Gate 3 has not passed.
+- Gate 4 has not started; the cross-product record is preview only.
+- GateHub first stage excludes payment routing, transaction execution, settlement and ledger.
+- Merchant Identity remains for Gate 4 disposition; neither SmartQuote nor GateHub may claim unilateral ownership.
+- Reusable channel-cost source ownership must close before actual Gate 2 disposition.
+- AA-01 through AA-04 remain approved temporary assumptions.
+- AA-05 and AA-06 are approved for bounded Gate 1 use until 2026-08-07 or their corresponding RFC approval, whichever occurs first. They cannot replace actual logging, health, build, test, CI checks, artifact identity or evidence.
+- AA-07 through AA-09 remain Candidate and are not approved for use.
+- Staging and Production may be deferred only for a bounded non-production first increment with no live credentials, customer/KYC/payment data or product business implementation.
+- After 2026-07-26, two concentrated feasibility validations may be prepared for application engineering and platform/operations. This record assigns no task.
+- Identity/Tenant/Security minimum boundaries remain design inputs, not final architecture.
+- `STAR-SAAS/star-platform` remains a Candidate repository and is not engineering-ready.
+- Reversible matters use an Approved Assumption or ADR/RFC backlog; unresolved high-cost, cross-product, core-data, security, legal/compliance or non-reversible matters may block a Gate.
+- This record does not approve a technology stack, final product architecture, bounded-bootstrap execution, engineering start, M1, Product Commitment, SmartQuote Delivery or GateHub Delivery.
