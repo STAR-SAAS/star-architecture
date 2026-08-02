@@ -2,10 +2,10 @@
 
 | Field | Value |
 |---|---|
-| **Version / status** | v0.1.2 — Active confirmed working decisions; not frozen |
+| **Version / status** | v0.1.3 — Active confirmed working decisions; not frozen |
 | **Owner** | STAR leadership |
 | **Maintainer** | STAR OS governance maintainers |
-| **Last reviewed** | 2026-07-21 |
+| **Last reviewed** | 2026-08-02 |
 | **Review trigger** | New global decision, supersession, cross-domain conflict or freeze proposal |
 | **Scope** | All STAR work unless a decision states otherwise |
 | **Access** | Public; sensitive governance records belong in approved private systems |
@@ -41,11 +41,13 @@
 | **GDEC-0017** | Law or regulatory prohibition, customer or merchant data confidentiality, credential protection, core Tenant Isolation, KYC or AML obligations, customer contract restrictions, Production Release Authority and unresolved Critical Security Risk cannot be bypassed through temporary assumptions or Founder-led Fast Track. | Global risk boundary | DSP-001-048 Decision 5 |
 | **GDEC-0018** | Emergency Authority is temporary containment authority only. It requires explicit scope, expiry, notification and retrospective review and never becomes continuing Authority automatically. | Global emergency governance | DSP-001-048 Decision 6 |
 | **GDEC-0019** | Founder-led Fast Track must end before policy activation, formal appointment, Product Commitment, Gate passage, Engineering Start, real sensitive-data use, production environment use, external customer use, material financial decision or legal/compliance professional judgment. | Global execution boundary | DSP-001-048 Decision 7 |
+| **GDEC-0020** | STAR approves Batch A as the **Company Minimum Control Baseline · Candidate Operational Baseline**, covering the Company Authority Register; appointment, explicit acceptance, revocation, replacement and temporary delegation mechanisms; four-eyes and segregation of duties; Risk Acceptance and Exception controls; Emergency Authority; and the Founder-led Fast Track Exit Checklist. The approval creates no named appointment, threshold, effective policy, Gate passage, Engineering Start, Delivery, production or permission change. | Global company governance and product readiness | Leadership approval, 2026-08-02 |
 
 ## Decision status distinctions
 
-- Leadership decisions `GDEC-0013` through `GDEC-0019`: **Confirmed**.
+- Leadership decisions `GDEC-0013` through `GDEC-0020`: **Confirmed**.
 - STAR Company Governance Authority Model: **Candidate**.
+- Company Minimum Control Baseline: **Candidate Operational Baseline**.
 - Policy effective status: **Not Effective**.
 - Named appointments or Authority-holder appointments: **None**.
 - Numeric monetary, commercial, risk, delegation-duration and emergency-duration thresholds: **Missing**.
@@ -54,10 +56,11 @@
 
 | Target | Current action |
 |---|---|
-| STAR global governance | Apply these confirmed principles as working constraints |
+| STAR global governance | Apply these confirmed principles and Batch A as governed working constraints |
 | PORT-001 | Authority design may continue; Draft PR #2 remains Draft and not frozen or merge-authorized |
 | PORT-002 | SAIG remains professional authority for AI governance; no activation status changes |
 | PORT-003 | Product and Mission boundaries apply; M1, Gate 2, Commitment and Delivery remain separate decisions |
+| SmartQuote and GateHub | Proceed only to named-Authority binding and Engineering Start readiness; no automatic Gate or Engineering Start authorization |
 | Other STAR domains | Apply at the next governed bootstrap or domain update |
 
 ## Supersession rule
