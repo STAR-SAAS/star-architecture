@@ -1,5 +1,31 @@
 # STAR OS Global Governance Changelog
 
+## [0.1.4] — 2026-08-02
+
+### Approved
+
+- `GDEC-0020` records leadership approval of the **Company Minimum Control Baseline · Candidate Operational Baseline**.
+- Batch A establishes the Company Authority Register; appointment, explicit acceptance, revocation, replacement and temporary-delegation mechanisms; four-eyes and segregation of duties; Risk Acceptance and Exception controls; Emergency Authority; and the Founder-led Fast Track Exit Checklist.
+- The Corporate Delegation, Risk and Control Baseline is promoted from Candidate preparation record to Candidate Operational Baseline.
+
+### Status
+
+- Company Minimum Control Baseline: Candidate Operational Baseline.
+- Policy effective status: Not Effective.
+- Named appointments: None.
+- Monetary, commercial, risk, temporary-delegation and emergency-duration thresholds: Missing.
+
+### Boundaries
+
+- No person or committee is appointed.
+- No policy becomes effective.
+- No threshold is created.
+- No system, repository, environment or data permission changes.
+- No system permission becomes company Authority.
+- No M1, Gate 2, Gate 3 or other Gate is passed.
+- SmartQuote Engineering Start, GateHub Engineering Start, Delivery, Release and production remain unauthorized.
+- Draft PR #2 remains Open / Draft / Unmerged; Ready, Freeze and Merge status are unchanged.
+
 ## [0.1.3] — 2026-07-21
 
 ### Added
