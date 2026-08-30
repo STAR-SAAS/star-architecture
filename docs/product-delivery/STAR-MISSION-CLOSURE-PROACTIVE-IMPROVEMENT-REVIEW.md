@@ -4,12 +4,14 @@
 |---|---|
 | Document ID | STAR-PD-TPL-001 |
 | Version | 1.0 |
-| Status | Proposed |
+| Status | Effective |
 | Owner | Mission Owner and Delivery Authority |
 | Applicability | Every STAR Mission before closure recommendation |
 | Classification | Internal |
 | Related standard | SAIG-STD-002 v1.1 |
 | Related decision | SAIG-DEC-025 |
+| Effective date | 2026-08-30 |
+| Approval basis | SAIG-DEC-025 |
 
 ## 1. Purpose
 
