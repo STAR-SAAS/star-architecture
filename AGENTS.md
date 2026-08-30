@@ -9,3 +9,10 @@ Report: Severity; Observed Signal; Impact; Root Cause (Confirmed/Probable/Unknow
 Critical: report immediately; do not take the affected high-risk/irreversible action. Material: report before the decision point. Optimisation: record for consolidated backlog review.
 
 Advice is not authority. Do not expand scope or change production, permissions, finance, customer data, external systems, paid services, or material records without explicit approval. Continue only safe authorised work that does not pre-empt the decision.
+
+
+## Mission Completion Proactive Improvement Review
+
+Before recommending any Mission for closure, complete STAR-PD-TPL-001 · Mission Closure Proactive Improvement Review. Review all required areas and mark each as Finding, No Finding — Evidenced, Not Assessed, or Not Applicable. Do not treat a blank answer or unsupported assertion as no finding.
+
+Do not recommend full closure with an unresolved Critical finding. Material findings require an explicit treatment decision, owner, and target date. Optimisations may enter the Improvement Backlog. The review does not grant authority to remediate, accept risk, or expand scope.
