@@ -2,11 +2,11 @@
 
 | Field | Value |
 |---|---|
-| **Version / status** | v0.1.0 — Active Mission-level decisions |
+| **Version / status** | v0.2.0 — Active Mission-level decisions |
 | **Mission status** | Candidate — Baseline Confirmed; not Committed |
 | **Mission Owner** | Robin |
 | **Product / Service Owner** | Jason Lin |
-| **Last consolidated** | 2026-07-17 (Asia/Singapore) |
+| **Last consolidated** | 2026-09-12 (Asia/Singapore) |
 | **Authoritative source** | This path in Draft PR #1 on `agent/star-os-product-delivery-baseline` |
 
 ## Use rules
@@ -39,6 +39,7 @@
 | **M001-DEC-017** | SmartQuote is API-first for future CRM, Merchant Portal and partner integration. | SmartQuote product constraint | Previously confirmed product decision reaffirmed in DSP-003-002/003 context |
 | **M001-DEC-018** | SmartQuote must eventually support Whitelabel and independent deployment; this is a future product constraint, not permission to over-expand the first stage. | SmartQuote product constraint | Previously confirmed product decision reaffirmed in DSP-003-002/003 context |
 | **M001-DEC-019** | Unsupported historical completion or freeze claims are classified as `Unverified / Not authoritative`; `Superseded` requires an explicit authoritative supersession record. | M001 evidence classification | Leadership Dispatch DSP-003-003 |
+| **M001-DEC-020** | `STAR-SAAS/smartquote` is the approved independent SmartQuote product engineering repository. `STAR-SAAS/star-architecture` remains the M001 Mission/Gate/Authority working SoR; `STAR-SAAS/star-ai-governance` remains the company governance/SAIG/SAES SoR; `smartquote` becomes the product/engineering SoR only as specific work is authorized. Repository creation does not pass M1 or Gate 2, commit M001, make any Authority effective, grant Product Commitment, authorize Engineering Start, or authorize Release. | M001 repository and SoR boundary | Leadership decision 2026-09-12; `M001-REPO-BINDING-001` |
 
 ## Open decision gates
 
@@ -48,3 +49,4 @@
 - Production-release authority.
 - Mission-closure authority.
 - Security, compliance and financial reviewers required for pricing, cost and approval evidence.
+- Effective Engineering Authority and L2 engineering-profile acceptance before material implementation.
