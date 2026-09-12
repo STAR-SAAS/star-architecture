@@ -3,15 +3,17 @@
 | Field | Value |
 |---|---|
 | Record ID | `M001-REPO-BINDING-001` |
-| Status | Candidate — repository binding prepared; no Gate or Engineering effect |
+| Status | Candidate — repository binding calibrated after bootstrap merge; no Gate or Engineering effect |
 | Mission | `M001 · SmartQuote Foundation` |
 | Product repository | `STAR-SAAS/smartquote` |
-| Product repository state | Created; Governance Bootstrap Draft PR #1 open / draft / unmerged |
+| Product repository state | Created; Governance Bootstrap PR #1 merged; post-merge exact-object readback PASS; installation calibration PR #3 open / draft / unmerged |
 | Governance bootstrap Head | `304055ff5b22045cf93b7e28f20784f3d7d0817b` |
+| Governance bootstrap Merge Commit | `80e3fcc42e7f334beec34020a16c68a402e2f4cd` |
 | Governance bootstrap Tree | `de05cfd3ea29fed0c06bb9f240b5febd77c18828` |
+| Governance installation calibration | `STAR-SAAS/smartquote#3` — Draft / Unmerged |
 | Mission / Gate SoR | `STAR-SAAS/star-architecture` |
 | Company governance SoR | `STAR-SAAS/star-ai-governance` |
-| Prepared on | 2026-09-12 |
+| Prepared / calibrated on | 2026-09-12 |
 
 ## Binding decision
 
@@ -61,7 +63,7 @@ Current canonical Authority references remain in Draft PR #19 and retain their e
 - `SQ-AUTH-007` — Engineering Start Approver — Jason Lin — `Proposed — appointment pending`;
 - `SQ-AUTH-015` — Release Authority — Missing.
 
-Repository ownership or GitHub access does not make any of these Authorities effective.
+Repository ownership, governance installation evidence or GitHub access does not make any of these Authorities effective.
 
 Current Gate state remains:
 
@@ -72,9 +74,11 @@ Current Gate state remains:
 - Formal Delivery: Not Started;
 - Production Release: Not Authorized.
 
-## Bootstrap dependency
+## Bootstrap and installation calibration
 
-SmartQuote Governance Bootstrap PR #1 must be human-merged and post-merge Commit/Tree/Blob readback must pass before the product repository can be recorded as `Installed / Report-only` for governance inheritance.
+SmartQuote Governance Bootstrap PR #1 was human-merged at `80e3fcc42e7f334beec34020a16c68a402e2f4cd`. Recursive post-merge readback of tree `de05cfd3ea29fed0c06bb9f240b5febd77c18828` matched all nine expected bootstrap governance Blobs and found no unexpected governance-path drift.
+
+That evidence supports `Installed / Report-only`, but the SmartQuote repository-side lifecycle calibration is being recorded separately in Draft PR #3. Until PR #3 is human-merged and its resulting main state is read back, this M001 binding records the factual merge/readback result without representing repository-side calibration as already published on `main`.
 
 This repository-binding record does not require PR #19 to be rewritten and does not invalidate its exact Authority proposal object. PR #19 remains a separate Draft Authority package pending explicit acceptance, conflict resolution and a later effectiveness decision.
 
