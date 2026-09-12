@@ -2,20 +2,20 @@
 
 | Field | Value |
 |---|---|
-| **Version / status** | v0.4.0 — Candidate — Baseline Confirmed; not Committed |
+| **Version / status** | v0.5.0 — Candidate — Baseline Confirmed; not Committed |
 | **Portfolio / Mission** | `PORT-003 · Mission-001 · SmartQuote Foundation` |
 | **Primary Alias** | `M001` |
 | **Mission Owner** | Robin |
 | **Product / Service Owner** | Jason Lin |
 | **Updated / last reviewed** | 2026-09-12 (Asia/Singapore) |
 | **Authoritative working source** | Draft PR #1 branch `agent/star-os-product-delivery-baseline` |
-| **Product repository** | `STAR-SAAS/smartquote` — created; Governance Bootstrap PR #1 remains Draft / Unmerged |
+| **Product repository** | `STAR-SAAS/smartquote` — created; governance `Installed / Report-only` after PR #1 and PR #3 merge/readback |
 | **Repository-binding record** | `SMARTQUOTE_REPOSITORY_BINDING.md` / `M001-REPO-BINDING-001` |
 | **Review trigger** | Material decision, milestone change, blocker change, walkthrough result, repository-binding change, Package B evidence change, routing decision or record-integrity failure |
 
 ## Current objective
 
-Prepare SmartQuote for governed delivery without starting formal implementation prematurely: install the project governance carrier, close repository/Source-of-Record boundaries, recover pre-existing assets, complete M1 readiness evidence, and preserve the approved first-stage product boundary.
+Prepare SmartQuote for governed delivery without starting formal implementation prematurely: preserve installed project governance, close repository/Source-of-Record boundaries, recover pre-existing assets, complete pre-engineering evidence, refresh M1 / Gate 2 readiness, and preserve the approved first-stage product boundary.
 
 ## Current actual state
 
@@ -23,10 +23,13 @@ Prepare SmartQuote for governed delivery without starting formal implementation 
 - Mission status is `Candidate — Baseline Confirmed`.
 - M1 has not passed.
 - M001 is not Committed.
-- `STAR-SAAS/smartquote` now exists as the approved independent SmartQuote product engineering repository.
-- SmartQuote Governance Bootstrap PR #1 is Open / Draft / Unmerged at Head `304055ff5b22045cf93b7e28f20784f3d7d0817b`; governance is not yet Installed.
+- `STAR-SAAS/smartquote` exists as the approved independent SmartQuote product engineering repository.
+- SmartQuote Governance Bootstrap PR #1 was merged at `80e3fcc42e7f334beec34020a16c68a402e2f4cd`; exact bootstrap readback passed.
+- SmartQuote Governance Installation Calibration PR #3 was merged at `ec5b1b45eccb55a10750b3021da2fc20d7b78f16` with installed tree `0da445404bd764826ebafd860e70a4d3acbf9337`.
+- Repository governance state is `Installed / Report-only`; enforcement is not verified and no Blocking CI / Quality Gate is enabled.
+- Pre-Engineering Baseline remains a separate Draft PR #2; Existing Asset Recovery remains separate Draft PR #4.
 - Product implementation, Engineering Start, staging, production and Release remain unauthorized.
-- Draft PR #19 Authority proposals remain pending; no Authority becomes effective because the repository exists.
+- Draft PR #19 Authority proposals remain pending; no Authority becomes effective because the repository exists or governance is installed.
 - Package B completed the real `continue M001` recovery test with result `Passed with findings`.
 - Existing historical code, database, prototype and test assets outside the authoritative record set remain Unknown or `Unverified / Not authoritative` until inventoried and reviewed.
 
@@ -46,10 +49,15 @@ Prepare SmartQuote for governed delivery without starting formal implementation 
 |---|---|
 | Product repository strategy | Confirmed — independent repository |
 | Product repository | `STAR-SAAS/smartquote` created |
-| Governance bootstrap | Draft PR #1 prepared / reviewed candidate; not Installed until human merge + post-merge readback |
-| Company governance inheritance | Pinned candidate to `STAR-COMPANY-GOVERNANCE-BASELINE-01 v0.1.0` |
-| Safety Foundation | Restrictive project binding prepared; no positive authority |
+| Governance bootstrap | PR #1 merged; exact nine-Blob bootstrap readback PASS |
+| Governance installation calibration | PR #3 merged; `Installed / Report-only` published on `main` |
+| Installed governance main | `ec5b1b45eccb55a10750b3021da2fc20d7b78f16` / tree `0da445404bd764826ebafd860e70a4d3acbf9337` |
+| Enforcement | Not verified / non-blocking |
+| Company governance inheritance | Pinned to `STAR-COMPANY-GOVERNANCE-BASELINE-01 v0.1.0` |
+| Safety Foundation | Restrictive/applicable; no positive authority |
 | SAES engineering profile | L2 candidate; final assignment pending effective Engineering Authority |
+| Pre-engineering package | SmartQuote Draft PR #2 / unmerged |
+| Asset recovery package | SmartQuote Draft PR #4 / unmerged |
 | Product code | Not authorized |
 | Real data | Not authorized |
 | Environment / deployment | Not authorized / not started |
@@ -72,7 +80,7 @@ Current independent states:
 - Formal Delivery: Not Started;
 - Production Release: Not Authorized.
 
-GitHub access, repository ownership or Mission ownership does not create professional Authority or pass any Gate.
+GitHub access, repository ownership, installed governance or Mission ownership does not create professional Authority or pass any Gate.
 
 ## SWS Pilot Package B
 
@@ -115,19 +123,18 @@ GitHub access, repository ownership or Mission ownership does not create profess
 - approved dependency/version baseline;
 - approved CI/test/environment baseline.
 
-Candidate names mentioned during recovery remain proposals until confirmed through the Mission/Authority process; they are not promoted by repository creation or this rebinding.
+Candidate names mentioned during recovery remain proposals until confirmed through the Mission/Authority process; they are not promoted by repository creation, governance installation or this rebinding.
 
 ## Blockers and dependencies
 
 - **M1 blocker:** required business acceptance and professional/technical confirmation remain incomplete.
-- **Governance dependency:** SmartQuote Governance Bootstrap PR #1 must be human-merged and post-merge read back before the product repository can be recorded as `Installed / Report-only`.
 - **Evidence dependency:** prior Product Blueprint, architecture corrections, Rule Center materials, code, prototypes, databases and tests require authoritative inventory and freshness review.
 - **Architecture dependency:** Merchant Identity, identity/authorization, tenant, security and Shared Foundation exact bindings remain unresolved.
 - **Commercial dependency:** Channel Cost and Pricing/Approval professional SoRs and rules remain missing.
+- **Engineering dependency:** Pre-Engineering Baseline and Existing Asset Recovery are prepared as Draft packages but remain unmerged and do not authorize implementation.
 
 ## Decisions still needed
 
-- complete Governance Bootstrap human merge + installation readback;
 - confirm business acceptance representative and necessary M1 participants;
 - resolve effective Architecture / Engineering / QA / Operations responsibilities as required;
 - resolve Finance/Pricing, Risk, Compliance, Security and Release Authority routes;
@@ -138,15 +145,15 @@ Candidate names mentioned during recovery remain proposals until confirmed throu
 
 ## Next Mission actions
 
-1. Human-review and, if approved, merge SmartQuote Governance Bootstrap PR #1; perform post-merge Commit/Tree/Blob readback.
-2. Merge this repository-binding update into the M001 working branch after review; keep PR #19 separate and pending.
-3. Complete existing-asset recovery and Pre-Engineering Baseline preparation without product implementation.
-4. Refresh M1/Gate 2 evidence and conduct the required human/professional confirmation batch.
+1. Review SmartQuote Pre-Engineering Baseline PR #2 against installed governance and existing-asset constraints.
+2. Review SmartQuote Existing Asset Recovery PR #4 and complete separately authorized source inventory when available.
+3. Merge this repository-binding update into the M001 working branch after review; keep PR #19 separate and pending.
+4. Refresh M1 / Gate 2 evidence and conduct the required human/professional confirmation batch.
 5. Only after the applicable gates and separate leadership decisions, consider Product Commitment and Engineering Start.
 
 ## Routing status
 
-**SmartQuote Delivery: Not started.** Repository creation and governance preparation do not route M001 to formal Delivery.
+**SmartQuote Delivery: Not started.** Repository creation and governance installation do not route M001 to formal Delivery.
 
 ## Independent gates and authority boundary
 
@@ -158,6 +165,6 @@ Candidate names mentioned during recovery remain proposals until confirmed throu
 
 ## Current readiness recommendations
 
-- **SmartQuote Governance Bootstrap PR #1:** eligible for human merge only after exact-object integrity review passes.
+- **Governance inheritance:** Installed / Report-only; enforcement not verified.
 - **M1 walkthrough execution:** remains Hold until required business/professional readiness is adequate.
-- **Pre-Engineering preparation:** authorized as documentation/evidence preparation only; no application/build/runtime implementation.
+- **Pre-Engineering preparation:** may continue as documentation/evidence preparation only; no application/build/runtime implementation.
