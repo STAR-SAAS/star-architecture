@@ -3,21 +3,23 @@
 | Field | Value |
 |---|---|
 | Record ID | `M001-REPO-BINDING-001` |
-| Status | Candidate — repository binding calibrated after bootstrap merge; no Gate or Engineering effect |
+| Status | Candidate — repository binding calibrated after governance installation; no Gate or Engineering effect |
 | Mission | `M001 · SmartQuote Foundation` |
 | Product repository | `STAR-SAAS/smartquote` |
-| Product repository state | Created; Governance Bootstrap PR #1 merged; post-merge exact-object readback PASS; installation calibration PR #3 open / draft / unmerged |
+| Product repository state | Created; Governance Bootstrap PR #1 merged; post-merge exact-object readback PASS; Installation Calibration PR #3 merged |
 | Governance bootstrap Head | `304055ff5b22045cf93b7e28f20784f3d7d0817b` |
 | Governance bootstrap Merge Commit | `80e3fcc42e7f334beec34020a16c68a402e2f4cd` |
 | Governance bootstrap Tree | `de05cfd3ea29fed0c06bb9f240b5febd77c18828` |
-| Governance installation calibration | `STAR-SAAS/smartquote#3` — Draft / Unmerged |
+| Governance installation calibration | `STAR-SAAS/smartquote#3` — merged at `ec5b1b45eccb55a10750b3021da2fc20d7b78f16` |
+| Installed governance Tree | `0da445404bd764826ebafd860e70a4d3acbf9337` |
+| Governance state | `Installed / Report-only`; Enforcement Verified = No; Blocking CI / Quality Gate = No |
 | Mission / Gate SoR | `STAR-SAAS/star-architecture` |
 | Company governance SoR | `STAR-SAAS/star-ai-governance` |
 | Prepared / calibrated on | 2026-09-12 |
 
 ## Binding decision
 
-`STAR-SAAS/smartquote` is the approved independent SmartQuote product engineering repository. Repository creation supersedes only the earlier historical fact that no SmartQuote product repository existed. It does not supersede or silently modify M001 scope, Gate state, Authority state, Product Commitment, Engineering Start or Release controls.
+`STAR-SAAS/smartquote` is the approved independent SmartQuote product engineering repository. Repository creation and governance installation supersede only the earlier historical facts that no SmartQuote product repository existed and that its governance carrier was not yet installed. They do not supersede or silently modify M001 scope, Gate state, Authority state, Product Commitment, Engineering Start or Release controls.
 
 ## Repository responsibility boundary
 
@@ -74,11 +76,11 @@ Current Gate state remains:
 - Formal Delivery: Not Started;
 - Production Release: Not Authorized.
 
-## Bootstrap and installation calibration
+## Governance installation calibration
 
 SmartQuote Governance Bootstrap PR #1 was human-merged at `80e3fcc42e7f334beec34020a16c68a402e2f4cd`. Recursive post-merge readback of tree `de05cfd3ea29fed0c06bb9f240b5febd77c18828` matched all nine expected bootstrap governance Blobs and found no unexpected governance-path drift.
 
-That evidence supports `Installed / Report-only`, but the SmartQuote repository-side lifecycle calibration is being recorded separately in Draft PR #3. Until PR #3 is human-merged and its resulting main state is read back, this M001 binding records the factual merge/readback result without representing repository-side calibration as already published on `main`.
+SmartQuote Installation Calibration PR #3 was then human-merged at `ec5b1b45eccb55a10750b3021da2fc20d7b78f16`, producing tree `0da445404bd764826ebafd860e70a4d3acbf9337`. The repository may therefore be represented as `Installed / Report-only`; enforcement remains unverified and non-blocking.
 
 This repository-binding record does not require PR #19 to be rewritten and does not invalidate its exact Authority proposal object. PR #19 remains a separate Draft Authority package pending explicit acceptance, conflict resolution and a later effectiveness decision.
 
